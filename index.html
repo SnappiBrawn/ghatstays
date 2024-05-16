@@ -1,0 +1,12 @@
+---
+title: Simple Jekyll Starter
+description: A very basic starter template for jekyll with sass support and the necessary directory structure.
+layout: default
+---
+<div>
+	<h1>Home Page</h1>
+	<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam cumque voluptates libero officiis provident molestias debitis facere ducimus alias laudantium optio officia expedita, similique veniam doloremque beatae culpa architecto eum!</p>
+	{% for blog in site.posts %}
+	<a href="{{blog.url}}">{{blog.title}}</a>
+	{% endfor %}
+</div>

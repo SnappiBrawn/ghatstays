@@ -1,0 +1,12 @@
+//Add all custom CSS here
+
+html{
+    scroll-behavior: smooth;
+    height: 100%;
+}
+*{
+    color: blue;
+    @include media-query($on-hand){
+        color: red;
+    }
+}

@@ -1,0 +1,23 @@
+
+sass:
+  sass_dir: /assets/css/_sass/
+  style: compressed
+
+include:
+  - _pages
+
+
+#compress.html
+compress_html:
+  clippings: [html, head, meta, title, link, body, div, script, header, footer]
+  comments: ["<!-- ", " -->"]
+  endings: [all]
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: []
+
+
+plugins:
+ - jekyll-seo-tag
