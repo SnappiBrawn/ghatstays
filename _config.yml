@@ -1,4 +1,7 @@
 
+title: Ghatstays
+description: Your guide through the mesmerising landscape of the western ghats. 
+
 sass:
   sass_dir: /assets/css/_sass/
   style: compressed

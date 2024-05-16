@@ -1,3 +1,8 @@
+---
+layout: default
+---
+
+
 # Blog Title
 
 This is an example blog.

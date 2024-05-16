@@ -4,7 +4,9 @@
 
 @charset "utf-8";
 
-$base-font-family: 'Work Sans', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+$base-font-family: 'Lato', monospace;
 $base-font-size:   20px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
@@ -14,9 +16,9 @@ $spacing-unit:     30px;
 
 $text-color:       #333;
 $background-color: #fdfdfd;
-$brand-color:      #eb2020;
+$brand-color:      #e83f53;
 
-$grey-color:       #828282;
+$grey-color:       #494b4a;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
@@ -43,4 +45,4 @@ $on-laptop:        1000px;
 
 // Core
 
-@import "custom";
+@import "custom", "bootstrap";
