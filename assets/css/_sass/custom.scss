@@ -1,20 +1,32 @@
 //Add all custom CSS here
 
+
+// Globals
 html {
   scroll-behavior: smooth;
   height: 100%;
 }
 
+::selection {
+  background-color: $brand-color;
+  color: white;
+}
+
+
+// Header and anvbar
 .top-bar {
   background-color: $grey-color;
   display: flex;
   justify-content: space-between;
+  height: 42px;
   font-size: 12px;
-  font-weight: 100;
+  font-weight: 600 !important;
   line-height: 10px;
+  align-items: center;
 
   .search-btn {
     height: 100%;
+    font-size: 26px;
     background-color: rgb(52, 173, 177);
     cursor: pointer;
   }
@@ -53,7 +65,32 @@ header {
   }
 }
 
-.offcanvas-body{
+#scroll-top{
+  position: fixed;
+  font-size: 30px;
+  border: 0;
+  bottom: 10px;
+  right: 10px;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+  text-align: center;
+  transition: opacity 300ms ease;
+  text-decoration: none;
+
+  &.show{
+    display: flex;
+  }
+  span{
+    font-size: 12px;
+    font-weight: 700;
+    width: 100%;
+  }
+}
+
+// Aside Drawer
+.offcanvas-body {
   background-image: url('https://wallpapercave.com/wp/wp8370836.jpg'), linear-gradient(0deg, #222222, #222222);
   background-blend-mode: multiply;
   background-size: cover;
@@ -61,7 +98,68 @@ header {
   font-size: 16px;
   color: lightgrey;
 
-  h1,h2,h3,h4,h5,h6{
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: white;
+  }
+}
+
+
+// Footer
+footer {
+  color: lightgrey;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: white;
+    font-weight: 700 !important;
+  }
+
+  h5 {
+    padding-bottom: 1.7rem;
+  }
+
+  a{
+    color: lightgrey;
+    &:hover{
+      color: white;
+    }
+  }
+
+  .s1 {
+    h6 {
+      font-weight: 900;
+      font-size: 13px;
+    }
+
+    i {
+      font-size: 16px;
+      padding-right: 5px;
+    }
+    a{
+      color: inherit;
+    }
+  }
+
+  .s4 {
+    padding-left: 40px;
+    a{
+      color:#bbb;
+      display: flex;
+      align-items: center;
+    }
+
+    i {
+      font-size: 40px;
+      padding-right: 1rem;
+    }
   }
 }

@@ -1,3 +1,60 @@
-<footer>
-	Footer
+<footer style="background-color: #242625;">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3 col-12 py-5 s1">
+				<img src="https://voyage.qodeinteractive.com/wp-content/uploads/2016/04/logo-footer-light.png" class="pb-3">
+				
+				<br><p>{{ site.description }}</p><br>
+				<div class="d-flex flex-column gap-1">
+					<h6 style="font-size:small !important"><i class="bi bi-telephone-inbound"></i> 1-677-124-44227
+					</h6>
+					<h6 style="font-size:small !important"><i class="bi bi-geo-alt"></i> 184 Main Street West
+						Victoria 8007</h6>
+					<h6 style="font-size:small !important"><i class="bi bi-calendar-check"></i> Mon - Sat 8.00 - 18.00
+						Sunday CLOSED</h6>
+				</div>
+			</div>
+			<div class="col-sm-3 col-12 py-5">
+				<h5>Latest News</h5>
+				<div>
+					<div class="row align-items-center">
+							<p>A week by Malpe: Exploring the coastal Scenic</p>
+							<p style="font-size: small; color: grey;">May 5, 2024</p>
+					</div>
+					<hr>
+					<div class="row align-items-center">
+							<p>A week by Malpe: Exploring the coastal Scenic</p>
+							<p style="font-size: small; color: grey;">May 5, 2024</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3 col-12 py-5">
+				<h5>Gallery</h5>
+				<div class="row">
+					{% for index in (1..6)%}
+					<div class="col-4 p-2">
+						<a href="https://exp.cdn-hotels.com/hotels/2000000/1170000/1163200/1163147/1c53b3d9_z.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-caption="Scenic beaches" class="col-sm-4">
+							<img src="https://exp.cdn-hotels.com/hotels/2000000/1170000/1163200/1163147/1c53b3d9_z.jpg" class="img-fluid">
+						</a>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+			<div class="col-sm-3 col-12 py-5 s4">
+				<h5>Follow Us</h5>
+				<a href="#"><i class="bi bi-instagram"></i><span>Instagram</span></a>
+				<a href="#"><i class="bi bi-youtube"></i><span>Youtube</span></a>
+				<a href="#"><i class="bi bi-facebook"></i><span>Facebook</span></a>
+			</div>
+		</div>
+		<hr>
+		<div class="d-flex justify-content-between py-3">
+			<div>
+				<a href="https://snaplogix.in" target="_blank"><i class="bi bi-c-circle"></i> 2024 SnapLogix.Inc, All Rights Reserved</a>
+			</div>
+			<div>
+				<i class="bi bi-globe"></i>
+			</div>
+		</div>
+	</div>
 </footer>
