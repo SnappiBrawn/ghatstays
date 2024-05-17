@@ -12,6 +12,18 @@ html {
   color: white;
 }
 
+section:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+section {
+  p {
+    font-size: 18px;
+    line-height: 33px;
+    color: grey;
+  }
+}
+
 
 // Header and anvbar
 .top-bar {
@@ -142,6 +154,7 @@ header {
     left: 50%;
     transform: translate(-50%, 0);
     font-size: 18px;
+    z-index: 10;
 
     .input-group {
       width: 18%;
@@ -158,24 +171,178 @@ header {
   }
 }
 
+// deals section
+.magic-card {
+  img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+  }
+
+  .first-overlay {
+    opacity: 1;
+    transition: all 0.2s ease;
+  }
+
+  .second-overlay {
+    opacity: 0;
+    backdrop-filter: blur(5px);
+    transition: all 0.1s ease;
+
+    div {
+      transition: all 0.1s ease;
+      transform: translateY(15px);
+    }
+  }
+
+  &:hover {
+    .first-overlay {
+      opacity: 0;
+
+    }
+
+    .second-overlay {
+      opacity: 1;
+
+      div {
+        transform: translateY(0);
+      }
+    }
+  }
+
+}
+
+.reviews {
+  display: flex;
+  align-items: center;
+
+  .card-body {
+    i {
+      color: $brand-color;
+    }
+
+    p {
+      font-weight: 100;
+      line-height: 1.5rem;
+      font-size: 15px;
+    }
+
+    img {
+      border-radius: 50%;
+
+    }
+  }
+
+}
+
+// section with the sortable
+.sortable {
+  .iso-links {
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      color: grey;
+      text-transform: uppercase;
+      padding-right: 16px;
+      font-size: 12px;
+    }
+
+    a.active {
+      color: red;
+    }
+  }
+
+  .view-all {
+    background-color: $brand-color;
+    color: white;
+    border: 2px solid $brand-color;
+    border-radius: 0;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 9px 30px;
+  }
+}
+
+// wide video block
+
+div.wide {
+  background-image: url('https://cdn.shopify.com/s/files/1/0354/9161/0668/files/koda_1024x1024.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 80vh;
+  position: relative;
+
+  div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+
+    i:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+      transition-duration: 0.1s;
+    }
+  }
+}
+
+//Other info
+.accordion {
+
+  .accordion-button:hover,
+  .accordion-button:not(.collapsed) {
+    color: $brand-color;
+    background-color: #f0f0f0;
+  }
+
+  .accordion-button:focus {
+    background-color: inherit;
+    color: $brand-color;
+    border: transparent 0px;
+    box-shadow: none;
+  }
+}
+
+// quickbook
+.quickbook {
+  background-color: $grey-color;
+  color: white;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    a {
+      background-color: $brand-color;
+      padding: 10px 15px;
+      border-radius: 0;
+      color: white;
+      font-weight: 500;
+    }
+  }
+
+}
+
 @include media-query($on-hand) {
   .slider {
     .carousel {
       .carousel-caption {
         top: 150px;
-  
+
         h1 {
           font-size: 50px;
         }
-  
+
         h3 {
           font-size: 15px;
         }
       }
-      img{
+
+      img {
         height: 90vh;
       }
     }
+
     .container {
       position: unset;
       transform: translate(0, 0);
@@ -186,15 +353,24 @@ header {
         gap: 10px;
 
         .input-group {
-          width: 90%;
+          width: 100%;
         }
+      }
+
+      button {
+        width: 100%;
       }
     }
   }
+
+  .magic-card {
+    padding: 10px;
+
+    .card-img-overlay {
+      padding: 30px !important;
+    }
+  }
 }
-
-
-
 
 // Footer
 footer {
