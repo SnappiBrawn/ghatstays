@@ -1,5 +1,8 @@
 ---
 layout: default
+title: Hrudaya Stays
+categories: [Karnataka, bangalore]
+slug: state
 ---
 
 

@@ -1,0 +1,35 @@
+<section>
+    <div class="container">
+<h1>Suggested Stays</h1>
+    <div class="owl-carousel" style="color: dimgray;">
+        {% for index in (1..5)%}
+        <div class="item">
+            <div class="card rounded-0 m-2">
+                <img class="rounded-0"
+                    src="https://img.traveltriangle.com/blog/wp-content/uploads/2020/01/Ooty-In-Summer-cover_17th-Jan.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body p-4">
+                    <div class="d-flex justify-content-between">
+                        <h5 class="card-title text-dark">Hrudaya Stays</h5>
+                        <h5 class="text-primary">₹ 2500</h5>
+                    </div>
+                    <div class="d-flex gap-2 pb-3">
+                        <h6 class="text-dark"><i class="bi bi-emoji-smile"></i></h6>
+                        <h6> Forest Stay </h6>
+                    </div>
+                    <span class="card-text" style="font-size: 14px">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Vel asperiores
+                        aliquam tenetur inventore laudantium quaerat voluptate modi blanditiis placeat quo!
+                    </span>
+                    <hr>
+                    <div class="d-flex gap-3">
+                        <div><i class="bi bi-arrow-counterclockwise"></i>10 Days</div>
+                        <div><i class="bi bi-person"></i>12+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+</section>

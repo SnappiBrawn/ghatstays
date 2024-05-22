@@ -1,8 +1,9 @@
 ---
 layout: default
+title: Home \| Ghatstays
 ---
 <div>
-	{% include slider.html %}
+	{% include slider-home.html %}
 
 	<!-- Most Popular Tours -->
 	<section>
@@ -259,6 +260,7 @@ layout: default
 		</div>
 	</div>
 
+	<!-- do not remove -->
 	<section></section>
 
 	<!-- Other Useful Information -->
@@ -351,13 +353,11 @@ layout: default
 					elementum pretium.</p>
 			</div>
 			<div class="owl-carousel facts-carousel">
-				<img src="https://www.svgrepo.com/show/279316/suitcase-travel.svg" style="max-width: 150px;">
-				<img src="https://www.svgrepo.com/show/279316/suitcase-travel.svg" style="max-width: 150px;">
-				<img src="https://www.svgrepo.com/show/279316/suitcase-travel.svg" style="max-width: 150px;">
-				<img src="https://www.svgrepo.com/show/279316/suitcase-travel.svg" style="max-width: 150px;">
-				<img src="https://www.svgrepo.com/show/279316/suitcase-travel.svg" style="max-width: 150px;">
-				<img src="https://www.svgrepo.com/show/279316/suitcase-travel.svg" style="max-width: 150px;">
-				<img src="https://www.svgrepo.com/show/279316/suitcase-travel.svg" style="max-width: 150px;">
+				{% for _ in (1..7)%}
+				<div>
+					<img data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" title="<b>Fact</b><p>London has the highest population distribution at 5.6 people per square meter.</p>" src="https://www.svgrepo.com/show/279316/suitcase-travel.svg" style="max-width: 150px; margin: 0 auto;">
+				</div>
+				{% endfor %}
 			</div>
 		</div>
 	</section>

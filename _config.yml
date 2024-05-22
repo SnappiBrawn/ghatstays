@@ -1,6 +1,17 @@
 
 title: Ghatstays
 description: Your guide through the mesmerising landscape of the western ghats. 
+email: ghatstays@gmail.com
+instagram: https://www.instagram.com/ghatstays 
+linkedin: https://in.linkedin.com/in/ghat-stays 
+twitter: https://twitter.com/GhatStays 
+justdial: https://jsdl.in/DT-99BTDKH6VI9    
+facebook: https://m.facebook.com/profile.php?id=100085038775426&mibextid=ZbWKwL 
+youtube: https://youtube.com/@ghatstays?si=Ke6yJfcNkgg84Hos 
+
+logo: /assets/img/logos/Logo-v2-full-clr.png
+logo-white: /assets/img/logos/logo-v2-full-white.png
+logo-black: /assets/img/logos/Logo-v2-full-blk.png
 
 sass:
   sass_dir: /assets/css/_sass/
@@ -9,6 +20,9 @@ sass:
 include:
   - _pages
 
+collections:
+  locations:
+    permalink: /:categories/:slug/
 
 #compress.html
 compress_html:

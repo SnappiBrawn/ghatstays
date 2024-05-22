@@ -25,6 +25,39 @@ section {
 }
 
 
+table {
+  width: 100%;
+  border: 1px solid $brand-color-fade;
+
+  th {
+    display: flex;
+    width: 100%;
+    background: #000;
+    padding: 5px;
+  }
+
+  tr {
+    display: flex;
+    padding: 5px;
+
+    td {
+      flex: 1 1 20%;
+    }
+
+    &:nth-of-type(odd) {
+      background: $brand-color-fade;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
 // Header and anvbar
 .top-bar {
   background-color: $grey-color;
@@ -103,6 +136,30 @@ header {
   }
 }
 
+.secondary-navbar {
+  height: 0;
+  padding: 0px !important;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+
+  .navbar-nav {
+    gap: 34px;
+
+    a {
+      color: #f9f9f9;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 700;
+    }
+  }
+
+  &.visible {
+    height: 70px;
+    overflow: visible;
+    padding: 10px 0px;
+  }
+}
+
 // Aside Drawer
 .offcanvas-body {
   background-image: url('https://wallpapercave.com/wp/wp8370836.jpg'), linear-gradient(0deg, #222222, #222222);
@@ -123,7 +180,7 @@ header {
 }
 
 // Slider
-.slider {
+.slider-home {
   position: relative;
 
   .carousel {
@@ -170,6 +227,54 @@ header {
     }
   }
 }
+
+.slider {
+  position: relative;
+
+  .carousel {
+    margin: 0 auto;
+
+    .carousel-item {
+      .backdrop{
+        position: absolute; 
+        object-fit:cover; 
+        width: 100%; 
+        filter: blur(5px);
+      }
+
+      img {
+        width: 60vw;
+        margin: 0px auto;
+        object-fit: cover;
+        filter: brightness(0.8) blur(0);
+      }
+    }
+  }
+
+  .container {
+    position: absolute;
+    top: 380px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 18px;
+    z-index: 10;
+
+    .input-group {
+      width: 18%;
+    }
+
+    button {
+      background-color: $brand-color;
+      color: white;
+      border: none;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 10px 25px;
+    }
+  }
+}
+
+
 
 // deals section
 .magic-card {
@@ -236,19 +341,24 @@ header {
 
 // section with the sortable
 .sortable {
-  .iso-links {
+  #filters {
     text-align: center;
 
-    a {
+    button {
       text-decoration: none;
       color: grey;
       text-transform: uppercase;
       padding-right: 16px;
       font-size: 12px;
+      border: transparent 0px;
     }
 
-    a.active {
+    button.active {
       color: red;
+    }
+
+    button:focus {
+      box-shadow: none;
     }
   }
 
@@ -305,13 +415,46 @@ div.wide {
   }
 }
 
+//Facts
+.facts-carousel {
+  .fact {
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px rgb(192, 190, 190) solid;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgba(red($brand-color), green($brand-color), blue($brand-color), 0.6);
+    color: white;
+
+    &::before {
+      content: "";
+      /* Empty content */
+      position: absolute;
+      /* Positioned relative to the popup */
+      bottom: -10px;
+      /* Adjust position as needed */
+      left: 50%;
+      /* Center horizontally */
+      transform: translateX(-50%);
+      /* Center within the popup */
+      border-width: 10px;
+      /* Adjust border width for triangle size */
+      border-style: solid;
+      border-color: transparent transparent red transparent;
+    }
+  }
+
+}
+
 // quickbook
 .quickbook {
   background-color: $grey-color;
   color: white;
+
   .container {
     display: flex;
     justify-content: space-between;
+
     a {
       background-color: $brand-color;
       padding: 10px 15px;
@@ -323,7 +466,191 @@ div.wide {
 
 }
 
+.listing {
+  * {
+    border-radius: 0 !important;
+    transition: all 0.2s linear;
+  }
+
+  h1 {
+    font-size: 36px;
+    font-weight: 600;
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    position: relative;
+    display: inline;
+    padding-bottom: 2px;
+    font-weight: 600;
+
+    &::after {
+      content: "";
+      position: absolute;
+      border: 1px $brand-color solid;
+      width: 90%;
+      bottom: 0;
+      left: 5%;
+    }
+  }
+
+  p {
+    font-size: 14pt;
+  }
+
+  .price {
+    font-size: 33px;
+    color: $brand-color;
+    font-weight: 600;
+  }
+
+  .stubs {
+    font-size: 20px;
+    font-weight: 500;
+
+    i {
+      color: $brand-color;
+      font-size: 25px;
+    }
+  }
+
+  .feature-card {
+    background-color: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    padding: 16px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 5px;
+
+    .feature-name {
+      font-size: 14.5pt;
+      font-weight: 700;
+    }
+
+    .feature-value {
+      font-size: 18pt;
+      font-weight: 700;
+      color: $brand-color;
+      word-break: break-word;
+    }
+
+    .feature-icon {
+      color: $brand-color;
+      font-size: 43px;
+    }
+  }
+
+  .feature-text {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 110%;
+    border: solid 1px #e5e5e5;
+    border-top: 0;
+  }
+
+  .nav-link {
+    padding: 15px 15px 5px 15px;
+    font-size: 14px;
+    font-weight: 700;
+    color: $grey-color-light;
+    border: 0 $brand-color !important;
+    border-bottom: inherit;
+    position: relative;
+    text-transform: uppercase;
+
+    &.active {
+      border-bottom: 3px $brand-color solid !important;
+    }
+
+    &:hover {
+      color: #000 !important;
+    }
+  }
+
+  .tab-content {
+    li {
+      list-style: none;
+      margin-left: 10px;
+      position: relative;
+    }
+
+    li::before {
+      content: "●";
+      color: $brand-color;
+      font-size: 1.2em;
+      position: absolute;
+      left: -15px;
+      top: -3px;
+    }
+
+    td {
+      i {
+        color: $brand-color;
+        font-size: x-large;
+        font-weight: 600;
+        vertical-align: -0.18em;
+        line-height: 0;
+      }
+
+      &.value {
+        font-weight: 600;
+        text-align: center;
+      }
+    }
+
+    #food-menu b {
+      color: $brand-color;
+    }
+
+    #activities, #amenities{
+      .act,i{
+        padding: 5px 10px;
+        border: solid 1px $brand-color-fade;
+        align-items: center;
+        display: flex;
+      }
+      .act{
+        background-color: #f9f9f9;
+        flex: 1;
+      }
+      i{
+        background-color: $brand-color-fade;
+      }
+    }
+
+
+  }
+
+  .enquiry {
+    position: sticky;
+    top: 70px;
+
+    form {
+      button {
+        text-transform: uppercase;
+        font-weight: 700;
+
+      }
+    }
+  }
+}
+
+
 @include media-query($on-hand) {
+  header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 20;
+  }
+
   .slider {
     .carousel {
       .carousel-caption {
@@ -370,6 +697,31 @@ div.wide {
       padding: 30px !important;
     }
   }
+
+  .quickbook {
+    .container {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+  }
+
+  .listing{
+    .nav-tabs{
+      justify-content: center;
+    }
+    td{
+      max-width: 70vw;
+    }
+    td.value {
+        max-width: 30vw;
+      }
+    .card{
+      border: none;
+    }
+  }
+
 }
 
 // Footer
