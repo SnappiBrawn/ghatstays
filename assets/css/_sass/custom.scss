@@ -246,7 +246,6 @@ header {
         width: 60vw;
         margin: 0px auto;
         object-fit: cover;
-        filter: brightness(0.8) blur(0);
       }
     }
   }
@@ -517,15 +516,21 @@ div.wide {
   }
 
   .feature-card {
-    background-color: #f9f9f9;
-    border: 1px solid #e5e5e5;
-    padding: 16px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-    gap: 5px;
+
+    .feature-header{
+      padding: 16px 0px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      background-color: #f9f9f9;
+      border: solid 1px #e5e5e5;
+      gap: 5px;
+    }
 
     .feature-name {
       font-size: 14.5pt;
@@ -543,17 +548,21 @@ div.wide {
       color: $brand-color;
       font-size: 43px;
     }
+
+    .feature-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 14px;
+      line-height: 110%;
+      background-color: #f9f9f9;
+      border: solid 1px #e5e5e5;
+      border-top: 0;
+    }
   }
 
-  .feature-text {
-    text-align: center;
-    background-color: #f9f9f9;
-    padding: 10px;
-    font-size: 14px;
-    line-height: 110%;
-    border: solid 1px #e5e5e5;
-    border-top: 0;
-  }
+ 
 
   .nav-link {
     padding: 15px 15px 5px 15px;
@@ -651,7 +660,7 @@ div.wide {
     z-index: 20;
   }
 
-  .slider {
+  .slider-home {
     .carousel {
       .carousel-caption {
         top: 150px;
@@ -690,6 +699,8 @@ div.wide {
     }
   }
 
+
+
   .magic-card {
     padding: 10px;
 
@@ -707,6 +718,46 @@ div.wide {
 
   }
 
+  .slider {
+    position: relative;
+  
+    .carousel {
+      margin: 0 auto;
+  
+      .carousel-item {
+        .backdrop{
+          display: none;
+        }
+  
+        img {
+          width: 100%;
+        }
+      }
+    }
+  
+    .container {
+      position: absolute;
+      top: 380px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      font-size: 18px;
+      z-index: 10;
+  
+      .input-group {
+        width: 18%;
+      }
+  
+      button {
+        background-color: $brand-color;
+        color: white;
+        border: none;
+        font-size: 13px;
+        font-weight: 600;
+        padding: 10px 25px;
+      }
+    }
+  }
+
   .listing{
     .nav-tabs{
       justify-content: center;
@@ -719,6 +770,21 @@ div.wide {
       }
     .card{
       border: none;
+    }
+    .feature-card {
+      .feature-name {
+        font-size: 14.5px;
+      }
+      .feature-value {
+        font-size: 18px;
+      }
+      .feature-text {
+        padding: 10px;
+        font-size: 14px;
+      }
+      .price{
+        font-size: 24px;
+      }
     }
   }
 
