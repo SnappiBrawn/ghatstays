@@ -1,18 +1,12 @@
 <section class="slider mx-auto" height=500>
     <div id="carouselExampleControls" class="carousel slide caption-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="3000">
-                <img src="/properties/kudhremukh/Gaaligudda/cover.jpg" alt="Gaaligudda" class="mx-auto backdrop">
-                <img src="/properties/kudhremukh/Gaaligudda/cover.jpg" alt="Gaaligudda" class="mx-auto d-flex">
+            {% for i in page.images %}
+            <div class="carousel-item {% if forloop.index == 1 %}active{% endif %}" data-bs-interval="3000">
+                <img src="{{i}}" alt="Gaaligudda" class="backdrop">
+                <img src="{{i}}" alt="Gaaligudda" class="fore mx-auto d-flex">
             </div>
-            <div class="carousel-item active" data-bs-interval="3000">
-                <img src="/properties/kudhremukh/Gaaligudda/cover.jpg" alt="Gaaligudda" class="mx-auto backdrop">
-                <img src="/properties/kudhremukh/Gaaligudda/cover.jpg" alt="Gaaligudda" class="mx-auto d-flex">
-            </div>
-            <div class="carousel-item active" data-bs-interval="3000">
-                <img src="/properties/kudhremukh/Gaaligudda/cover.jpg" alt="Gaaligudda" class="mx-auto backdrop">
-                <img src="/properties/kudhremukh/Gaaligudda/cover.jpg" alt="Gaaligudda" class="mx-auto d-flex">
-            </div>
+            {% endfor %}
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
             data-bs-slide="prev">

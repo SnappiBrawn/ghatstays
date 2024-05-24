@@ -20,9 +20,11 @@ sass:
 include:
   - _pages
 
+collections_dir: site_collections
+
 collections:
-  locations:
-    permalink: /:categories/:slug/
+  stays:
+    output: true
 
 #compress.html
 compress_html:
