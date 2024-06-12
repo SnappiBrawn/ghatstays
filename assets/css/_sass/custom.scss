@@ -7,6 +7,58 @@ html {
   height: 100%;
 }
 
+input[type=checkbox] {
+  -webkit-appearance: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 1px solid hsl(0, 0%, 85%);
+  border-radius: 1px;
+  top: 5px;
+  position: relative;
+  left: 0;
+  outline: none;
+
+  &:checked {
+    background-color: $brand-color;
+  }
+
+  &:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzMwMHB4JyB3aWR0aD0nMzAwcHgnICBmaWxsPSIjZmZmZmZmIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgdmVyc2lvbj0iMS4xIiB4PSIwcHgiIHk9IjBweCI+PHRpdGxlPmljb25fYnlfUG9zaGx5YWtvdjEwPC90aXRsZT48ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz48ZyBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48ZyBmaWxsPSIjZmZmZmZmIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNi4wMDAwMDAsIDI2LjAwMDAwMCkiPjxwYXRoIGQ9Ik0xNy45OTk5ODc4LDMyLjQgTDEwLjk5OTk4NzgsMjUuNCBDMTAuMjI2Nzg5MSwyNC42MjY4MDE0IDguOTczMTg2NDQsMjQuNjI2ODAxNCA4LjE5OTk4Nzc5LDI1LjQgTDguMTk5OTg3NzksMjUuNCBDNy40MjY3ODkxNCwyNi4xNzMxOTg2IDcuNDI2Nzg5MTQsMjcuNDI2ODAxNCA4LjE5OTk4Nzc5LDI4LjIgTDE2LjU4NTc3NDIsMzYuNTg1Nzg2NCBDMTcuMzY2ODIyOCwzNy4zNjY4MzUgMTguNjMzMTUyOCwzNy4zNjY4MzUgMTkuNDE0MjAxNCwzNi41ODU3ODY0IEw0MC41OTk5ODc4LDE1LjQgQzQxLjM3MzE4NjQsMTQuNjI2ODAxNCA0MS4zNzMxODY0LDEzLjM3MzE5ODYgNDAuNTk5OTg3OCwxMi42IEw0MC41OTk5ODc4LDEyLjYgQzM5LjgyNjc4OTEsMTEuODI2ODAxNCAzOC41NzMxODY0LDExLjgyNjgwMTQgMzcuNzk5OTg3OCwxMi42IEwxNy45OTk5ODc4LDMyLjQgWiI+PC9wYXRoPjwvZz48L2c+PC9nPjwvc3ZnPg==");
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &+label {
+    padding-left: 5px;
+  }
+}
+
+div.position-stickyscrollable {
+  position: sticky;
+  top: 80px;
+  overflow-y: hidden;
+  height: 70vh;
+
+  &:hover {
+    overflow-y: auto;
+
+    scrollbar-width: 0;
+  }
+}
+
+.wide-equal{
+  display: flex;
+  justify-content: space-between;
+}
+
+
 ::selection {
   background-color: $brand-color;
   color: white;
@@ -240,7 +292,7 @@ header {
         height: 100%;
         filter: blur(5px);
       }
-      
+
       .fore {
         position: relative;
         max-width: 60vw;
@@ -442,6 +494,96 @@ div.wide {
 
 }
 
+.destinations {
+  * {
+    border-radius: 0 !important;
+    transition: all 0.2s linear;
+  }
+
+  h2,h3,h4 {
+    color: $brand-color;
+  }
+
+  .bi{
+    color: $brand-color;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  .count{
+    padding-left: 5px;
+    font-size: 20px;
+  }
+
+  select{
+    color: #828282;
+    background-color: white;
+    border: none;
+    transform: translateY(50%);
+    padding: 5px 10px;
+    font-size: 20px;
+    width: 200px;
+  }
+
+  .card{
+    background-color: #DC354520;
+    border: none;
+
+    img{
+      width: 100%;
+    }
+
+    .price {
+      font-size: 20px;
+      color: black;
+      font-weight: 400;
+      border: $brand-color solid 2px;
+      padding: 3px 9px;
+      transition-duration: 0.1s;
+  
+      &:hover{
+        background-color: $brand-color;
+        color: white;
+        cursor: pointer;
+      }
+    }
+
+    .button{
+      background-color: $brand-color;
+      color: white;
+      border: none;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 7px 20px;
+    }
+
+  }
+
+  .activities,
+  .amenities {
+
+    .act,
+    i {
+      padding: 5px 10px;
+      border: solid 1px $brand-color-fade;
+      align-items: center;
+      display: flex;
+    }
+
+    .act {
+      background-color: #f9f9f9;
+      flex: 1;
+    }
+
+    i {
+      background-color: $brand-color-fade;
+    }
+  }
+}
+
 .listing {
   * {
     border-radius: 0 !important;
@@ -499,7 +641,7 @@ div.wide {
     justify-content: space-evenly;
     text-align: center;
 
-    .feature-header{
+    .feature-header {
       padding: 16px 0px;
       display: flex;
       flex-direction: column;
@@ -539,7 +681,7 @@ div.wide {
     }
   }
 
- 
+
 
   .nav-link {
     padding: 15px 15px 5px 15px;
@@ -595,18 +737,23 @@ div.wide {
       color: $brand-color;
     }
 
-    #activities, #amenities{
-      .act,i{
+    #activities,
+    #amenities {
+
+      .act,
+      i {
         padding: 5px 10px;
         border: solid 1px $brand-color-fade;
         align-items: center;
         display: flex;
       }
-      .act{
+
+      .act {
         background-color: #f9f9f9;
         flex: 1;
       }
-      i{
+
+      i {
         background-color: $brand-color-fade;
       }
     }
@@ -697,21 +844,21 @@ div.wide {
 
   .slider {
     position: relative;
-  
+
     .carousel {
       margin: 0 auto;
-  
+
       .carousel-item {
-        .backdrop{
+        .backdrop {
           display: none;
         }
-  
+
         img {
           width: 100%;
         }
       }
     }
-  
+
     .container {
       position: absolute;
       top: 380px;
@@ -719,11 +866,11 @@ div.wide {
       transform: translate(-50%, 0);
       font-size: 18px;
       z-index: 10;
-  
+
       .input-group {
         width: 18%;
       }
-  
+
       button {
         background-color: $brand-color;
         color: white;
@@ -735,31 +882,38 @@ div.wide {
     }
   }
 
-  .listing{
-    .nav-tabs{
+  .listing {
+    .nav-tabs {
       justify-content: center;
     }
-    td{
+
+    td {
       max-width: 70vw;
     }
+
     td.value {
-        max-width: 30vw;
-      }
-    .card{
+      max-width: 30vw;
+    }
+
+    .card {
       border: none;
     }
+
     .feature-card {
       .feature-name {
         font-size: 14.5px;
       }
+
       .feature-value {
         font-size: 18px;
       }
+
       .feature-text {
         padding: 10px;
         font-size: 14px;
       }
-      .price{
+
+      .price {
         font-size: 24px;
       }
     }
