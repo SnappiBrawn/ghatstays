@@ -53,7 +53,7 @@ div.position-stickyscrollable {
   }
 }
 
-.wide-equal{
+.wide-equal {
   display: flex;
   justify-content: space-between;
 }
@@ -500,11 +500,13 @@ div.wide {
     transition: all 0.2s linear;
   }
 
-  h2,h3,h4 {
+  h2,
+  h3,
+  h4 {
     color: $brand-color;
   }
 
-  .bi{
+  .bi {
     color: $brand-color;
   }
 
@@ -513,12 +515,12 @@ div.wide {
     line-height: 150%;
   }
 
-  .count{
+  .count {
     padding-left: 5px;
     font-size: 20px;
   }
 
-  select{
+  select {
     color: #828282;
     background-color: white;
     border: none;
@@ -528,11 +530,11 @@ div.wide {
     width: 200px;
   }
 
-  .card{
+  .card {
     background-color: #DC354520;
     border: none;
 
-    img{
+    img {
       width: 100%;
     }
 
@@ -543,36 +545,39 @@ div.wide {
       border: $brand-color solid 2px;
       padding: 3px 9px;
       transition-duration: 0.1s;
-  
-      &:hover{
+
+      &:hover {
         background-color: $brand-color;
         color: white;
         cursor: pointer;
       }
     }
 
-    .feature{
-      background: rgba(red($brand-color),green($brand-color),blue($brand-color),0.1);
+    .feature {
+      background: rgba(red($brand-color), green($brand-color), blue($brand-color), 0.1);
       padding: 5px;
       justify-content: space-evenly;
       display: flex;
       width: 100%;
-      span{
+
+      span {
         color: $brand-color;
         font-size: 20px;
         border-radius: 50%;
       }
 
-      &:hover{
+      &:hover {
         cursor: pointer;
-        p{
+
+        p {
           color: black;
         }
-        background-color: rgba(red($brand-color),green($brand-color),blue($brand-color),0.2);
+
+        background-color: rgba(red($brand-color), green($brand-color), blue($brand-color), 0.2);
       }
     }
 
-    .button{
+    .button {
       background-color: $brand-color;
       color: white;
       border: none;
@@ -940,80 +945,29 @@ div.wide {
     }
   }
 
-  .destinations {  
-    .count{
-      padding-left: 5px;
-      font-size: 20px;
+  .destinations {
+    .count {
+      padding-left: 0px;
+      font-size: 18px;
     }
-  
-    select{
-      color: #828282;
-      background-color: white;
-      border: none;
-      transform: translateY(50%);
+
+    select {
       padding: 5px 10px;
-      font-size: 10px;
-      width: 200px;
+      font-size: 12px;
+      width: unset; 
     }
-  
-    .card{
-      background-color: #DC354520;
-      border: none;
-  
-      img{
+
+    .card {
+      .button {
         width: 100%;
+        text-align: center;
+        padding: 13px 20px;
       }
-  
-      .price {
-        font-size: 20px;
-        color: black;
-        font-weight: 400;
-        border: $brand-color solid 2px;
-        padding: 3px 9px;
-        transition-duration: 0.1s;
-    
-        &:hover{
-          background-color: $brand-color;
-          color: white;
-          cursor: pointer;
-        }
-      }
-  
-      .feature{
-        background: rgba(red($brand-color),green($brand-color),blue($brand-color),0.1);
-        padding: 5px;
-        justify-content: space-evenly;
-        display: flex;
-        width: 100%;
-        span{
-          color: $brand-color;
-          font-size: 20px;
-          border-radius: 50%;
-        }
-  
-        &:hover{
-          cursor: pointer;
-          p{
-            color: black;
-          }
-          background-color: rgba(red($brand-color),green($brand-color),blue($brand-color),0.2);
-        }
-      }
-  
-      .button{
-        background-color: $brand-color;
-        color: white;
-        border: none;
-        font-size: 13px;
-        font-weight: 600;
-        padding: 7px 20px;
-      }
-  
     }
-  
+
     .activities,
     .amenities {
-  
+
       .act,
       i {
         padding: 5px 10px;
@@ -1021,12 +975,12 @@ div.wide {
         align-items: center;
         display: flex;
       }
-  
+
       .act {
         background-color: #f9f9f9;
         flex: 1;
       }
-  
+
       i {
         background-color: $brand-color-fade;
       }

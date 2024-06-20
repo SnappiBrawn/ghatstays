@@ -8,7 +8,7 @@ image: /assets/img/999.jpg
 <section class="slider mx-auto" height=500>
     <div class="" style="background: url('/assets/img/999.jpg'); height: 70vh; background-position: center;">
         <h1 class="text-center text-light h-100 align-center"
-            style="font-size: 80px; padding-top: 150px; backdrop-filter: brightness(0.5)">FIND YOUR ADVENTURE</h1>
+            style="font-size: 55px; padding-top: 150px; backdrop-filter: brightness(0.5)">FIND YOUR ADVENTURE</h1>
     </div>
 </section>
 
@@ -79,39 +79,46 @@ image: /assets/img/999.jpg
                 </div>
             </div>
             <div class="col-12 col-md-9">
-                <div class="wide-equal">
+                <div class="wide-equal px-2">
                     <div>
                         <h2>All Locations</h2>
                         <span class="count">{{ site.stays | size }} stays available</span>
                     </div>
                     <div>
-                        <div class="btn btn-success align-right"><span class="bi bi-funnel-fill"></span> Filter</div>
-                        <select>
-                            <option>
-                                Sort By
-                            </option>
-                            <option>
-                                Price ↓
-                            </option>
-                            <option>
-                                Price ↑
-                            </option>
-                            <option>
-                                User Ratings
-                            </option>
-                            <option>
-                                Visitor Count
-                            </option>
-                        </select>
+                        <div 
+                        class="btn border rounded-1 d-md-none" 
+                        style="float:right; font-size: 12px"
+                        type="button" data-bs-toggle="offcanvas" data-bs-target="#filterOffCanvas" aria-controls="Filters"
+                        >
+                            <span class="bi bi-funnel-fill"></span> FILTERS</div>
+                        <div>
+                            <select>
+                                <option>
+                                    Sort By
+                                </option>
+                                <option>
+                                    Price ↓
+                                </option>
+                                <option>
+                                    Price ↑
+                                </option>
+                                <option>
+                                    User Ratings
+                                </option>
+                                <option>
+                                    Visitor Count
+                                </option>
+                            </select>
+                        </div>
                     </div>
                 </div>
                 {% for stay in site.stays%}
-                <div class="card my-2">
+                <div class="card my-4 my-md-2">
                     <div class="row p-3">
-                        <div class="col-5">
+                        <div class="col-12 col-md-5">
                             <a href="{{stay.url}}"><img src="{{stay.images}}" alt=""></a>
                         </div>
-                        <div class="col-7">
+                        <div class="col-12 col-md-7 pt-md-0 pt-3">
                             <div class="wide-equal pb-3">
                                 <div>
                                     <h4>{{stay.title}}</h4>
@@ -131,7 +138,7 @@ image: /assets/img/999.jpg
                                     </a>
                                 </div>
                                 {% endfor %}
-                                <div class="flex-column text-center feature">
+                                <div class="flex-column text-center feature d-none d-md-flex">
                                     <a href="{{stay.url}}#amenities">
                                         <span>+{{stay.ameneties | size }}</span>
                                         <p>more</p>
@@ -161,3 +168,66 @@ image: /assets/img/999.jpg
         </div>
     </div>
 </section>
+
+<div class="offcanvas offcanvas-start d-md-none w-75" tabindex="-1" id="filterOffCanvas" aria-labelledby="Filters">
+    <div class="d-inline">
+        <button type="button" class="btn-close text-reset float-end p-2" data-bs-dismiss="offcanvas" aria-label="Close Filters"></button>
+    </div>
+    <h3 class="m-3">Filters</h3>
+    <div class="accordion" id="filter1">
+        <div class="accordion-item rounded-0">
+            <h2 class="accordion-header" id="filter1Header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Popular Filters
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#filter1">
+                <div class="accordion-body">
+                    <div class="col" style="padding: 5px 0;">
+                        <input type="checkbox" id="f11" name="f11">
+                        <label for="f11">Child Friendly</label>
+                    </div>
+                    <div class="col" style="padding: 5px 0;">
+                        <input type="checkbox" id="f12" name="f12">
+                        <label for="f12">Has Wifi</label>
+                    </div>
+                    <div class="col" style="padding: 5px 0;">
+                        <input type="checkbox" id="f13" name="f13">
+                        <label for="f13">Parking Available</label>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion" id="filter2">
+        <div class="accordion-item rounded-0">
+            <h2 class="accordion-header" id="filter2Header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    User Rating
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+                data-bs-parent="#filter2">
+                <div class="accordion-body">
+                    <div class="col" style="padding: 5px 0;">
+                        <input type="checkbox" id="f21" name="f21">
+                        <label for="f21">4.5+ Stars</label>
+                    </div>
+                    <div class="col" style="padding: 5px 0;">
+                        <input type="checkbox" id="f22" name="f22">
+                        <label for="f22">4+ Stars</label>
+                    </div>
+                    <div class="col" style="padding: 5px 0;">
+                        <input type="checkbox" id="f23" name="f23">
+                        <label for="f23">3+ Stars</label>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
