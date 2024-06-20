@@ -23,9 +23,9 @@ pricing: [
 ]
 ameneties: [
     [ lightning-fill,Power Backup],
-    [ lightning-fill,Refrigerator],
+    [ snow2,Refrigerator],
     [ wifi ,Wi-Fi],
-    [ lightning-fill,Laundry],
+    [ basket-fill,Laundry],
     [ p-circle-fill,Parking],
     [ binoculars-fill,Balcony],
     [ lightning-fill,Kettle],

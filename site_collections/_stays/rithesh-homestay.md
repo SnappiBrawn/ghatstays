@@ -21,8 +21,8 @@ pricing: [
 ]
 ameneties: [
     [ lightning-fill ,Power Backup],
-    [ lightning-fill ,Refrigerator],
-    [ lightning-fill ,Microwave],
+    [ snow2 ,Refrigerator],
+    [ file-post ,Microwave],
     [ binoculars-fill ,Balcony],
     [ hospital-fill ,Smoking Area],
     [ water ,Shower],

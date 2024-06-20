@@ -15,9 +15,9 @@ image: /assets/img/999.jpg
 <section></section>
 
 <section class="py-5 destinations">
-    <div class="container">
+    <div class="px-md-5 px-2">
         <div class="row">
-            <div class="col-3">
+            <div class="col-3 d-md-block d-none">
                 <div class="position-stickyscrollable">
                     <h3>Filters</h3>
                     <div class="accordion" id="filter1">
@@ -78,13 +78,14 @@ image: /assets/img/999.jpg
                     </div>
                 </div>
             </div>
-            <div class="col-9">
+            <div class="col-12 col-md-9">
                 <div class="wide-equal">
                     <div>
                         <h2>All Locations</h2>
                         <span class="count">{{ site.stays | size }} stays available</span>
                     </div>
                     <div>
+                        <div class="btn btn-success align-right"><span class="bi bi-funnel-fill"></span> Filter</div>
                         <select>
                             <option>
                                 Sort By
@@ -111,7 +112,7 @@ image: /assets/img/999.jpg
                             <a href="{{stay.url}}"><img src="{{stay.images}}" alt=""></a>
                         </div>
                         <div class="col-7">
-                            <div class="wide-equal">
+                            <div class="wide-equal pb-3">
                                 <div>
                                     <h4>{{stay.title}}</h4>
                                     User Rating: {% for item in (1..stay.rating) %}<i class="bi bi-star-fill"></i>
@@ -121,25 +122,41 @@ image: /assets/img/999.jpg
                                     <span class="price"><a href="{{stay.url}}#pricing">{{stay.price}}</a></span>
                                 </div>
                             </div>
-                            <p class="pt-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates reiciendis qui veniam quisquam dolore aliquam similique tenetur sed nulla vel. Maiores voluptate pariatur impedit quo. Aliquam provident dolores inventore minima!</p>
-                            <a href="{{stay.url}}" class="button" style="float:right">BOOK NOW</a>
+                            <div class="d-flex gap-2">
+                                {% for a in stay.ameneties | limit: 4 %}
+                                <div class="d-flex flex-column text-center feature">
+                                    <a href="{{stay.url}}#amenities">
+                                        <span class="bi bi-{{a[0]}}"></span>
+                                        <p>{{a[1]}}</p>
+                                    </a>
+                                </div>
+                                {% endfor %}
+                                <div class="flex-column text-center feature">
+                                    <a href="{{stay.url}}#amenities">
+                                        <span>+{{stay.ameneties | size }}</span>
+                                        <p>more</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <br>
+                            <a href="{{stay.url}}#book" class="button" style="float:right">BOOK NOW</a>
                         </div>
                     </div>
                 </div>
                 {% endfor %}
                 <nav aria-label="Page navigation example">
                     <ul class="pagination justify-content-center">
-                      <li class="page-item disabled">
-                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                      </li>
-                      <li class="page-item"><a class="page-link" href="#">1</a></li>
-                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">Next</a>
-                      </li>
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
                     </ul>
-                  </nav>
+                </nav>
             </div>
         </div>
     </div>

@@ -21,9 +21,9 @@ pricing: [
 ]
 ameneties: [
     [ lightning-fill,Power Backup],
-    [ lightning-fill,Refrigerator],
+    [ snow2,Refrigerator],
     [ hospital-fill ,Smoking Area],
-    [ lightning-fill, TV],
+    [ tv, TV],
     [ water ,Shower],
     [ droplet-fill,Hot Water]
 ]

@@ -22,12 +22,12 @@ pricing: [
 ]
 ameneties: [
     [ lightning-fill,Power Backup],
-    [ lightning-fill,Refrigerator],
-    [ lightning-fill,Microwave],
+    [ snow2,Refrigerator],
+    [ file-post,Microwave],
     [ wifi ,Wi-Fi],
     [ water ,Shower],
     [ shop ,Restaurant],
-    [ lightning-fill, TV],
+    [ tv, TV],
     [ water,Swimming Pool],
     [ droplet-fill,Hot Water]
 ]

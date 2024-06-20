@@ -1,10 +1,10 @@
-<section class="slider mx-auto" height=500>
+<section class="slider mx-auto">
     <div id="carouselExampleControls" class="carousel slide caption-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
             {% for i in page.images %}
             <div class="carousel-item {% if forloop.index == 1 %}active{% endif %}" data-bs-interval="3000">
-                <img src="{{i}}" alt="Gaaligudda" class="backdrop">
-                <img src="{{i}}" alt="Gaaligudda" class="fore mx-auto d-flex">
+                <img src="{{i}}" alt="Gaaligudda" class="backdrop"  height=300>
+                <img src="{{i}}" alt="Gaaligudda" class="fore mx-auto d-flex"  height=300>
             </div>
             {% endfor %}
         </div>

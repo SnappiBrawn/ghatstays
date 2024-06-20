@@ -23,7 +23,7 @@ pricing: [
 ]
 ameneties: [
     [ lightning-fill,Power Backup],
-    [ lightning-fill,Refrigerator],
+    [ snow2,Refrigerator],
     [ p-circle-fill,Parking],
     [ binoculars-fill,Balcony],
     [ hospital-fill ,Smoking Area],
