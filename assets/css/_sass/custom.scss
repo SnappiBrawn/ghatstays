@@ -494,7 +494,7 @@ div.wide {
 
 }
 
-.destinations {
+.stays {
   * {
     border-radius: 0 !important;
     transition: all 0.2s linear;
@@ -801,6 +801,45 @@ div.wide {
   }
 }
 
+.destinations {
+  .card {
+    background-size: cover;
+    height: 225px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 100%;
+      object-position: center;
+      transform: translate(-50%, -50%);
+      transition: all 0.5s ease-out;
+    }
+
+    span {
+      backdrop-filter: brightness(0.7) blur(2px);
+      display: inline-block;
+      height: 225px;
+      line-height: 225px;
+      font-size: 30px;
+      font-weight: 600;
+      transition: all 0.5s ease-out;
+    }
+
+    &:hover {
+      img {
+        transform: translate(-50%, -50%) scale(110%);
+      }
+
+      span {
+        backdrop-filter: brightness(0.8) blur(0px);
+      }
+    }
+  }
+}
+
 
 @include media-query($on-hand) {
   header {
@@ -945,7 +984,7 @@ div.wide {
     }
   }
 
-  .destinations {
+  .stays {
     .count {
       padding-left: 0px;
       font-size: 18px;
@@ -954,7 +993,7 @@ div.wide {
     select {
       padding: 5px 10px;
       font-size: 12px;
-      width: unset; 
+      width: unset;
     }
 
     .card {

@@ -1,0 +1,35 @@
+---
+layout: default
+
+---
+
+
+
+<section class="slider mx-auto" height=500>
+    <div class="" style="background: url('/assets/img/999.jpg'); height: 70vh; background-position: center;">
+        <h1 class="text-center text-light h-100 align-center"
+            style="font-size: 55px; padding-top: 150px; backdrop-filter: brightness(0.5)">FIND YOUR ADVENTURE</h1>
+    </div>
+</section>
+
+<section>
+    <div class="container destinations py-5">
+        <div class="py-3 text-center">
+            <h1>Choose Your Destination</h1>
+            <p>Beyond the city lights, a world of wonder awaits. Hike majestic mountains, explore verdant valleys, or unwind on pristine beaches. Choose your perfect escape and reconnect with nature.</p>
+        </div>
+        <div class="row py-3 justify-content-center">
+            {% for destination in site.data.destinations %}
+            <div class="col-12 col-md-3">
+                <a href="/stays?location={{destination[0]}}#entry">
+                <div class="card rounded-0 text-center text-light destination-card my-2">
+                    <img src="{{destination[1]}}" alt="travel packages to {{destination[0]}} ">
+                    <span>{{destination[0]}}</span>
+                </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+</section>
