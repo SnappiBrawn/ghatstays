@@ -5,7 +5,7 @@ images: ["/properties/kudhremukh/Kyathanmakki/1.jpg","/properties/kudhremukh/Kya
 price: ₹1,999
 area: Kudremukh
 rating: 5
-description: Et quia aperiam et deleniti ab ut. Non ab enim consequuntur. Nulla dolor aut itaque vel quis. Id et facere est sequi aut rerum. Id ea aliquid et quasi atque. Aperiam eum fugiat vero magni.<br> Natus et repudiandae minima veniam. Doloribus veniam omnis error. Voluptatem voluptas tenetur et architecto expedita corrupti ea. Necessitatibus aut ut omnis. Placeat non soluta amet eius nihil eaque non exercitationem. Accusantium vero sint culpa cupiditate nostrum. 
+description: Craving a nature fix? Look no further than Kyathanmakki Eco Stay! Nestled in Kalasa's vibrant hills, our homestay offers a cozy retreat for mountain enthusiasts. Sip your morning chai on your private balcony, mesmerized by the endless emerald valleys and majestic peaks. Our modern rooms come with free Wi-Fi and comfy beds, perfect for unwinding after a day of exploring hidden waterfalls and lush hiking trails. In the evenings, share stories with fellow travelers under a sky ablaze with stars.  Kyathanmakki Eco Stay – your simple escape for a true mountain experience. 
 district: Chikmagalur
 total-occupancy: 20
 rooms: 4

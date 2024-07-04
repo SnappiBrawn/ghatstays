@@ -5,7 +5,7 @@ images: ["/properties/horanadu/tranquil/1.jpg","/properties/horanadu/tranquil/1.
 price: ₹2,499
 area: Mudigere
 rating: 5
-description: Et quia aperiam et deleniti ab ut. Non ab enim consequuntur. Nulla dolor aut itaque vel quis. Id et facere est sequi aut rerum. Id ea aliquid et quasi atque. Aperiam eum fugiat vero magni.<br> Natus et repudiandae minima veniam. Doloribus veniam omnis error. Voluptatem voluptas tenetur et architecto expedita corrupti ea. Necessitatibus aut ut omnis. Placeat non soluta amet eius nihil eaque non exercitationem. Accusantium vero sint culpa cupiditate nostrum.
+description: Unveiled by the mist-shrouded hills of Chikmagalur, an enchanting escape awaits. Imagine this, crisp mountain air filling your lungs, a tapestry of emerald green that ignites your inner artist, and a sanctuary that restores your sense of self. Welcome to Woods, your intimate retreat with just 6 luxurious rooms, each framing a breathtaking panorama of Chikmagalur's dreamlike scenery. Wake gently to the melody of birdsong and the whispers of the forest. Unwind in our spacious, modern-tropical havens, designed to connect you seamlessly with the mesmerizing surroundings. Immerse yourself in nature's embrace – a stay at Woods promises to rejuvenate your mind, body, and soul. And for the adventurous spirit, the captivating mountain ranges of Chikmagalur offer thrilling trekking trails waiting to be explored.
 district: Chikmagalur
 total-occupancy: 32
 rooms: 6

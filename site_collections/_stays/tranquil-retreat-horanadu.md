@@ -5,7 +5,7 @@ images: ["/properties/horanadu/tranquil/1.jpg","/properties/horanadu/tranquil/1.
 price: ₹1,599
 area: Horanadu
 rating: 5
-description: Et quia aperiam et deleniti ab ut. Non ab enim consequuntur. Nulla dolor aut itaque vel quis. Id et facere est sequi aut rerum. Id ea aliquid et quasi atque. Aperiam eum fugiat vero magni.<br> Natus et repudiandae minima veniam. Doloribus veniam omnis error. Voluptatem voluptas tenetur et architecto expedita corrupti ea. Necessitatibus aut ut omnis. Placeat non soluta amet eius nihil eaque non exercitationem. Accusantium vero sint culpa cupiditate nostrum.
+description: Escape to serenity at Tranquil Retreat, Horanadu. Nestled amidst mist-kissed Western Ghats, our stone haven boasts breathtaking views. Unwind by the infinity pool, explore hidden trails that weave through verdant hills, or simply soak in the mountain magic. Reconnect with nature and rediscover yourself at Tranquil Retreat. Breathe in the crisp mountain air, invigorating your senses with each inhale. In the evenings, stargaze from your private balcony, letting the Milky Way wash over you with its celestial glow. Tranquil Retreat – your escape to tranquility awaits.
 district: Chikmagalur
 total-occupancy: 36
 rooms: 8

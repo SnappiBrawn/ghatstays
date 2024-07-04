@@ -5,7 +5,7 @@ images: ["/properties/horanadu/tranquil/1.jpg","/properties/horanadu/tranquil/1.
 price: ₹1,299
 area: Chikmagalur
 rating: 5
-description: Et quia aperiam et deleniti ab ut. Non ab enim consequuntur. Nulla dolor aut itaque vel quis. Id et facere est sequi aut rerum. Id ea aliquid et quasi atque. Aperiam eum fugiat vero magni.<br> Natus et repudiandae minima veniam. Doloribus veniam omnis error. Voluptatem voluptas tenetur et architecto expedita corrupti ea. Necessitatibus aut ut omnis. Placeat non soluta amet eius nihil eaque non exercitationem. Accusantium vero sint culpa cupiditate nostrum.
+description: Escape to RockStone Homestay, where the verdant embrace of the Western Ghats will leave you breathless. Nestled amidst this spectacular scenery, RockStone offers the perfect getaway you've been yearning for. Immerse yourself in the rich tapestry of Malnad tradition. Explore the sprawling coffee plantations that surround the homestay, and sip on a cup of the freshest homegrown brew imaginable. But the adventure doesn't stop there! Lace up your boots and embark on thrilling treks through the lush hills, discovering hidden waterfalls and breathtaking viewpoints. RockStone Homestay – reconnect with nature, explore ancient traditions, and create memories that will last a lifetime.
 district: Chikmagalur
 total-occupancy: 14
 rooms: 4

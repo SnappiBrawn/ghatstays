@@ -5,7 +5,7 @@ images: ["/properties/kudhremukh/Gaaligudda/1.jpg","/properties/kudhremukh/Gaali
 price: ₹1,999
 area: Kudremukh
 rating: 5
-description: Et quia aperiam et deleniti ab ut. Non ab enim consequuntur. Nulla dolor aut itaque vel quis. Id et facere est sequi aut rerum. Id ea aliquid et quasi atque. Aperiam eum fugiat vero magni.<br> Natus et repudiandae minima veniam. Doloribus veniam omnis error. Voluptatem voluptas tenetur et architecto expedita corrupti ea. Necessitatibus aut ut omnis. Placeat non soluta amet eius nihil eaque non exercitationem. Accusantium vero sint culpa cupiditate nostrum.
+description: Escape the ordinary at Gaaligudda Heaven Retreat, nestled near the vibrant hills of Kyathanmakki. This serene retreat offers a haven for nature lovers. Wake up to breathtaking sunrises over the untouched landscape. Breathe in crisp mountain air and listen to the melody of birdsong. Explore hidden waterfalls and lush hiking trails, or simply relax on your private balcony with a good book. In the evenings, unwind under a blanket of stars, sharing stories with fellow travelers. Gaaligudda Heaven Retreat – reconnect with nature's beauty and find your peace.
 district: Chikmagalur
 total-occupancy: 20
 rooms: 4

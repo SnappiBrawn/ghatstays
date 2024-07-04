@@ -5,7 +5,7 @@ images: ["/properties/kudhremukh/Gaaligudda/1.jpg","/properties/kudhremukh/Gaali
 price: ₹1,999
 area: Kudremukh
 rating: 5
-description: Et quia aperiam et deleniti ab ut. Non ab enim consequuntur. Nulla dolor aut itaque vel quis. Id et facere est sequi aut rerum. Id ea aliquid et quasi atque. Aperiam eum fugiat vero magni.<br> Natus et repudiandae minima veniam. Doloribus veniam omnis error. Voluptatem voluptas tenetur et architecto expedita corrupti ea. Necessitatibus aut ut omnis. Placeat non soluta amet eius nihil eaque non exercitationem. Accusantium vero sint culpa cupiditate nostrum.
+description: Craving a digital detox and fresh mountain air? Kudremukh Heights homestay beckons. Nestled on Kudremukh National Park's fringes, this family-run haven offers a simple escape. Breathe deep at 1,340 meters – year-round pleasant temperatures await. Leave stress behind and reconnect with nature's rhythm. Explore yoga with guidance, or simply unwind in the tranquility. Kudremukh Heights – your escape for a true mountain experience.
 district: Chikmagalur
 total-occupancy: 46
 rooms: 10

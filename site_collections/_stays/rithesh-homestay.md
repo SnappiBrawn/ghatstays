@@ -5,7 +5,7 @@ images: ["/properties/horanadu/tranquil/1.jpg","/properties/horanadu/tranquil/1.
 price: ₹1,799
 area: Mudigere
 rating: 5
-description: Et quia aperiam et deleniti ab ut. Non ab enim consequuntur. Nulla dolor aut itaque vel quis. Id et facere est sequi aut rerum. Id ea aliquid et quasi atque. Aperiam eum fugiat vero magni.<br> Natus et repudiandae minima veniam. Doloribus veniam omnis error. Voluptatem voluptas tenetur et architecto expedita corrupti ea. Necessitatibus aut ut omnis. Placeat non soluta amet eius nihil eaque non exercitationem. Accusantium vero sint culpa cupiditate nostrum.
+description: Waking up to a symphony of birdsong and breathtaking views of picturesque landscapes is the norm here at Rithesh Homestay. Lush green tea estates carpet the rolling hills, offering a tranquil backdrop to your stay. The magic just begins. Ritesh Homestay boasts its very own private waterfall, a cascading gem accessible for a refreshing dip or a moment of peaceful contemplation. Explore hidden trails that weave through the verdant embrace of the hills, or simply unwind on your private balcony, often veiled in a mystical mist. Renowned for its warm hospitality, Ritesh Homestay serves mouthwatering Malnad-style cuisine, making your stay a truly unforgettable experience.
 district: Chikmagalur
 total-occupancy: 16
 rooms: 3
