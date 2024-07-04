@@ -83,7 +83,7 @@ $(document).ready(function () {
   })
 });
 
-// init Isotope
+// init Isotope for home page
 var $grid = $('.filtered-listing').isotope({
   itemSelector: '.iso-item',
   layoutMode: 'fitRows',
@@ -96,7 +96,7 @@ var $grid = $('.filtered-listing').isotope({
 
 $('#filters').on('click', 'button', function () {
   var filterValue = $(this).attr('data-filter');
-  $(this).siblings().each(function() {
+  $(this).siblings().each(function () {
     $(this).removeClass("active");
   });
   $(this).addClass("active");
@@ -114,3 +114,34 @@ var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggl
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 })
+
+
+// Isotope for stays page
+
+var $stay_grid = $('.stays-grid').isotope({
+  itemSelector: '.stay-item',
+  layoutMode: 'vertical',
+  gutter: 0,
+  transitionDuration: 0,
+  getSortData: {
+    price_asc: function (ele) {
+      return parseInt( $(ele).attr('iso-price').replace(/[^0-9]/g, ""), 10 )
+    },
+    price_desc: function (ele) {
+      return -parseInt( $(ele).attr('iso-price').replace(/[^0-9]/g, ""), 10 )
+    },
+  }
+});
+
+const url = new URL(window.location.href);
+const searchParams = url.searchParams;
+currentLocation = searchParams.get("location");
+document.querySelector('#entry').innerHTML = currentLocation ? currentLocation : "All locations";
+$stay_grid.isotope({ filter: currentLocation ? '.' + currentLocation : "*" });
+$stay_grid.isotope('layout');
+document.querySelector('#staysCount').innerHTML = $stay_grid.isotope('getFilteredItemElements').length;
+
+$('#sort-options').on('change', function () {
+  const sortValue = $(this).val();
+  $stay_grid.isotope({ sortBy: sortValue });
+});
