@@ -121,7 +121,7 @@ image: /assets/img/999.jpg
                         <div class="col-12 col-md-7 pt-md-0 pt-3">
                             <div class="wide-equal pb-3">
                                 <div>
-                                    <h4>{{stay.title}}</h4>
+                                    <a href="{{stay.url}}"><h4>{{stay.title}}</h4></a>
                                     User Rating: {% for item in (1..stay.rating) %}<i class="bi bi-star-fill"></i>
                                     {% endfor %}
                                 </div>
