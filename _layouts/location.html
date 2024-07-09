@@ -4,7 +4,7 @@ layout: default
 
 {% include slider.html %}
 <section class="listing">
-    <div class="py-md-5 px-5">
+    <div class="py-md-5 px-1 px-md-5">
         <div class="row">
             <div class="col-12 col-md-8">
                 <div class="card rounded-0 border- p-2 p-md-5">
@@ -13,8 +13,8 @@ layout: default
                         <span class="price">{{page.price}}</span>
                     </div>
                     <div class="col-12 col-md-9 d-block d-md-flex justify-content-between stubs">
-                        <div><i class="bi bi-pin-map-fill"></i> {{page.area}}</div>
-                        <div>Rating: {% for item in (1..page.rating) %}<i class="bi bi-star-fill"></i> {% endfor %}</div>
+                        <div><i class="fa-solid fa-map-pin"></i> {{page.area}}</div>
+                        <div>Rating: {% for item in (1..page.rating) %}<i class="fa-solid fa-star"></i> {% endfor %}</div>
                     </div>
                     <div class="mt-5">
                         <h3 class="fs-5">About the stay</h3>
@@ -136,8 +136,8 @@ layout: default
                             <div class="row py-3" style="color: dimgray;">
                                 {% for amenity in page.ameneties %}
                                 <div class="col-6">
-                                    <div class="d-flex h-100">
-                                        <i class="bi bi-{{amenity[0]}}"></i>
+                                    <div class="d-flex h-100 icon-text-pair">
+                                        <i class="{{amenity[0]}}"></i>
                                         <div class="act">{{ amenity[1]}}</div>
                                     </div>
                                 </div>
@@ -148,8 +148,8 @@ layout: default
                             <div class="row py-3" style="color: dimgray;">
                                 {% for activity in page.activities %}
                                 <div class="col-6">
-                                    <div class="d-flex h-100">
-                                        <i class="bi bi-{{activity[0]}}"></i>
+                                    <div class="d-flex h-100 icon-text-pair">
+                                        <i class="{{activity[0]}}"></i>
                                         <div class="act">{{ activity[1] }}</div>
                                     </div>
                                 </div>
@@ -190,23 +190,23 @@ layout: default
                         <div class="tab-pane fade" id="tnc" role="tabpanel" aria-labelledby="tnc">
                             <table>
                                 <tr>
-                                    <td><span><i class="bi bi-check"></i></span>Flexible Check-In*:</td>
+                                    <td><span><i class="fa-solid fa-check"></i></span>Flexible Check-In*:</td>
                                     <td class="value">{{page.tnc[0]}}</td>
                                 </tr>
                                 <tr>
-                                    <td><span><i class="bi bi-check"></i></span>Pets Friendly:</td>
+                                    <td><span><i class="fa-solid fa-check"></i></span>Pets Friendly:</td>
                                     <td class="value">{{page.tnc[1]}}</td>
                                 </tr>
                                 <tr>
-                                    <td><span><i class="bi bi-check"></i></span>Smoking Area:</td>
+                                    <td><span><i class="fa-solid fa-check"></i></span>Smoking Area:</td>
                                     <td class="value">{{page.tnc[2]}}</td>
                                 </tr>
                                 <tr>
-                                    <td><span><i class="bi bi-check"></i></span>Couple Friendly:</td>
+                                    <td><span><i class="fa-solid fa-check"></i></span>Couple Friendly:</td>
                                     <td class="value">{{page.tnc[3]}}</td>
                                 </tr>
                                 <tr>
-                                    <td><span><i class="bi bi-check"></i></span>Check In/Out Time:</td>
+                                    <td><span><i class="fa-solid fa-check"></i></span>Check In/Out Time:</td>
                                     <td class="value">{{page.tnc[4]}}</td>
                                 </tr>
                             </table>
@@ -237,43 +237,43 @@ layout: default
                                 <input type="text" class="form-control" placeholder="Full Name" aria-label="Name"
                                     aria-describedby="basic-addon2">
                                 <span class="input-group-text" id="basic-addon2"><i
-                                        class="bi bi-person-fill"></i></span>
+                                        class="fa-solid fa-user"></i></span>
                             </div>
                             <div class="input-group mb-3">
                                 <input type="mail" class="form-control" placeholder="Email ID" aria-label="email"
                                     aria-describedby="basic-addon2">
                                 <span class="input-group-text" id="basic-addon2"><i
-                                        class="bi bi-envelope-at-fill"></i></span>
+                                        class="fa-solid fa-envelope"></i></span>
                             </div>
                             <div class="input-group mb-3">
                                 <input type="text" class="form-control" placeholder="Contact Number"
                                     aria-label="phone number" aria-describedby="basic-addon2">
                                 <span class="input-group-text" id="basic-addon2"><i
-                                        class="bi bi-telephone-fill"></i></span>
+                                        class="fa-solid fa-phone"></i></span>
                             </div>
                             <div class="input-group mb-3">
                                 <input type="text" class="form-control" placeholder="Alternate Ccntact"
                                     aria-label="phone number" aria-describedby="basic-addon2">
                                 <span class="input-group-text" id="basic-addon2"><i
-                                        class="bi bi-telephone-fill"></i></span>
+                                        class="fa-solid fa-phone"></i></span>
                             </div>
                             <div class="input-group mb-3">
                                 <input type="text" class="form-control" placeholder="No. of Adults"
                                     aria-label="no of aduts" aria-describedby="basic-addon2">
                                 <span class="input-group-text" id="basic-addon2"><i
-                                        class="bi bi-people-fill"></i></span>
+                                        class="fa-solid fa-user-group"></i></span>
                             </div>
                             <div class="input-group mb-3">
                                 <input type="text" class="form-control" placeholder="No. of Children"
                                     aria-label="no of children" aria-describedby="basic-addon2">
                                 <span class="input-group-text" id="basic-addon2"><i
-                                        class="bi bi-people-fill"></i></span>
+                                        class="fa-solid fa-user-group"></i></span>
                             </div>
                             <div class="input-group mb-3">
                                 <input type="text" class="form-control" placeholder="Preferred Check-In"
                                     aria-label="message" aria-describedby="basic-addon2">
                                 <span class="input-group-text" id="basic-addon2"><i
-                                        class="bi bi-pencil-fill"></i></span>
+                                        class="fa-solid fa-pencil"></i></span>
                             </div>
                             <button type="submit" class="btn btn-danger py-2 mb-3">Book Now</button>
                         </form>

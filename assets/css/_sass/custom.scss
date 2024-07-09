@@ -707,7 +707,12 @@ div.wide {
     }
   }
 
-
+  .icon-text-pair{
+    i{
+      width: 15%;
+      justify-content: center;
+    }
+  }
 
   .nav-link {
     padding: 15px 15px 5px 15px;
@@ -980,6 +985,11 @@ div.wide {
 
       .price {
         font-size: 24px;
+      }
+    }
+    .icon-text-pair{
+      i{
+        width: 30%;
       }
     }
   }

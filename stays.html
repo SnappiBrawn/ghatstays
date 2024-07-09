@@ -26,7 +26,7 @@ image: /assets/img/999.jpg
                             <h2 class="accordion-header" id="filter1Header">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Popular Filters
+                                    Filter By Location
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
@@ -34,17 +34,24 @@ image: /assets/img/999.jpg
                                 <div class="accordion-body">
                                     <div class="col" style="padding: 5px 0;">
                                         <input type="checkbox" id="f11" name="f11">
-                                        <label for="f11">Child Friendly</label>
+                                        <label for="f11">Chikmagalur</label>
                                     </div>
                                     <div class="col" style="padding: 5px 0;">
-                                        <input type="checkbox" id="f12" name="f12">
-                                        <label for="f12">Has Wifi</label>
+                                        <input type="checkbox" id="f11" name="f11">
+                                        <label for="f11">Coorg</label>
                                     </div>
                                     <div class="col" style="padding: 5px 0;">
-                                        <input type="checkbox" id="f13" name="f13">
-                                        <label for="f13">Parking Available</label>
+                                        <input type="checkbox" id="f11" name="f11">
+                                        <label for="f11">Horanadu</label>
                                     </div>
-
+                                    <div class="col" style="padding: 5px 0;">
+                                        <input type="checkbox" id="f11" name="f11">
+                                        <label for="f11">Kudremukh</label>
+                                    </div>
+                                    <div class="col" style="padding: 5px 0;">
+                                        <input type="checkbox" id="f11" name="f11">
+                                        <label for="f11">Mudigere</label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -125,7 +132,7 @@ image: /assets/img/999.jpg
                                     {% for a in stay.ameneties | limit: 4 %}
                                     <div class="d-flex flex-column text-center feature">
                                         <a href="{{stay.url}}#amenities">
-                                            <span class="bi bi-{{a[0]}}"></span>
+                                            <span class="{{a[0]}}"></span>
                                             <p>{{a[1]}}</p>
                                         </a>
                                     </div>
@@ -155,7 +162,42 @@ image: /assets/img/999.jpg
             aria-label="Close Filters"></button>
     </div>
     <h3 class="m-3">Filters</h3>
-    <div class="accordion" id="filter1">
+    <div class="accordion" id="locationFilter">
+        <div class="accordion-item rounded-0">
+            <h2 class="accordion-header" id="locationFilterHeader">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLocationFilter"
+                    aria-expanded="true" aria-controls="collapseLocationFilter">
+                    Filter By Locations
+                </button>
+            </h2>
+            <div id="collapseLocationFilter" class="accordion-collapse collapse show" aria-labelledby="locationFilterHeading"
+                data-bs-parent="#locationFilter">
+                <div class="accordion-body">
+                    <div class="col" style="padding: 5px 0;">
+                        <input type="checkbox" id="f11" name="f11">
+                        <label for="f11">Chikmagalur</label>
+                    </div>
+                    <div class="col" style="padding: 5px 0;">
+                        <input type="checkbox" id="f11" name="f11">
+                        <label for="f11">Coorg</label>
+                    </div>
+                    <div class="col" style="padding: 5px 0;">
+                        <input type="checkbox" id="f11" name="f11">
+                        <label for="f11">Horanadu</label>
+                    </div>
+                    <div class="col" style="padding: 5px 0;">
+                        <input type="checkbox" id="f11" name="f11">
+                        <label for="f11">Kudremukh</label>
+                    </div>
+                    <div class="col" style="padding: 5px 0;">
+                        <input type="checkbox" id="f11" name="f11">
+                        <label for="f11">Mudigere</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="accordion" id="filter1">
         <div class="accordion-item rounded-0">
             <h2 class="accordion-header" id="filter1Header">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
@@ -210,6 +252,6 @@ image: /assets/img/999.jpg
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
 
