@@ -23,31 +23,31 @@ pricing: [
     [SUITE ROOM, 3099, Stay | Activities | All Meals | Hi-tea | Veg Snacks],
 ]
 ameneties: [
-    [ lightning-fill,Power Backup],
-    [ snow2,Refrigerator],
-    [ wifi ,Wi-Fi],
-    [ basket-fill,Laundry],
-    [ p-circle-fill,Parking],
-    [ binoculars-fill,Balcony],
-    [ lightning-fill,Kettle],
-    [ binoculars-fill,Watch Tower],
-    [ hospital-fill ,Smoking Area],
-    [ lightning-fill,Air Conditioning],
-    [ water ,Shower],
-    [ water,Swimming Pool],
-    [ droplet-fill,Hot Water]
+    [ fa-solid fa-plug-circle-plus,Power Backup],
+    [ fa-solid fa-snowflake,Refrigerator],
+    [ fa-solid fa-wifi ,Wi-Fi],
+    [ fa-solid fa-shirt,Laundry],
+    [ fa-solid fa-square-parking,Parking],
+    [ fa-solid fa-tower-observation,Balcony],
+    [ fa-solid fa-mug-hot,Kettle],
+    [ fa-solid fa-tower-observation,Watch Tower],
+    [ fa-solid fa-smoking ,Smoking Area],
+    [ fa-solid fa-wind,Air Conditioning],
+    [ fa-solid fa-shower ,Shower],
+    [ fa-solid fa-person-swimming,Swimming Pool],
+    [ fa-solid fa-hot-tub-person,Hot Water]
 ]
 activities: [ 
-    [ fire,Bonfire & Music],
-    [ water, Water Stream],
-    [ circle-fill,Mud Kabbaddi],
-    [ person-walking,Estate Walk], 
-    [ water, Swimming], 
-    [ circle-fill,Vollyball], 
-    [ person-walking,Nature Walk],
-    [ binoculars-fill,Private View Point], 
-    [ feather,Bird Watch], 
-    [ car-front-fill,Jeep-ride]
+    [ fa-solid fa-fire,Bonfire & Music],
+    [ fa-solid fa-water, Water Stream],
+    [ fa-solid fa-person-drowning,Mud Kabbaddi],
+    [ fa-solid fa-person-walking,Estate Walk], 
+    [ fa-solid fa-person-swimming, Swimming], 
+    [ fa-solid fa-volleyball,Vollyball], 
+    [ fa-solid fa-person-walking,Nature Walk],
+    [ fa-solid fa-tower-observation,Private View Point], 
+    [ fa-solid fa-dove,Bird Watch], 
+    [ fa-solid fa-truck-pickup,Jeep-ride]
 ]
 locations: [Kyathanmakki Hills Station (7km), Doddannashetti Caves (8km), Panchamikallu View Point (19km), Horandu Temple(1km), Kalasa Temple(8km), Ambatheertha(7km), Hanging Bridge(9km), Soormane Falls(15km), Samse T-Estate(13 Km), Elaneer Falls(16km), Kudremukh (30km) ]
 breakfast: [Neer Dosa, item2, item3, item4]

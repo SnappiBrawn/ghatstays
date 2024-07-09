@@ -21,26 +21,26 @@ pricing: [
     [STANDARD PACKAGE, 3499, Stay | All Meals | Activities | Hi-tea | Veg Snacks]
 ]
 ameneties: [
-    [ lightning-fill,Power Backup],
-    [ snow2,Refrigerator],
-    [ file-post,Microwave],
-    [ wifi ,Wi-Fi],
-    [ water ,Shower],
-    [ shop ,Restaurant],
-    [ tv, TV],
-    [ water,Swimming Pool],
-    [ droplet-fill,Hot Water]
+    [ fa-solid fa-plug-circle-plus,Power Backup],
+    [ fa-solid fa-snowflake,Refrigerator],
+    [ fa-solid fa-clapperboard,Microwave],
+    [ fa-solid fa-wifi ,Wi-Fi],
+    [ fa-solid fa-shower ,Shower],
+    [ fa-solid fa-shower,Restaurant],
+    [ fa-solid fa-tv, TV],
+    [ fa-solid fa-person-swimming,Swimming Pool],
+    [ fa-solid fa-hot-tub-person,Hot Water]
 ]
 activities: [ 
-    [ fire,Bonfire & Music],
-    [ dice-3-fill, Chess],
-    [ circle-fill,Mud Kabbaddi],
-    [ water, Swimming], 
-    [ circle-fill,Volleyball], 
-    [ person-walking,Nature Walk],
-    [ binoculars-fill,Private View Point], 
-    [ feather,Bird Watch], 
-    [ car-front-fill,Jeep-ride]
+    [ fa-solid fa-fire,Bonfire & Music],
+    [ fa-solid fa-chess-knight, Chess],
+    [ fa-solid fa-person-drowning,Mud Kabbaddi],
+    [ fa-solid fa-person-swimming, Swimming], 
+    [ fa-solid fa-volleyball,Volleyball], 
+    [ fa-solid fa-person-walking,Nature Walk],
+    [ fa-solid fa-tower-observation,Private View Point], 
+    [ fa-solid fa-dove,Bird Watch], 
+    [ fa-solid fa-truck-pickup,Jeep-ride]
 ]
 locations: [Bettada Byreswars(8KM), Magajahalli Falls(9KM), Devarmane Betta(10KM), Devarmane Water Falls(12KM), Ethinabhuja Trek(15KM), Devrundha (Hoysala Dynasty Origin)(5KM)
 ]

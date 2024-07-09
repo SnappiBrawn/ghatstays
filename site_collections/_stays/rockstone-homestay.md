@@ -20,23 +20,23 @@ pricing: [
     [COUPLE PACKAGE, 2699, Stay | All Meals | Activities | Hi-tea | Veg Snacks],
 ]
 ameneties: [
-    [ lightning-fill,Power Backup],
-    [ snow2,Refrigerator],
-    [ hospital-fill ,Smoking Area],
-    [ tv, TV],
-    [ water ,Shower],
-    [ droplet-fill,Hot Water]
+    [ fa-solid fa-plug-circle-plus,Power Backup],
+    [ fa-solid fa-snowflake,Refrigerator],
+    [ fa-solid fa-smoking,Smoking Area],
+    [ fa-solid fa-tv, TV],
+    [ fa-solid fa-shower ,Shower],
+    [ fa-solid fa-hot-tub-person,Hot Water]
 ]
 activities: [ 
-    [ fire,Bonfire & Music],
-    [ dice-3-fill, Chess],
-    [ person-walking,Estate Walk], 
-    [ dice-3-fill, Carrom], 
-    [ circle-fill, Badminton], 
-    [ circle-fill, Basketball],
-    [ circle-fill, Cricket], 
-    [ feather, Bird Watch], 
-    [ person-walking, Trekking]
+    [ fa-solid fa-fire,Bonfire & Music],
+    [ fa-solid fa-chess-knight, Chess],
+    [ fa-solid fa-person-walking,Estate Walk], 
+    [ fa-solid fa-hockey-puck, Carrom], 
+    [ fa-solid fa-spoon, Badminton], 
+    [ fa-solid fa-basketball, Basketball],
+    [ fa-solid fa-baseball-bat-ball, Cricket], 
+    [ fa-solid fa-dove, Bird Watch], 
+    [ fa-solid fa-person-hiking, Trekking]
 ]
 locations: [
     Bandekallu Trek (3KM), Muthodi Wildlife (18KM), Ukkada Falls (27KM), Mullayanagiri Peak (28KM), Jhari Falls (30KM), Baba Budangiri Peak (40KM), Manikyadhara View Point (40KM) 

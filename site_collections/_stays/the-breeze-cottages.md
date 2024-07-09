@@ -19,19 +19,19 @@ pricing: [
     [COUPLE PACKAGE, 4499, Stay | All Meals | Activities | Hi-tea | Veg Snacks]
 ]
 ameneties: [
-    [ lightning-fill,Power Backup],
-    [ snow2, Refrigerator],
-    [ hospital-fill ,Smoking Area],
-    [ binoculars-fill,Balcony],
-    [ water ,Shower],
-    [ droplet-fill,Hot Water]
+    [ fa-solid fa-plug-circle-plus,Power Backup],
+    [ fa-solid fa-snowflake, Refrigerator],
+    [ fa-solid fa-smoking, Smoking Area],
+    [ fa-solid fa-tower-observation,Balcony],
+    [ fa-solid fa-shower ,Shower],
+    [ fa-solid fa-hot-tub-person,Hot Water]
 ]
 activities: [ 
-    [ fire,Bonfire & Music],
-    [ person-walking,Estate Walk], 
-    [ water, Waterfall],
-    [ person-walking,Trekking], 
-    [ car-front-fill,Jeep-ride]
+    [ fa-solid fa-fire,Bonfire & Music],
+    [ fa-solid fa-person-walking,Estate Walk], 
+    [ fa-solid fa-lines-leaning, Waterfall],
+    [ fa-solid fa-person-hiking,Trekking], 
+    [ fa-solid fa-truck-pickup,Jeep-ride]
 ]
 locations: [Elaneer Falls(4KM), Samse Ganesh Temple(5KM), Kalasa Temple(7KM), Amba Teertha(10KM),  Longest Hanging Bridge(10KM),  Soormane Falls(12KM), Hornadu Temple(12KM), Kyathanmakki Trekking(20KM), Gaaligudda Sunset Point(20KM)
 ]

@@ -22,31 +22,31 @@ pricing: [
     [DORMITORY, 1799, Stay | Activities | All Meals | Hi-tea | Veg Snacks],
 ]
 ameneties: [
-    [ lightning-fill,Power Backup],
-    [ snow2,Refrigerator],
-    [ wifi ,Wi-Fi],
-    [ basket-fill,Laundry],
-    [ p-circle-fill,Parking],
-    [ binoculars-fill,Balcony],
-    [ lightning-fill,Kettle],
-    [ hospital-fill ,Smoking Area],
-    [ binoculars-fill, Watch Tower],
-    [ water ,Shower],
-    [ droplet-fill,Hot Water]
+    [ fa-solid fa-plug-circle-plus,Power Backup],
+    [ fa-solid fa-snowflake,Refrigerator],
+    [ fa-solid fa-wifi ,Wi-Fi],
+    [ fa-solid fa-shirt,Laundry],
+    [ fa-solid fa-square-parking,Parking],
+    [ fa-solid fa-tower-observation,Balcony],
+    [ fa-solid fa-mug-hot,Kettle],
+    [ fa-solid fa-smoking,Smoking Area],
+    [ fa-solid fa-tower-observation, Watch Tower],
+    [ fa-solid fa-shower,Shower],
+    [ fa-solid fa-hot-tub-person,Hot Water]
 ]
 activities: [ 
-    [ fire,Bonfire & Music],
-    [ water, Water Stream], 
-    [ dice-3-fill,Chess], 
-    [ person-walking,Estate Walk], 
-    [ circle-fill,Badmiton], 
-    [ circle-fill,Cricket], 
-    [ circle-fill,Carrom], 
-    [ circle-fill,Vollyball], 
-    [ person-walking,Nature Walk],
-    [ person-walking,Trekking], 
-    [ feather,Bird Watch], 
-    [ car-front-fill,Jeep-ride]
+    [ fa-solid fa-fire,Bonfire & Music],
+    [ fa-solid fa-water, Water Stream], 
+    [ fa-solid fa-chess-knight,Chess], 
+    [ fa-solid fa-person-walking,Estate Walk], 
+    [ fa-solid fa-spoon,Badmiton], 
+    [ fa-solid fa-baseball-bat-ball,Cricket], 
+    [ fa-solid fa-hockey-puck,Carrom], 
+    [ fa-solid fa-volleyball,Vollyball], 
+    [ fa-solid fa-person-walking,Nature Walk],
+    [ fa-solid fa-person-hiking,Trekking], 
+    [ fa-solid fa-dove,Bird Watch], 
+    [ fa-solid fa-truck-pickup,Jeep-ride]
 ]
 locations: ["Kyathanmakki Hills Station (3.5km)","Doddannashetti Caves (4km)","Panchamikallu View Point (13km)","Horandu Temple(7km)","Kalasa Temple(15km)","Ambatheertha(14km)","Hanging Bridge(16km)","Soormane Falls(17km)","Samse Tea Estate(21km)","Elaneer Falls(23km)","Kudremukh (34km)"]
 breakfast: [Neer Dosa, item2, item3, item4]
