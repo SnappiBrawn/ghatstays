@@ -84,10 +84,10 @@ $(document).ready(function () {
   })
 
   $('.owl-carousel').owlCarousel({
-    loop: true,
+    loop: false,
     margin: 10,
     nav: true,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 4000,
     responsive: {
       0: {
@@ -169,6 +169,7 @@ $('#sort-options').on('change', function () {
   $stay_grid.isotope({ sortBy: sortValue });
 });
 
+// location based filters for desktop and mobile respectively
 $('#filterOne input[type="checkbox"]').on('change', function() {
   if ($(this).is(':checked')) {
     $(this).closest('#filterOne').find('input[type="checkbox"]').prop('checked', false);

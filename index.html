@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home 
+title: Home
 ---
 <div>
 	{% include slider-home.html %}
@@ -17,33 +17,57 @@ title: Home
 					elementum pretium.</p>
 			</div>
 			<div class="owl-carousel" style="color: dimgray;">
-				{% for index in (1..5)%}
+				{% for stay in site.stays%}
+				{% if stay.exclusive == true %}
 				<div class="item">
-					<div class="card rounded-0 m-2">
-						<img class="rounded-0"
-							src="https://img.traveltriangle.com/blog/wp-content/uploads/2020/01/Ooty-In-Summer-cover_17th-Jan.jpg"
-							class="card-img-top" alt="...">
+					<div class="card popular-stays rounded-0 m-2">
+						<img class="rounded-0 card-img-top" src="{{stay.cover_image}}" alt="{{stay.keywords}}">
 						<div class="card-body p-4">
-							<div class="d-flex justify-content-between">
-								<h5 class="card-title text-dark">Hrudaya Stays</h5>
-								<h5 class="text-primary">₹ 2500</h5>
-							</div>
+							<h5 class="card-title fs-3 text-dark">{{stay.title}}</h5>
 							<div class="d-flex gap-2 pb-3">
-								<h6 class="text-dark"><i class="bi bi-emoji-smile"></i></h6>
-								<h6> Forest Stay </h6>
+								<div class="row">
+									<div class="col-6 p-1">
+										<div class="feature-card">
+											<div class="feature-header">
+												<span class="feature-name">District</span>
+												<span class="feature-value">{{stay.district}}</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-6 p-1">
+										<div class="feature-card">
+											<div class="feature-header">
+												<span class="feature-name">Total Occupancy</span>
+												<span class="feature-value">{{stay.total-occupancy}}</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-6 p-1">
+										<div class="feature-card">
+											<div class="feature-header">
+												<span class="feature-name">Rooms</span>
+												<span class="feature-value">{{stay.rooms}}</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-6 p-1">
+										<div class="feature-card">
+											<div class="feature-header">
+												<span class="feature-name">Stay Type</span>
+												<span class="feature-value">{{stay.stay-type}}</span>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-							<span class="card-text" style="font-size: 14px">Lorem ipsum dolor sit amet consectetur
-								adipisicing elit. Vel asperiores
-								aliquam tenetur inventore laudantium quaerat voluptate modi blanditiis placeat quo!
-							</span>
 							<hr>
 							<div class="d-flex gap-3">
-								<div><i class="bi bi-arrow-counterclockwise"></i>10 Days</div>
-								<div><i class="bi bi-person"></i>12+</div>
+								<div><i class="fa-solid fa-location-dot"></i> {{stay.area}}</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				{% endif %}
 				{% endfor %}
 			</div>
 
@@ -148,8 +172,10 @@ title: Home
 										culpa velit perspiciatis aut magni odio voluptas nihil rem.</div>
 									<div class="d-flex h-100 align-items-end">
 										<div style="font-size: 30px">
-											<i class="bi bi-patch-plus" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Key Feature"></i>
-											<i class="bi bi-patch-plus" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Key Feature"></i>
+											<i class="bi bi-patch-plus" data-bs-toggle="tooltip"
+												data-bs-placement="bottom" title="Key Feature"></i>
+											<i class="bi bi-patch-plus" data-bs-toggle="tooltip"
+												data-bs-placement="bottom" title="Key Feature"></i>
 										</div>
 									</div>
 								</div>
@@ -239,9 +265,9 @@ title: Home
 						</div>
 						<div class="d-flex reviews-nav text-center">
 							<button class="btn border-top rounded-0 fs-3 flex-fill border-end" id="reviews-prev"><i
-									class="bi bi-chevron-left"></i></button>
+									class="fa-solid fa-chevron-left"></i></button>
 							<button class="btn border-top rounded-0 fs-3 flex-fill" id="reviews-next"><i
-									class="bi bi-chevron-right"></i></button>
+									class="fa-solid fa-chevron-right"></i></button>
 						</div>
 					</div>
 				</div>
@@ -276,69 +302,85 @@ title: Home
 			</div>
 			<div class="row">
 				<div class="col-12 col-md-4">
-					<img class="img-fluid pb-4" src="https://i.pinimg.com/originals/bd/70/45/bd7045a6efecc02b3ef8a72f5bba6f90.jpg">
+					<img class="img-fluid pb-4"
+						src="https://i.pinimg.com/originals/bd/70/45/bd7045a6efecc02b3ef8a72f5bba6f90.jpg">
 					<h4 class="text-dark mb-3 fw-bold fs-5">Private Guide Tour</h4>
-					<p class="fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nemo deleniti saepe rerum harum tenetur dolor auctor tellus, eu consectetur neque elit quis.</p>
+					<p class="fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nemo deleniti saepe
+						rerum harum tenetur dolor auctor tellus, eu consectetur neque elit quis.</p>
 				</div>
 				<div class="col-12 col-md-4">
-					<img class="img-fluid pb-4" src="https://i.pinimg.com/originals/bd/70/45/bd7045a6efecc02b3ef8a72f5bba6f90.jpg">
+					<img class="img-fluid pb-4"
+						src="https://i.pinimg.com/originals/bd/70/45/bd7045a6efecc02b3ef8a72f5bba6f90.jpg">
 					<h4 class="text-dark mb-3 fw-bold fs-5">Special Activities</h4>
-					<p class="fs-6 lh-">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nemo deleniti saepe rerum harum tenetur dolor auctor tellus, eu consectetur neque elit quis.</p>
+					<p class="fs-6 lh-">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nemo deleniti saepe
+						rerum harum tenetur dolor auctor tellus, eu consectetur neque elit quis.</p>
 				</div>
 				<div class="col-12 col-md-4">
 					<div class="accordion accordion-flush" id="accordionExample">
 						<div class="accordion-item">
-						  <h2 class="accordion-header" id="headingOne">
-							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-								Sightseeing Tour Booking
-							</button>
-						  </h2>
-						  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-							<div class="accordion-body">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin, tellus vitae condimentum egestas, libero dolor auctor.
+							<h2 class="accordion-header" id="headingOne">
+								<button class="accordion-button" type="button" data-bs-toggle="collapse"
+									data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									Sightseeing Tour Booking
+								</button>
+							</h2>
+							<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+								data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin, tellus
+									vitae condimentum egestas, libero dolor auctor.
+								</div>
 							</div>
-						  </div>
 						</div>
 						<div class="accordion-item">
-						  <h2 class="accordion-header" id="headingTwo">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-								Paris Honeymoon
-							</button>
-						  </h2>
-						  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-							<div class="accordion-body">
-							  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin, tellus vitae condimentum egestas, libero dolor auctor.
+							<h2 class="accordion-header" id="headingTwo">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+									data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									Paris Honeymoon
+								</button>
+							</h2>
+							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+								data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin, tellus
+									vitae condimentum egestas, libero dolor auctor.
+								</div>
 							</div>
-						  </div>
 						</div>
 						<div class="accordion-item">
-						  <h2 class="accordion-header" id="headingThree">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-								South Africa Adventure
-							</button>
-						  </h2>
-						  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-							<div class="accordion-body">
-							  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin, tellus vitae condimentum egestas, libero dolor auctor.
+							<h2 class="accordion-header" id="headingThree">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+									data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									South Africa Adventure
+								</button>
+							</h2>
+							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+								data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin, tellus
+									vitae condimentum egestas, libero dolor auctor.
+								</div>
 							</div>
-						  </div>
 						</div>
 						<div class="accordion-item">
 							<h2 class="accordion-header" id="headingFour">
-							  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-								  South Africa Adventure
-							  </button>
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+									data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+									South Africa Adventure
+								</button>
 							</h2>
-							<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-							  <div class="accordion-body">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin, tellus vitae condimentum egestas, libero dolor auctor.
-							  </div>
+							<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+								data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin, tellus
+									vitae condimentum egestas, libero dolor auctor.
+								</div>
 							</div>
-						  </div>
-					  </div>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>		
+		</div>
 	</section>
 
 	<!-- Interesting Facts -->
@@ -355,7 +397,10 @@ title: Home
 			<div class="owl-carousel facts-carousel">
 				{% for _ in (1..7)%}
 				<div>
-					<img data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" title="<b>Fact</b><p>London has the highest population distribution at 5.6 people per square meter.</p>" src="https://www.svgrepo.com/show/279316/suitcase-travel.svg" style="max-width: 150px; margin: 0 auto;">
+					<img data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true"
+						title="<b>Fact</b><p>London has the highest population distribution at 5.6 people per square meter.</p>"
+						src="https://www.svgrepo.com/show/279316/suitcase-travel.svg"
+						style="max-width: 150px; margin: 0 auto;">
 				</div>
 				{% endfor %}
 			</div>

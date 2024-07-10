@@ -1,5 +1,6 @@
 ---
 layout: location
+exclusive: Yes
 title: Gaaligudda Heaven Retreat
 keywords: resort stay
 cover_image: "/properties/Gaaligudda Heaven Retreat/1.jpg"

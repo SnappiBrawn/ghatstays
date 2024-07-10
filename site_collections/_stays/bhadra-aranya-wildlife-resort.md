@@ -1,5 +1,6 @@
 ---
 layout: location
+exclusive: Yes
 keywords: resort stay
 title: Bhadra Aranya Wildlife Resort
 cover_image: /properties/Bhadra Aranya homestay/1.jpg

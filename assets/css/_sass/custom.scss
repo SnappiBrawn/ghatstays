@@ -309,7 +309,61 @@ header {
 
 }
 
+// exclusive stays
+.popular-stays{
+  
+  .card-img-top{
+    height: 250px;
+    object-fit: cover;
+  }
 
+  .feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+
+    .feature-header {
+      padding: 16px 0px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      background-color: #f9f9f9;
+      border: solid 1px #e5e5e5;
+      gap: 5px;
+    }
+
+    .feature-name {
+      font-size: 14.5pt;
+      font-weight: 700;
+    }
+
+    .feature-value {
+      font-size: 18pt;
+      font-weight: 700;
+      color: $brand-color;
+      word-break: break-word;
+    }
+
+    .feature-icon {
+      color: $brand-color;
+      font-size: 43px;
+    }
+
+    .feature-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 14px;
+      line-height: 110%;
+      background-color: #f9f9f9;
+      border: solid 1px #e5e5e5;
+      border-top: 0;
+    }
+  }
+}
 
 // deals section
 .magic-card {
