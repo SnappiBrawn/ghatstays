@@ -104,7 +104,7 @@ image: /assets/img/999.jpg
                                 <option value="price_desc">Price ↑</option>
                                 <option value="rating">User Ratings</option>
                                 <option value="visitor_count">Visitor Count</option>
-                              </select>
+                            </select>
                         </div>
                     </div>
                 </div>
@@ -116,7 +116,7 @@ image: /assets/img/999.jpg
                                 <a href="{{stay.url}}"><img src="{{stay.cover_image}}" alt=""></a>
                             </div>
                             <div class="col-12 col-md-7 pt-md-0 pt-3">
-                                <div class="wide-equal pb-3">
+                                <div class="wide-equal pb-2">
                                     <div>
                                         <a href="{{stay.url}}">
                                             <h4 class="iso-title">{{stay.title}}</h4>
@@ -128,20 +128,43 @@ image: /assets/img/999.jpg
                                         <span class="price"><a href="{{stay.url}}#pricing">{{stay.price}}</a></span>
                                     </div>
                                 </div>
-                                <div class="d-flex gap-2">
-                                    {% for a in stay.ameneties | limit: 4 %}
-                                    <div class="d-flex flex-column text-center feature">
-                                        <a href="{{stay.url}}#amenities">
-                                            <span class="{{a[0]}}"></span>
-                                            <p>{{a[1]}}</p>
-                                        </a>
-                                    </div>
-                                    {% endfor %}
-                                    <div class="flex-column text-center feature d-none d-md-flex">
-                                        <a href="{{stay.url}}#amenities">
-                                            <span>+{{stay.ameneties | size }}</span>
-                                            <p>more</p>
-                                        </a>
+                                <div class="d-flex">
+                                    <div class="row text-center w-100">
+                                        <div class="col-6 p-1 flex-row d-flex">
+                                            <div class="card py-2 justify-content-center h-100 ps-3 fs-3">
+                                                <i class="fa-solid fa-people-roof"></i>
+                                            </div>
+                                            <div class="card py-2 justify-content-center flex-grow-1">
+                                                <span class="fw-bold fs-4">{{stay.total-occupancy}}</span>
+                                                <span class="fst-italic">Max Occupancy</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-1 flex-row d-flex">
+                                            <div class="card py-2 justify-content-center h-100 ps-3 fs-3">
+                                                <i class="fa-solid fa-house-user"></i>
+                                            </div>
+                                            <div class="card py-2 justify-content-center flex-grow-1">
+                                                <span class="fw-bold fs-4">{{stay.rooms}}</span>
+                                                <span class="fst-italic">Rooms</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-1 flex-row d-flex">
+                                            <div class="card py-2 justify-content-center h-100 ps-3 fs-3">
+                                                <i class="fa-solid fa-mountain-sun"></i>
+                                            </div>
+                                            <div class="card py-2 justify-content-center flex-grow-1">
+                                                <span class="fw-bold fs-4">{{stay.stay-type}}</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-1 flex-row d-flex">
+                                            <div class="card py-2 justify-content-center h-100 ps-3 fs-3">
+                                                <i class="fa-solid fa-gifts"></i>
+                                            </div>
+                                            <div class="card py-2 justify-content-center flex-grow-1">
+                                                <span class="fw-bold fs-4">{{stay.ameneties | size }}</span>
+                                                <span class="fst-italic">Amenities</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <br>
@@ -165,13 +188,14 @@ image: /assets/img/999.jpg
     <div class="accordion" id="locationFilter">
         <div class="accordion-item rounded-0">
             <h2 class="accordion-header" id="locationFilterHeader">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLocationFilter"
-                    aria-expanded="true" aria-controls="collapseLocationFilter">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseLocationFilter" aria-expanded="true"
+                    aria-controls="collapseLocationFilter">
                     Filter By Locations
                 </button>
             </h2>
-            <div id="collapseLocationFilter" class="accordion-collapse collapse show" aria-labelledby="locationFilterHeading"
-                data-bs-parent="#locationFilter">
+            <div id="collapseLocationFilter" class="accordion-collapse collapse show"
+                aria-labelledby="locationFilterHeading" data-bs-parent="#locationFilter">
                 <div class="accordion-body">
                     <div class="col" style="padding: 5px 0;">
                         <input type="checkbox" id="f11" name="f11">
@@ -254,4 +278,3 @@ image: /assets/img/999.jpg
         </div>
     </div> -->
 </div>
-
