@@ -2,9 +2,11 @@
     <div class="owl-carousel stay-carousel owl-theme">
         {% assign image_files = site.static_files | where: "image", true%}
         {% for img in image_files %}
-        {% if img.path contains 'sample dir' %}
+        {% if img.path contains page.images_src %}
         <div class="item">
-            <img src="{{img.path}}" alt="Gaaligudda" style="object-fit: cover;">
+            <a href="{{img.path}}" data-toggle="lightbox" data-gallery="{{page.title}}" data-caption="{{page.title}}">
+                <img src="{{img.path}}" alt="{{page.keywords}}">
+            </a>
         </div>
         {% endif %}
         {% endfor %}
