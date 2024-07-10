@@ -25,11 +25,11 @@ image: /assets/img/999.jpg
                         <div class="accordion-item rounded-0">
                             <h2 class="accordion-header" id="filter1Header">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    data-bs-target="#filterOne" aria-expanded="true" aria-controls="filterOne">
                                     Filter By Location
                                 </button>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            <div id="filterOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#filter1">
                                 <div class="accordion-body">
                                     <div class="col" style="padding: 5px 0;">
@@ -37,20 +37,24 @@ image: /assets/img/999.jpg
                                         <label for="f11">Chikmagalur</label>
                                     </div>
                                     <div class="col" style="padding: 5px 0;">
-                                        <input type="checkbox" id="f11" name="f11">
-                                        <label for="f11">Coorg</label>
+                                        <input type="checkbox" id="f12" name="f12">
+                                        <label for="f12">Coorg</label>
                                     </div>
                                     <div class="col" style="padding: 5px 0;">
-                                        <input type="checkbox" id="f11" name="f11">
-                                        <label for="f11">Horanadu</label>
+                                        <input type="checkbox" id="f13" name="f13">
+                                        <label for="f13">Horanadu</label>
                                     </div>
                                     <div class="col" style="padding: 5px 0;">
-                                        <input type="checkbox" id="f11" name="f11">
-                                        <label for="f11">Kudremukh</label>
+                                        <input type="checkbox" id="f14" name="f14">
+                                        <label for="f14">Kudremukh</label>
                                     </div>
                                     <div class="col" style="padding: 5px 0;">
-                                        <input type="checkbox" id="f11" name="f11">
-                                        <label for="f11">Mudigere</label>
+                                        <input type="checkbox" id="f15" name="f15">
+                                        <label for="f15">Mudigere</label>
+                                    </div>
+                                    <div class="col" style="padding: 5px 0;">
+                                        <input type="checkbox" id="f16" name="f16">
+                                        <label for="f16">Sakleshpur</label>
                                     </div>
                                 </div>
                             </div>
@@ -60,11 +64,11 @@ image: /assets/img/999.jpg
                         <div class="accordion-item rounded-0">
                             <h2 class="accordion-header" id="filter2Header">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                    data-bs-target="#filterTwo" aria-expanded="true" aria-controls="filterTwo">
                                     User Rating
                                 </button>
                             </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+                            <div id="filterTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
                                 data-bs-parent="#filter2">
                                 <div class="accordion-body">
                                     <div class="col" style="padding: 5px 0;">
@@ -100,17 +104,17 @@ image: /assets/img/999.jpg
                         <div>
                             <select id="sort-options">
                                 <option>Sort By</option>
+                                <option value="name_asc">Name</option>
                                 <option value="price_asc">Price ↓</option>
                                 <option value="price_desc">Price ↑</option>
-                                <option value="rating">User Ratings</option>
-                                <option value="visitor_count">Visitor Count</option>
+                                <option value="ratings">User Ratings</option>
                             </select>
                         </div>
                     </div>
                 </div>
                 <div class="stays-grid">
                     {% for stay in site.stays%}
-                    <div class="card my-4 my-md-2 stay-item {{stay.area}}" {{stay.area}} iso-price="{{stay.price}}">
+                    <div class="card my-4 my-md-2 stay-item {{stay.area}}" iso-rating="{{stay.rating}}" iso-price="{{stay.price}}">
                         <div class="row p-3">
                             <div class="col-12 col-md-5">
                                 <a href="{{stay.url}}"><img src="{{stay.cover_image}}" alt=""></a>
@@ -128,7 +132,7 @@ image: /assets/img/999.jpg
                                         <span class="price"><a href="{{stay.url}}#pricing">{{stay.price}}</a></span>
                                     </div>
                                 </div>
-                                <div class="d-flex">
+                                <div class="d-flex justify-content-center">
                                     <div class="row text-center w-100">
                                         <div class="col-6 p-1 flex-row d-flex">
                                             <div class="card py-2 justify-content-center h-100 ps-3 fs-3">
@@ -198,24 +202,28 @@ image: /assets/img/999.jpg
                 aria-labelledby="locationFilterHeading" data-bs-parent="#locationFilter">
                 <div class="accordion-body">
                     <div class="col" style="padding: 5px 0;">
-                        <input type="checkbox" id="f11" name="f11">
-                        <label for="f11">Chikmagalur</label>
+                        <input type="checkbox" id="mf11" name="mf11">
+                        <label for="mf11">Chikmagalur</label>
                     </div>
                     <div class="col" style="padding: 5px 0;">
-                        <input type="checkbox" id="f11" name="f11">
-                        <label for="f11">Coorg</label>
+                        <input type="checkbox" id="mf12" name="mf12">
+                        <label for="mf12">Coorg</label>
                     </div>
                     <div class="col" style="padding: 5px 0;">
-                        <input type="checkbox" id="f11" name="f11">
-                        <label for="f11">Horanadu</label>
+                        <input type="checkbox" id="mf13" name="mf13">
+                        <label for="mf13">Horanadu</label>
                     </div>
                     <div class="col" style="padding: 5px 0;">
-                        <input type="checkbox" id="f11" name="f11">
-                        <label for="f11">Kudremukh</label>
+                        <input type="checkbox" id="mf14" name="mf14">
+                        <label for="mf14">Kudremukh</label>
                     </div>
                     <div class="col" style="padding: 5px 0;">
-                        <input type="checkbox" id="f11" name="f11">
-                        <label for="f11">Mudigere</label>
+                        <input type="checkbox" id="mf15" name="mf15">
+                        <label for="mf15">Mudigere</label>
+                    </div>
+                    <div class="col" style="padding: 5px 0;">
+                        <input type="checkbox" id="mf16" name="mf16">
+                        <label for="mf16">Sakleshpur</label>
                     </div>
                 </div>
             </div>

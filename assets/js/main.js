@@ -141,11 +141,17 @@ var $stay_grid = $('.stays-grid').isotope({
   gutter: 0,
   transitionDuration: 0,
   getSortData: {
+    name_asc: function (ele) {
+      return $(ele).find(".iso-title").text();
+    },
     price_asc: function (ele) {
       return parseInt( $(ele).attr('iso-price').replace(/[^0-9]/g, ""), 10 )
     },
     price_desc: function (ele) {
       return -parseInt( $(ele).attr('iso-price').replace(/[^0-9]/g, ""), 10 )
+    },
+    ratings: function (ele) {
+      return -parseInt( $(ele).attr('iso-rating'), 10 )
     },
   }
 });
@@ -162,3 +168,38 @@ $('#sort-options').on('change', function () {
   const sortValue = $(this).val();
   $stay_grid.isotope({ sortBy: sortValue });
 });
+
+$('#filterOne input[type="checkbox"]').on('change', function() {
+  if ($(this).is(':checked')) {
+    $(this).closest('#filterOne').find('input[type="checkbox"]').prop('checked', false);
+    $(this).prop('checked', true);
+    const checkedLabelText = $(this).closest('.col').find('label').text().trim();
+
+    $stay_grid.isotope({ filter: '.' + checkedLabelText});
+    document.querySelector('#staysCount').innerHTML = $stay_grid.isotope('getFilteredItemElements').length;
+    document.querySelector('#entry').innerHTML = checkedLabelText;
+  }
+  else{
+    $stay_grid.isotope({ filter: '*'});
+    document.querySelector('#staysCount').innerHTML = $stay_grid.isotope('getItemElements').length;
+    document.querySelector('#entry').innerHTML = "All Locations"
+  }
+});
+
+$('#collapseLocationFilter input[type="checkbox"]').on('change', function() {
+  if ($(this).is(':checked')) {
+    $(this).closest('#collapseLocationFilter').find('input[type="checkbox"]').prop('checked', false);
+    $(this).prop('checked', true);
+    const checkedLabelText = $(this).closest('.col').find('label').text().trim();
+
+    $stay_grid.isotope({ filter: '.' + checkedLabelText});
+    document.querySelector('#staysCount').innerHTML = $stay_grid.isotope('getFilteredItemElements').length;
+    document.querySelector('#entry').innerHTML = checkedLabelText;
+  }
+  else{
+    $stay_grid.isotope({ filter: '*'});
+    document.querySelector('#staysCount').innerHTML = $stay_grid.isotope('getItemElements').length;
+    document.querySelector('#entry').innerHTML = "All Locations"
+  }
+});
+
