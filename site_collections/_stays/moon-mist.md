@@ -1,7 +1,9 @@
 ---
 layout: location
 title: Moon Mist
-images: ["/properties/horanadu/tranquil/1.jpg","/properties/horanadu/tranquil/1.jpg"]
+keywords: resort stay
+cover_image: "/properties/Moon Mist/1.jpg"
+images_src: Moon Mist
 price: ₹2,999
 area: Coorg
 rating: 5

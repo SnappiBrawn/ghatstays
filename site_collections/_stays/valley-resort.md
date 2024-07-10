@@ -1,7 +1,9 @@
 ---
 layout: location
 title: Valley Resort
-images: ["/properties/kudhremukh/Kyathanmakki/1.jpg","/properties/kudhremukh/Kyathanmakki/1.jpg"]
+keywords: resort stay
+cover_image: "/properties/Valley Resort/1.jpg"
+images_src: Valley Resort
 price: ₹2,999
 area: Mudigere
 rating: 5

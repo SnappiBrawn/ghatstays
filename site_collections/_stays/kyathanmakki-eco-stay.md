@@ -1,7 +1,9 @@
 ---
 layout: location
 title: Kyathanmakki Eco Stay
-images: ["/properties/kudhremukh/Kyathanmakki/1.jpg","/properties/kudhremukh/Kyathanmakki/1.jpg"]
+keywords: resort stay
+cover_image: "/properties/Kyathanmakki Eco Stay/1.jpg"
+images_src: Kyathanmakki Eco Stay
 price: ₹1,999
 area: Kudremukh
 rating: 5

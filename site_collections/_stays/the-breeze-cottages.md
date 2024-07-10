@@ -1,7 +1,9 @@
 ---
 layout: location
 title: The Breeze Cottages
-images: ["/properties/horanadu/tranquil/1.jpg","/properties/horanadu/tranquil/1.jpg"]
+keywords: cottage stay
+cover_image: /properties/0The Breeze Cottages/1.jpg
+images_src: 0The Breeze Cottages
 price: ₹2,999
 area: Kudremukh
 rating: 5

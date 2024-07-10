@@ -1,11 +1,13 @@
 ---
 layout: location
 title: Hasiru Thaana Homestay
-images: ["/properties/kudhremukh/Gaaligudda/1.jpg","/properties/kudhremukh/Gaaligudda/2.jpg"]
+keywords: resort stay
+cover_image: "/properties/Hasiru Thaana Homestay/1.jpg"
+images_src: Hasiru Thaana Homestay
 price: ₹1,499
 area: Kudremukh
 rating: 5
-description: Craving a digital detox and fresh mountain air? Kudremukh Heights homestay beckons. Nestled on Kudremukh National Park's fringes, this family-run haven offers a simple escape. Breathe deep at 1,340 meters – year-round pleasant temperatures await. Leave stress behind and reconnect with nature's rhythm. Explore yoga with guidance, or simply unwind in the tranquility. Kudremukh Heights – your escape for a true mountain experience.
+description: Craving a digital detox and fresh mountain air? Hasiru Thaana Homestay beckons. Nestled on Kudremukh National Park's fringes, this family-run haven offers a simple escape. Breathe deep at 1,340 meters – year-round pleasant temperatures await. Leave stress behind and reconnect with nature's rhythm. Explore yoga with guidance, or simply unwind in the tranquility. Kudremukh Heights – your escape for a true mountain experience.
 district: Chikmagalur
 total-occupancy: 26
 rooms: 5

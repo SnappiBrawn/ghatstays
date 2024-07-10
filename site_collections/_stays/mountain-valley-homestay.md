@@ -1,7 +1,9 @@
 ---
 layout: location
 title: Mountain Valley Homestay
-images: ["/properties/horanadu/tranquil/1.jpg","/properties/horanadu/tranquil/1.jpg"]
+keywords: resort stay
+cover_image: "/properties/Mountain Valley Homestay/1.jpg"
+images_src: Mountain Valley Homestay
 price: ₹X,XXX
 area: Chikmagalur
 rating: 5

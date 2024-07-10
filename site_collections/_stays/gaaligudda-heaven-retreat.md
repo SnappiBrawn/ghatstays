@@ -1,7 +1,9 @@
 ---
 layout: location
 title: Gaaligudda Heaven Retreat
-images: ["/properties/kudhremukh/Gaaligudda/1.jpg","/properties/kudhremukh/Gaaligudda/2.jpg"]
+keywords: resort stay
+cover_image: "/properties/Gaaligudda Heaven Retreat/1.jpg"
+images_src: Gaaligudda Heaven Retreat
 price: ₹1,999
 area: Kudremukh
 rating: 5

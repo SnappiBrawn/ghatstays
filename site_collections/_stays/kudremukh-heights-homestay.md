@@ -1,7 +1,9 @@
 ---
 layout: location
 title: Kudremukh Heights Homestay
-images: ["/properties/kudhremukh/Gaaligudda/1.jpg","/properties/kudhremukh/Gaaligudda/2.jpg"]
+keywords: resort stay
+cover_image: "/properties/Kudremukh Heights Homestay/1.jpg"
+images_src: Kudremukh Heights Homestay
 price: ₹1,999
 area: Kudremukh
 rating: 5

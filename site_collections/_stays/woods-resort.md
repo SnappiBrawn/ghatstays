@@ -1,7 +1,9 @@
 ---
 layout: location
 title: Woods Resort
-images: ["/properties/horanadu/tranquil/1.jpg","/properties/horanadu/tranquil/1.jpg"]
+keywords: resort stay
+cover_image: "/properties/Woods Resort/1.jpg"
+images_src: Woods Resort
 price: ₹2,499
 area: Mudigere
 rating: 5

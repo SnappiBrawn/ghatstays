@@ -1,7 +1,9 @@
 ---
 layout: location
 title: Tranquil Retreat Horanadu
-images: ["/properties/horanadu/tranquil/1.jpg","/properties/horanadu/tranquil/1.jpg"]
+keywords: riverside stay
+cover_image: /properties/Tranquil Retreat Horanadu/1.jpg
+images_src: Tranquil Retreat Horanadu
 price: ₹1,599
 area: Horanadu
 rating: 5

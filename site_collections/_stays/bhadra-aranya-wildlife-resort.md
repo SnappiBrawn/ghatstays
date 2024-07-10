@@ -1,7 +1,9 @@
 ---
 layout: location
+keywords: resort stay
 title: Bhadra Aranya Wildlife Resort
-images: ["/properties/kudhremukh/Kyathanmakki/1.jpg","/properties/kudhremukh/Kyathanmakki/1.jpg"]
+cover_image: /properties/Bhadra Aranya homestay/1.jpg
+images_src: Bhadra Aranya homestay
 price: ₹2,999
 area: Kudremukh
 rating: 5

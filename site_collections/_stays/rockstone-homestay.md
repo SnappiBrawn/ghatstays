@@ -1,7 +1,9 @@
 ---
 layout: location
 title: RockStone Homestay
-images: ["/properties/horanadu/tranquil/1.jpg","/properties/horanadu/tranquil/1.jpg"]
+keywords: resort stay
+cover_image: "/properties/RockStone Homestay/1.jpg"
+images_src: RockStone Homestay
 price: ₹1,299
 area: Chikmagalur
 rating: 5

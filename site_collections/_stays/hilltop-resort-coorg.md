@@ -1,7 +1,9 @@
 ---
 layout: location
 title: Hilltop Resort Coorg
-images: ["/properties/horanadu/tranquil/1.jpg","/properties/horanadu/tranquil/1.jpg"]
+keywords: resort stay
+cover_image: "/properties/Hilltop Resort Coorg/1.jpg"
+images_src: Hilltop Resort Coorg
 price: ₹2,999
 area: Coorg
 rating: 5

@@ -95,7 +95,7 @@ image: /assets/img/999.jpg
                     <div>
                         <div class="btn border rounded-1 d-md-none" style="float:right; font-size: 12px" type="button"
                             data-bs-toggle="offcanvas" data-bs-target="#filterOffCanvas" aria-controls="Filters">
-                            <span class="bi bi-funnel-fill"></span> FILTERS
+                            <span class="fa-solid fa-filter"></span> FILTERS
                         </div>
                         <div>
                             <select id="sort-options">
@@ -113,7 +113,7 @@ image: /assets/img/999.jpg
                     <div class="card my-4 my-md-2 stay-item {{stay.area}}" {{stay.area}} iso-price="{{stay.price}}">
                         <div class="row p-3">
                             <div class="col-12 col-md-5">
-                                <a href="{{stay.url}}"><img src="{{stay.images[0]}}" alt=""></a>
+                                <a href="{{stay.url}}"><img src="{{stay.cover_image}}" alt=""></a>
                             </div>
                             <div class="col-12 col-md-7 pt-md-0 pt-3">
                                 <div class="wide-equal pb-3">
@@ -121,7 +121,7 @@ image: /assets/img/999.jpg
                                         <a href="{{stay.url}}">
                                             <h4 class="iso-title">{{stay.title}}</h4>
                                         </a>
-                                        User Rating: {% for item in (1..stay.rating) %}<i class="bi bi-star-fill"></i>
+                                        User Rating: {% for item in (1..stay.rating) %}<i class="fa-solid fa-star"></i>
                                         {% endfor %}
                                     </div>
                                     <div>
