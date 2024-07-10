@@ -26,6 +26,13 @@ collections:
   stays:
     output: true
 
+
+defaults:
+  - scope:
+      path: "properties/*"
+    values:
+      image: true
+
 #compress.html
 compress_html:
   clippings: [html, head, meta, title, link, body, div, script, header, footer]

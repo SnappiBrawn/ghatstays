@@ -280,24 +280,31 @@ header {
 .slider {
   position: relative;
 
-  .carousel {
-    margin: 0 auto;
+  .stay-carousel{
+    .owl-prev, .owl-next{
+      span{
+        background-color: #ffffff50;
+        padding: 2px 5px;
+        border-radius: 2px;
+        transition: all 200ms;
 
-    .carousel-item {
-      .backdrop {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        filter: blur(5px);
-      }
-
-      .fore {
-        position: relative;
-        max-width: 60vw;
+        &:hover{
+          background-color: #ffffff00;
+        }
       }
     }
+    .owl-prev {
+      left: 10px !important;
+    }
+    
+    .owl-next {
+      right: 10px !important;
+    }
+    img{
+      height: 400px;
+      object-fit: cover;
+    }
+
   }
 
 }

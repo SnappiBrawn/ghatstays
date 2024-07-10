@@ -66,6 +66,23 @@ $(document).ready(function () {
     }
   })
 
+  $('.owl-carousel.stay-carousel').owlCarousel({
+    loop: true,
+    margin: 3,
+    nav: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    center: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 2
+      },
+    }
+  })
+
   $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 10,

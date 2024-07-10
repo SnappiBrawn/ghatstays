@@ -1,22 +1,21 @@
 <section class="slider mx-auto">
-    <div id="carouselExampleControls" class="carousel slide caption-fade" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            {% for i in page.images %}
-            <div class="carousel-item {% if forloop.index == 1 %}active{% endif %}" data-bs-interval="3000">
-                <img src="{{i}}" alt="Gaaligudda" class="backdrop"  height=300>
-                <img src="{{i}}" alt="Gaaligudda" class="fore mx-auto d-flex"  height=300>
-            </div>
-            {% endfor %}
+    <div class="owl-carousel stay-carousel owl-theme">
+        {% assign image_files = site.static_files | where: "image", true%}
+        {% for img in image_files %}
+        {% if img.path contains 'sample dir' %}
+        <div class="item">
+            <img src="{{img.path}}" alt="Gaaligudda" style="object-fit: cover;">
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+        {% endif %}
+        {% endfor %}
     </div>
 </section>
+
+<!-- {% assign image_files = site.static_files | where: "image", true%}
+{% for img in image_files %}
+{% if img.path contains 'green space' %}
+<div class="carousel-item {% if forloop.index == 1 %}active{% endif %}" data-bs-interval="3000">
+    <img src="{{img.path}}" alt="Gaaligudda" height=300>
+</div>
+{% endif %} -->
+<!-- {% endfor %} -->
