@@ -20,6 +20,7 @@ title: Home
 				{% for stay in site.stays%}
 				{% if stay.exclusive == true %}
 				<div class="item">
+					<a href="{{stay.url}}">
 					<div class="card popular-stays rounded-0 m-2">
 						<img class="rounded-0 card-img-top" src="{{stay.cover_image}}" alt="{{stay.keywords}}">
 						<div class="card-body p-4">
@@ -61,11 +62,13 @@ title: Home
 								</div>
 							</div>
 							<hr>
-							<div class="d-flex gap-3">
+							<div class="d-flex justify-content-between gap-3 align-items-center">
 								<div><i class="fa-solid fa-location-dot"></i> {{stay.area}}</div>
+								<a href="tel:+918296516447" class="btn btn-outline-primary d-md-none"><i class="fa-solid fa-phone"></i> Enquire</a>
+								<a href="{{stay.url}}" class="btn btn-primary rounded-0 text-light d-md-block"> BOOK NOW </a>
 							</div>
 						</div>
-					</div>
+					</div></a>
 				</div>
 				{% endif %}
 				{% endfor %}
