@@ -11,7 +11,8 @@ title: Home
 			<div class="text-center">
 				<h1>Ghatstays Exclusive Stays</h1>
 				<p class="px-1 mx-1 px-md-5 mx-md-5 pb-5">
-					Browse through Ghatstays' very own selection of stays with service as well as amenities, par excellence.
+					Browse through Ghatstays' very own selection of stays with service as well as amenities, par
+					excellence.
 				</p>
 			</div>
 			<div class="owl-carousel" style="color: dimgray;">
@@ -21,211 +22,147 @@ title: Home
 				{% assign exclusive_item4 = site.stays | where: "title", "Gaaligudda Heaven Retreat" | first %}
 
 				<div class="item">
-					<a href="{{exclusive_item1.url}}">
 					<div class="card popular-stays rounded-0 m-2">
-						<img class="rounded-0 card-img-top" src="{{exclusive_item1.cover_image}}" alt="{{exclusive_item1.keywords}}">
+						<a href="{{exclusive_item1.url}}">
+							<img class="rounded-0 card-img-top" src="{{exclusive_item1.cover_image}}"
+								alt="{{exclusive_item1.keywords}}">
+						</a>
 						<div class="card-body p-4">
-							<h5 class="card-title fs-3 text-dark">{{exclusive_item1.title}}</h5>
-							<div class="d-flex gap-2 pb-3">
+							<div class="stay-title">
+								<a href="{{exclusive_item1.url}}">
+									<h5 class="card-title fs-4 text-dark" >{{exclusive_item1.title}}</h5>
+								</a>
+							</div>
+							<div class="d-flex gap-2 py-2">
 								<div class="row">
-									<div class="col-6 p-1">
-										<div class="feature-card">
-											<div class="feature-header">
-												<span class="feature-name">District</span>
-												<span class="feature-value">{{exclusive_item1.district}}</span>
-											</div>
-										</div>
+									<div class="d-flex justify-content-between">
+										<p class="fs-6">{{exclusive_item1.stay-type}}</p>
+										<span class="text-primary px-2 py-1 fw-bold" style="width: max-content"><i class="fa-solid fa-location-dot"></i> {{exclusive_item1.area}}</span>
 									</div>
-									<div class="col-6 p-1">
-										<div class="feature-card">
-											<div class="feature-header">
-												<span class="feature-name">Total Occupancy</span>
-												<span class="feature-value">{{exclusive_item1.total-occupancy}}</span>
-											</div>
-										</div>
-									</div>
-									<div class="col-6 p-1">
-										<div class="feature-card">
-											<div class="feature-header">
-												<span class="feature-name">Rooms</span>
-												<span class="feature-value">{{exclusive_item1.rooms}}</span>
-											</div>
-										</div>
-									</div>
-									<div class="col-6 p-1">
-										<div class="feature-card">
-											<div class="feature-header">
-												<span class="feature-name">Stay Type</span>
-												<span class="feature-value">{{exclusive_item1.stay-type}}</span>
-											</div>
-										</div>
+									<div class="d-flex justify-content-between">
+										<span class="fs-6 text-center"><i class="fa-solid fa-bed"></i> {{exclusive_item1.rooms}} Rooms </span>
+										<span class="fs-6 text-center"><i class="fa-solid fa-users"></i> {{exclusive_item1.total-occupancy}} Guests </span>
+										<span class="fs-6 text-center">{{exclusive_item1.ameneties | size | minus: 1}}+ Amenities </span>
 									</div>
 								</div>
 							</div>
-							<hr>
+							<hr class="my-3">
 							<div class="d-flex justify-content-between gap-3 align-items-center">
-								<div><i class="fa-solid fa-location-dot"></i> {{exclusive_item1.area}}</div>
-								<a href="tel:+918296516447" class="btn btn-outline-primary d-md-none"><i class="fa-solid fa-phone"></i> Enquire</a>
-								<a href="{{exclusive_item1.url}}" class="btn btn-primary rounded-0 text-light d-md-block"> BOOK NOW </a>
+								<a href="tel:+918296516447" class="btn btn-outline-primary rounded-0 d-md-none"><i
+										class="fa-solid fa-phone"></i> Enquire</a>
+								<a href="{{exclusive_item1.url}}"
+									class="btn btn-primary rounded-0 text-light d-md-block"> BOOK NOW </a>
 							</div>
 						</div>
-					</div></a>
+					</div>
 				</div>
 
 				<div class="item">
-					<a href="{{exclusive_item2.url}}">
 					<div class="card popular-stays rounded-0 m-2">
-						<img class="rounded-0 card-img-top" src="{{exclusive_item2.cover_image}}" alt="{{exclusive_item2.keywords}}">
+						<a href="{{exclusive_item2.url}}">
+							<img class="rounded-0 card-img-top" src="{{exclusive_item2.cover_image}}"
+								alt="{{exclusive_item2.keywords}}">
+						</a>
 						<div class="card-body p-4">
-							<h5 class="card-title fs-3 text-dark">{{exclusive_item2.title}}</h5>
-							<div class="d-flex gap-2 pb-3">
+								<div class="stay-title">
+									<a href="{{exclusive_item3.url}}">
+										<h5 class="card-title fs-4 text-dark" >{{exclusive_item3.title}}</h5>
+									</a>
+								</div>
+							<div class="d-flex gap-2 py-2">
 								<div class="row">
-									<div class="col-6 p-1">
-										<div class="feature-card">
-											<div class="feature-header">
-												<span class="feature-name">District</span>
-												<span class="feature-value">{{exclusive_item2.district}}</span>
-											</div>
-										</div>
+									<div class="d-flex justify-content-between">
+										<p class="fs-6">{{exclusive_item2.stay-type}}</p>
+										<span class="text-primary px-2 py-1 fw-bold" style="width: max-content"><i class="fa-solid fa-location-dot"></i> {{exclusive_item2.area}}</span>
 									</div>
-									<div class="col-6 p-1">
-										<div class="feature-card">
-											<div class="feature-header">
-												<span class="feature-name">Total Occupancy</span>
-												<span class="feature-value">{{exclusive_item2.total-occupancy}}</span>
-											</div>
-										</div>
-									</div>
-									<div class="col-6 p-1">
-										<div class="feature-card">
-											<div class="feature-header">
-												<span class="feature-name">Rooms</span>
-												<span class="feature-value">{{exclusive_item2.rooms}}</span>
-											</div>
-										</div>
-									</div>
-									<div class="col-6 p-1">
-										<div class="feature-card">
-											<div class="feature-header">
-												<span class="feature-name">Stay Type</span>
-												<span class="feature-value">{{exclusive_item2.stay-type}}</span>
-											</div>
-										</div>
+									<div class="d-flex justify-content-between">
+										<span class="fs-6 text-center"><i class="fa-solid fa-bed"></i> {{exclusive_item2.rooms}} Rooms </span>
+										<span class="fs-6 text-center"><i class="fa-solid fa-users"></i> {{exclusive_item2.total-occupancy}} Guests </span>
+										<span class="fs-6 text-center">{{exclusive_item2.ameneties | size | minus: 1}}+ Amenities </span>
 									</div>
 								</div>
 							</div>
-							<hr>
+							<hr class="my-3">
 							<div class="d-flex justify-content-between gap-3 align-items-center">
-								<div><i class="fa-solid fa-location-dot"></i> {{exclusive_item2.area}}</div>
-								<a href="tel:+918296516447" class="btn btn-outline-primary d-md-none"><i class="fa-solid fa-phone"></i> Enquire</a>
-								<a href="{{exclusive_item2.url}}" class="btn btn-primary rounded-0 text-light d-md-block"> BOOK NOW </a>
+								<a href="tel:+918296516447" class="btn btn-outline-primary rounded-0 d-md-none"><i
+										class="fa-solid fa-phone"></i> Enquire</a>
+								<a href="{{exclusive_item2.url}}"
+									class="btn btn-primary rounded-0 text-light d-md-block"> BOOK NOW </a>
 							</div>
 						</div>
-					</div></a>
+					</div>
 				</div>
 
 				<div class="item">
-					<a href="{{exclusive_item3.url}}">
 					<div class="card popular-stays rounded-0 m-2">
-						<img class="rounded-0 card-img-top" src="{{exclusive_item3.cover_image}}" alt="{{exclusive_item3.keywords}}">
+						<a href="{{exclusive_item3.url}}">
+							<img class="rounded-0 card-img-top" src="{{exclusive_item3.cover_image}}"
+								alt="{{exclusive_item3.keywords}}">
+						</a>
 						<div class="card-body p-4">
-							<h5 class="card-title fs-3 text-dark">{{exclusive_item3.title}}</h5>
-							<div class="d-flex gap-2 pb-3">
+							<div class="stay-title">
+								<a href="{{exclusive_item3.url}}">
+									<h5 class="card-title fs-4 text-dark" >{{exclusive_item3.title}}</h5>
+								</a>
+							</div>
+							<div class="d-flex gap-2 py-2">
 								<div class="row">
-									<div class="col-6 p-1">
-										<div class="feature-card">
-											<div class="feature-header">
-												<span class="feature-name">District</span>
-												<span class="feature-value">{{exclusive_item3.district}}</span>
-											</div>
-										</div>
+									<div class="d-flex justify-content-between">
+										<p class="fs-6">{{exclusive_item3.stay-type}}</p>
+										<span class="text-primary px-2 py-1 fw-bold" style="width: max-content"><i class="fa-solid fa-location-dot"></i> {{exclusive_item3.area}}</span>
 									</div>
-									<div class="col-6 p-1">
-										<div class="feature-card">
-											<div class="feature-header">
-												<span class="feature-name">Total Occupancy</span>
-												<span class="feature-value">{{exclusive_item3.total-occupancy}}</span>
-											</div>
-										</div>
-									</div>
-									<div class="col-6 p-1">
-										<div class="feature-card">
-											<div class="feature-header">
-												<span class="feature-name">Rooms</span>
-												<span class="feature-value">{{exclusive_item3.rooms}}</span>
-											</div>
-										</div>
-									</div>
-									<div class="col-6 p-1">
-										<div class="feature-card">
-											<div class="feature-header">
-												<span class="feature-name">Stay Type</span>
-												<span class="feature-value">{{exclusive_item3.stay-type}}</span>
-											</div>
-										</div>
+									<div class="d-flex justify-content-between">
+										<span class="fs-6 text-center"><i class="fa-solid fa-bed"></i> {{exclusive_item3.rooms}} Rooms </span>
+										<span class="fs-6 text-center"><i class="fa-solid fa-users"></i> {{exclusive_item3.total-occupancy}} Guests </span>
+										<span class="fs-6 text-center">{{exclusive_item3.ameneties | size | minus: 1}}+ Amenities </span>
 									</div>
 								</div>
 							</div>
-							<hr>
+							<hr class="my-3">
 							<div class="d-flex justify-content-between gap-3 align-items-center">
-								<div><i class="fa-solid fa-location-dot"></i> {{exclusive_item3.area}}</div>
-								<a href="tel:+918296516447" class="btn btn-outline-primary d-md-none"><i class="fa-solid fa-phone"></i> Enquire</a>
-								<a href="{{exclusive_item3.url}}" class="btn btn-primary rounded-0 text-light d-md-block"> BOOK NOW </a>
+								<a href="tel:+918296516447" class="btn btn-outline-primary rounded-0 d-md-none"><i
+										class="fa-solid fa-phone"></i> Enquire</a>
+								<a href="{{exclusive_item3.url}}"
+									class="btn btn-primary rounded-0 text-light d-md-block"> BOOK NOW </a>
 							</div>
 						</div>
-					</div></a>
+					</div>
 				</div>
 
 				<div class="item">
-					<a href="{{exclusive_item4.url}}">
 					<div class="card popular-stays rounded-0 m-2">
-						<img class="rounded-0 card-img-top" src="{{exclusive_item4.cover_image}}" alt="{{exclusive_item4.keywords}}">
+						<a href="{{exclusive_item2.url}}">
+							<img class="rounded-0 card-img-top" src="{{exclusive_item2.cover_image}}"
+								alt="{{exclusive_item2.keywords}}">
+						</a>
 						<div class="card-body p-4">
-							<h5 class="card-title fs-3 text-dark">{{exclusive_item4.title}}</h5>
-							<div class="d-flex gap-2 pb-3">
+							<div class="stay-title">
+								<a href="{{exclusive_item4.url}}">
+									<h5 class="card-title fs-4 text-dark" >{{exclusive_item4.title}}</h5>
+								</a>
+							</div>
+							<div class="d-flex gap-2 py-2">
 								<div class="row">
-									<div class="col-6 p-1">
-										<div class="feature-card">
-											<div class="feature-header">
-												<span class="feature-name">District</span>
-												<span class="feature-value">{{exclusive_item4.district}}</span>
-											</div>
-										</div>
+									<div class="d-flex justify-content-between">
+										<p class="fs-6">{{exclusive_item2.stay-type}}</p>
+										<span class="text-primary px-2 py-1 fw-bold" style="width: max-content"><i class="fa-solid fa-location-dot"></i> {{exclusive_item2.area}}</span>
 									</div>
-									<div class="col-6 p-1">
-										<div class="feature-card">
-											<div class="feature-header">
-												<span class="feature-name">Total Occupancy</span>
-												<span class="feature-value">{{exclusive_item4.total-occupancy}}</span>
-											</div>
-										</div>
-									</div>
-									<div class="col-6 p-1">
-										<div class="feature-card">
-											<div class="feature-header">
-												<span class="feature-name">Rooms</span>
-												<span class="feature-value">{{exclusive_item4.rooms}}</span>
-											</div>
-										</div>
-									</div>
-									<div class="col-6 p-1">
-										<div class="feature-card">
-											<div class="feature-header">
-												<span class="feature-name">Stay Type</span>
-												<span class="feature-value">{{exclusive_item4.stay-type}}</span>
-											</div>
-										</div>
+									<div class="d-flex justify-content-between">
+										<span class="fs-6 text-center"><i class="fa-solid fa-bed"></i> {{exclusive_item2.rooms}} Rooms </span>
+										<span class="fs-6 text-center"><i class="fa-solid fa-users"></i> {{exclusive_item2.total-occupancy}} Guests </span>
+										<span class="fs-6 text-center">{{exclusive_item2.ameneties | size | minus: 1}}+ Amenities </span>
 									</div>
 								</div>
 							</div>
-							<hr>
+							<hr class="my-3">
 							<div class="d-flex justify-content-between gap-3 align-items-center">
-								<div><i class="fa-solid fa-location-dot"></i> {{exclusive_item4.area}}</div>
-								<a href="tel:+918296516447" class="btn btn-outline-primary d-md-none"><i class="fa-solid fa-phone"></i> Enquire</a>
-								<a href="{{exclusive_item4.url}}" class="btn btn-primary rounded-0 text-light d-md-block"> BOOK NOW </a>
+								<a href="tel:+918296516447" class="btn btn-outline-primary rounded-0 d-md-none"><i
+										class="fa-solid fa-phone"></i> Enquire</a>
+								<a href="{{exclusive_item2.url}}"
+									class="btn btn-primary rounded-0 text-light d-md-block"> BOOK NOW </a>
 							</div>
 						</div>
-					</div></a>
+					</div>
 				</div>
 
 			</div>
