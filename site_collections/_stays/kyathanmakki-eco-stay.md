@@ -1,5 +1,6 @@
 ---
 layout: location
+exclusive: Yes
 title: Kyathanmakki Eco Stay
 keywords: resort stay
 cover_image: "/properties/Kyathanmakki Eco Stay/1.jpg"

@@ -280,27 +280,31 @@ header {
 .slider {
   position: relative;
 
-  .stay-carousel{
-    .owl-prev, .owl-next{
-      span{
+  .stay-carousel {
+
+    .owl-prev,
+    .owl-next {
+      span {
         background-color: #ffffff50;
         padding: 2px 5px;
         border-radius: 2px;
         transition: all 200ms;
 
-        &:hover{
+        &:hover {
           background-color: #ffffff00;
         }
       }
     }
+
     .owl-prev {
       left: 10px !important;
     }
-    
+
     .owl-next {
       right: 10px !important;
     }
-    img{
+
+    img {
       height: 400px;
       object-fit: cover;
     }
@@ -310,9 +314,9 @@ header {
 }
 
 // exclusive stays
-.popular-stays{
-  
-  .card-img-top{
+.popular-stays {
+
+  .card-img-top {
     height: 250px;
     object-fit: cover;
   }
@@ -363,6 +367,19 @@ header {
       border-top: 0;
     }
   }
+
+  &::before {
+    content: "EXCLUSIVE";
+    position: absolute;
+    padding: 5px 10px;
+    top: 5px;
+    right: -2px;
+    box-shadow: 0px 2px 5px 1px black;
+    background: $brand-color;
+    color: white;
+    font-weight: 700;
+  }
+
 }
 
 // deals section
@@ -567,7 +584,8 @@ div.wide {
     color: $brand-color;
   }
 
-  .fa-solid, .fa-regular {
+  .fa-solid,
+  .fa-regular {
     color: $brand-color;
   }
 
@@ -594,6 +612,18 @@ div.wide {
   .card {
     background-color: #DC354520;
     border: none;
+
+    &[exclusive="true"]::before{
+      content: "EXCLUSIVE";
+      position: absolute;
+      background: $brand-color;
+      color: white;
+      font-weight: 600;
+      padding: 5px 10px;
+      top: 10px;
+      left: -2px;
+      box-shadow: 0px 3px 5px 0px black;
+    }
 
     img {
       width: 100%;
@@ -768,8 +798,8 @@ div.wide {
     }
   }
 
-  .icon-text-pair{
-    i{
+  .icon-text-pair {
+    i {
       width: 15%;
       justify-content: center;
     }
@@ -1048,8 +1078,9 @@ div.wide {
         font-size: 24px;
       }
     }
-    .icon-text-pair{
-      i{
+
+    .icon-text-pair {
+      i {
         width: 30%;
       }
     }

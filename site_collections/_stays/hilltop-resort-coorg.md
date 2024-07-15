@@ -1,5 +1,6 @@
 ---
 layout: location
+exclusive: Yes
 title: Hilltop Resort Coorg
 keywords: resort stay
 cover_image: "/properties/Hilltop Resort Coorg/1.jpg"

@@ -114,7 +114,7 @@ image: /assets/img/999.jpg
                 </div>
                 <div class="stays-grid">
                     {% for stay in site.stays%}
-                    <div class="card my-4 my-md-2 stay-item {{stay.area}}" iso-rating="{{stay.rating}}" iso-price="{{stay.price}}">
+                    <div class="card my-4 my-md-2 stay-item {{stay.area}}" exclusive={{stay.exclusive}} iso-rating="{{stay.rating}}" iso-price="{{stay.price}}">
                         <div class="row p-3">
                             <div class="col-12 col-md-5">
                                 <a href="{{stay.url}}"><img src="{{stay.cover_image}}" alt=""></a>
