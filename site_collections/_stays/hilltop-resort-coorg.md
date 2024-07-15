@@ -12,7 +12,7 @@ description: Imagine escaping to a hidden paradise nestled in the lush hills of 
 district: Chikmagalur 
 total-occupancy: 16
 rooms: 3
-stay-type: Hill Top
+stay-type: Resort Stay
 accomodation: [
     [0 Couples, 0, 0, house-door],
     [0 4-Sharing Rooms, 0, 0, shop],
