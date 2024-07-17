@@ -1,23 +1,17 @@
 <section>
     <div class="container py-5 sortable">
         <div class="text-center">
-            <h1>Find Your Perfect Tour</h1>
-            <p class="px-1 mx-1 px-md-5 mx-md-5 pb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-                sollicitudin,
-                tellus
-                vitae condimentum egestas, libero dolor auctor tellus, eu consectetur neque elit quis nunc. Cras
-                elementum pretium.</p>
+            <h1>Find Your Ideal Stay</h1>
+            <p class="px-1 mx-1 px-md-5 mx-md-5 pb-5">Browse through our hand-picked collection of homestays and resorts, nestled amidst the lush green, and keeping you forever one with nature</p>
         </div>
         <div class="iso">
             <div id="filters">
                 <button class="active btn" data-filter="*">ALL</button>
-                <button class="btn" data-filter=".budget">Budget Friendly</button>
-                <button class="btn" data-filter=".escorted">Escorted Tours</button>
-                <button class="btn" data-filter=".recommended">Recommended</button>
+                <button class="btn" data-filter=".Homestay">Homestay</button>
+                <button class="btn" data-filter=".Resort">Resorts</button>
             </div>
             <div class="row py-5 filtered-listing">
-                {% for index in (1..5)%}
-                <div class="col-12 col-md-4 iso-item">
+                <!-- <div class="col-12 col-md-4 iso-item">
                     <div class="card rounded-0 m-2">
                         <img class="rounded-0"
                             src="https://img.traveltriangle.com/blog/wp-content/uploads/2020/01/Ooty-In-Summer-cover_17th-Jan.jpg"
@@ -42,43 +36,49 @@
                             </div>
                         </div>
                     </div>
+                </div> -->
+                {% assign stays = site.stays | sort: 'area' | reverse %}
+                {% for stay in stays limit : 6 %}
+                <div class="col-12 col-md-4 iso-item {{stay.stay-type}}">
+                    <div class="card explore-stays rounded-0 m-2 {% if stay.exclusive == true %}exclusive{% endif %}">
+						<a href="{{stay.url}}">
+							<img class="rounded-0 card-img-top" src="{{stay.cover_image}}"
+								alt="{{stay.keywords}}">
+						</a>
+						<div class="card-body p-4">
+							<div class="stay-title">
+								<a href="{{stay.url}}">
+									<h5 class="card-title fs-4 text-dark" >{{stay.title}}</h5>
+								</a>
+							</div>
+							<div class="d-flex gap-2 py-2">
+								<div class="row">
+									<div class="d-flex justify-content-between">
+										<p class="fs-6">{{stay.stay-type}}</p>
+										<span class="text-primary px-2 py-1 fw-bold" style="width: max-content"><i class="fa-solid fa-location-dot"></i> {{stay.area}}</span>
+									</div>
+									<div class="d-flex gap-2">
+										<span class="fs-6 text-center"><i class="fa-solid fa-bed"></i> {{stay.rooms}} Rooms </span> 
+										<span class="fs-6 text-center"><i class="fa-solid fa-users"></i> {{stay.total-occupancy}} Guests </span>
+									</div>
+								</div>
+							</div>
+							<hr class="my-3">
+							<div class="d-flex justify-content-between gap-3 align-items-center">
+								<a href="tel:+918296516447" class="btn btn-outline-primary rounded-0 d-md-none"><i
+										class="fa-solid fa-phone"></i> Enquire</a>
+								<a href="{{stay.url}}"
+									class="btn btn-primary rounded-0 text-light d-md-block"> VIEW STAY </a>
+							</div>
+						</div>
+					</div>
                 </div>
                 {% endfor %}
-                <div class="col-12 col-md-4 iso-item budget">
-                    <div class="card rounded-0 m-2">
-                        <img class="rounded-0"
-                            src="https://img.traveltriangle.com/blog/wp-content/uploads/2020/01/Ooty-In-Summer-cover_17th-Jan.jpg"
-                            class="card-img-top" alt="...">
-                        <div class="card-body p-4">
-                            <div class="d-flex justify-content-between">
-                                <h5 class="card-title text-dark">Hrudaya Stays</h5>
-                                <h5 class="text-primary">₹ 2500</h5>
-                            </div>
-                            <div class="d-flex gap-2 pb-3">
-                                <h6 class="text-dark"><i class="bi bi-emoji-smile"></i></h6>
-                                <h6> 9.0 Superb </h6>
-                            </div>
-                            <span class="card-text" style="font-size: 14px">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Vel asperiores
-                                aliquam tenetur inventore laudantium quaerat voluptate modi blanditiis placeat quo!
-                            </span>
-                            <hr>
-                            <div class="d-flex gap-3">
-                                <div><i class="bi bi-arrow-counterclockwise"></i>10 Days</div>
-                                <div><i class="bi bi-person"></i>12+</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
         <div class="text-center">
-            <p class="px-1 mx-1 px-md-5 mx-md-5 pb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-                sollicitudin,
-                tellus
-                vitae condimentum egestas, libero dolor auctor tellus, eu consectetur neque elit quis nunc. Cras
-                elementum pretium.</p>
-            <a href="#" class="view-all btn">VIEW ALL TOURS</a>
+            <p class="px-1 mx-1 px-md-5 mx-md-5 pb-5">Like what you see? Want to explore more? Well, you're at the right place. Click on below to view all our stays!</p>
+            <a href="/stays/" class="view-all btn">VIEW ALL STAYS</a>
         </div>
     </div>
 </section>

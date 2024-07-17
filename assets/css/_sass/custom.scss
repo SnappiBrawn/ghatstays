@@ -434,6 +434,30 @@ header {
     font-weight: 600;
     padding: 9px 30px;
   }
+
+  .explore-stays {
+    .card-img-top {
+      height: 250px;
+      object-fit: cover;
+    }
+  
+    &.exclusive::before {
+      content: "EXCLUSIVE";
+      position: absolute;
+      padding: 5px 10px;
+      top: 5px;
+      right: -2px;
+      box-shadow: 0px 2px 5px 1px black;
+      background: $brand-color;
+      color: white;
+      font-weight: 700;
+    }
+  
+    .stay-title{
+      height: 50px;
+    }
+  
+  }
 }
 
 // wide video block
@@ -507,6 +531,49 @@ div.wide {
     }
   }
 
+}
+
+//reviews
+.reviews{
+  .card-body{
+    background-color: rgba(red($brand-color), green($brand-color), blue($brand-color), 0.1);
+
+    p{
+      font-weight: 600;
+      color: #00000080;
+      position: relative;
+      z-index: 2;
+      text-align: justify;
+    }
+
+    &:before{
+      content: ' ';
+      height: 100%;
+      width: 100%;
+      background: url('/assets/img/quote.png');
+      opacity: 0.3;
+      font-size: 200px;
+      background-repeat: no-repeat;
+      position: absolute;
+      color: $brand-color;
+      top: 0;
+      left: 10px;
+      z-index: 1;
+    }
+  }
+  .user{
+    display: flex;
+    gap: 10px;
+    flex-direction: row-reverse;
+    p{
+      line-height: 50px;
+    }
+    .avatar{
+      width: 50px;
+      height: auto;
+      border-radius: 50%;
+    }
+  }
 }
 
 // quickbook
@@ -960,6 +1027,19 @@ div.wide {
     .card-img-overlay {
       padding: 30px !important;
     }
+  }
+
+  .explore-stays {
+
+    .card-img-top {
+      height: 250px;
+      object-fit: cover;
+    }
+  
+    .stay-title{
+      height:unset;
+    }
+  
   }
 
   .quickbook {

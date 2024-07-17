@@ -83,6 +83,22 @@ $(document).ready(function () {
     }
   })
 
+  $('.owl-carousel.review').owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: true,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 3
+      },
+    }
+  })
+
   $('.owl-carousel').owlCarousel({
     loop: false,
     margin: 10,
