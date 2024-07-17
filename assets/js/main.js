@@ -88,15 +88,8 @@ $(document).ready(function () {
     margin: 20,
     nav: true,
     autoplay: true,
-    autoplayTimeout: 4000,
-    responsive: {
-      0: {
-        items: 1
-      },
-      600: {
-        items: 3
-      },
-    }
+    autoplayTimeout: 6000,
+    items: 1,
   })
 
   $('.owl-carousel').owlCarousel({

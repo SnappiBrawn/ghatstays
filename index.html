@@ -492,17 +492,17 @@ title: Home
 			</div>
 			<div class="owl-carousel review">
 				{% for item in site.data.reviews %}
-				<div class="item">
-					<div class="card border-0">
-						<div class="card-body">
+				<div class="item w-75 mx-auto">
+					<div class="card border-0 mb-3">
+						<div class="card-body p-5">
 							<p>{{item.message}}</p>
 						</div>
 					</div>
 					<div class="user">
+						<img src="{{item.avatar}}" class="avatar">
 						<p class="fs-5 fw-bold text-primary">
 							{{item.name}}
 						</p>
-						<img src="{{item.avatar}}" class="avatar">
 					</div>
 				</div>
 				{% endfor %}
