@@ -11,7 +11,7 @@ description:
 district: Hassan
 total-occupancy: 26
 rooms: 13
-stay-type: Pool Stay
+stay-type: Resort
 accomodation: [
     [1 Mountain View Room, 4, 2, shop],
     [3 Family Rooms, 14, 7, house-door], 

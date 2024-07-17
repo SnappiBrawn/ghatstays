@@ -11,7 +11,7 @@ description: Escape to RockStone Homestay, where the verdant embrace of the West
 district: Chikmagalur
 total-occupancy: 14
 rooms: 4
-stay-type: Trekking Stay
+stay-type: Homestay
 accomodation: [
     [3 Family Room, 6, 12, house-door],
     [1 Dormitory Room, 8, 4, shop]

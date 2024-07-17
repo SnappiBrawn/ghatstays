@@ -12,7 +12,7 @@ description: Craving a nature fix? Look no further than Kyathanmakki Eco Stay! N
 district: Chikmagalur
 total-occupancy: 20
 rooms: 4
-stay-type: Home Stay
+stay-type: Homestay
 accomodation: [
     [2 Standard Room, 4, 2, shop],
     [1 Basic Room, 4, 2, house-door], 

@@ -11,7 +11,7 @@ description: Moon Mist estates is an estate resort at Coorg in Karnataka. At 380
 district: Chikmagalur 
 total-occupancy: 35
 rooms: 9
-stay-type: Estate Stay
+stay-type: Resort
 accomodation: [
     [0 Couples, 0, 0, house-door],
     [0 4-Sharing Rooms, 0, 0, shop],

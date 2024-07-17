@@ -11,7 +11,7 @@ description: Seeking a unique escape in Coorg? Look no further than A-Frame Coor
 district: Chikmagalur
 total-occupancy: 10
 rooms: 3
-stay-type: Cottage Stay
+stay-type: Homestay
 accomodation: [
     [2 Standard Rooms, 8, 4, shop],
     [1 Dormitory Room, 8, 4, house-door]

@@ -11,7 +11,7 @@ description: Nestled amidst the rolling hills of the Western Ghats in Chikmagalu
 district: Chikmagalur
 total-occupancy: 35
 rooms: 6
-stay-type: Homestay
+stay-type: Resort
 accomodation: [
     [Standard Room, 0, 0, shop],
     [Basic Room, 0, 0, house-door], 

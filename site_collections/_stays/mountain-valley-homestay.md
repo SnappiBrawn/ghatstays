@@ -11,7 +11,7 @@ description: Craving a retreat nestled amidst rolling hills? Look no further tha
 district: Chikmagalur 
 total-occupancy: 10
 rooms: 3
-stay-type: Estate Stay
+stay-type: Homestay
 accomodation: [
     [0 Couples, 0, 0, house-door],
     [0 4-Sharing Rooms, 0, 0, shop],

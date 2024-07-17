@@ -11,7 +11,7 @@ description: Escape to a paradise nestled 3,500 feet above the clouds at the foo
 district: Chikmagalur
 total-occupancy: 16
 rooms: 4
-stay-type: Hill Top
+stay-type: Homestay
 accomodation: [
     [4 Deluxe Cottage, 16, 8, house-door],
 ]

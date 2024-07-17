@@ -12,7 +12,7 @@ description: Escape the ordinary at Gaaligudda Heaven Retreat, nestled near the 
 district: Chikmagalur
 total-occupancy: 20
 rooms: 4
-stay-type: Home Stay
+stay-type: Homestay
 accomodation: [
     [2 Standard Room, 8, 4, shop],
     [1 Basic Room, 4, 2, house-door], 

@@ -11,7 +11,7 @@ description: Craving a digital detox and fresh mountain air? Kudremukh Heights h
 district: Chikmagalur
 total-occupancy: 46
 rooms: 10
-stay-type: Home Stay
+stay-type: Homestay
 accomodation: [
     [1 Dormitory Room, 10, 5, shop],
     [2 Family Dormitory, 6, 2, shop],

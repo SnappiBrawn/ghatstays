@@ -11,7 +11,7 @@ description: Craving a digital detox and fresh mountain air? Hasiru Thaana Homes
 district: Chikmagalur
 total-occupancy: 26
 rooms: 5
-stay-type: Hill Top Stay
+stay-type: Homestay
 accomodation: [
     [2 Standard Rooms, 8, 4, shop],
     [2 Estate View, 8, 4, shop],

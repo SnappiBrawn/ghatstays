@@ -12,7 +12,7 @@ description: Seeking serenity? Look no further than Bhadra Aranya Wildlife Resor
 district: Kudremukh
 total-occupancy: 24
 rooms: 7
-stay-type: Resort Stay
+stay-type: Resort
 accomodation: [
     [0 Standard Room, 0, 0, shop],
     [0 Basic Room, 0, 0, house-door], 
