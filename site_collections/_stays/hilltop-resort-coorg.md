@@ -3,7 +3,7 @@ layout: location
 exclusive: Yes
 title: Hilltop Resort Coorg
 keywords: resort stay
-cover_image: "/properties/Hilltop Resort Coorg/1.jpg"
+cover_image: "/properties/Hilltop Resort Coorg/1.webp"
 images_src: Hilltop Resort Coorg
 price: ₹2,999
 area: Coorg

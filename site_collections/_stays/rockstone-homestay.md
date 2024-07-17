@@ -2,7 +2,7 @@
 layout: location
 title: RockStone Homestay
 keywords: resort stay
-cover_image: "/properties/RockStone Homestay/1.jpg"
+cover_image: "/properties/RockStone Homestay/1.webp"
 images_src: RockStone Homestay
 price: ₹1,299
 area: Chikmagalur

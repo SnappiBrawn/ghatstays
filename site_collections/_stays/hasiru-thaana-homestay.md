@@ -2,7 +2,7 @@
 layout: location
 title: Hasiru Thaana Homestay
 keywords: resort stay
-cover_image: "/properties/Hasiru Thaana Homestay/1.jpg"
+cover_image: "/properties/Hasiru Thaana Homestay/1.webp"
 images_src: Hasiru Thaana Homestay
 price: ₹1,499
 area: Kudremukh

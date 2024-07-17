@@ -2,7 +2,7 @@
 layout: location
 title: Woods Resort
 keywords: resort stay
-cover_image: "/properties/Woods Resort/1.jpg"
+cover_image: "/properties/Woods Resort/1.webp"
 images_src: Woods Resort
 price: ₹2,499
 area: Mudigere

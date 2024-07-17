@@ -2,7 +2,7 @@
 layout: location
 title: Valley Resort
 keywords: resort stay
-cover_image: "/properties/Valley Resort/1.jpg"
+cover_image: "/properties/Valley Resort/1.webp"
 images_src: Valley Resort
 price: ₹2,999
 area: Mudigere

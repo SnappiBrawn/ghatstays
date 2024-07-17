@@ -2,7 +2,7 @@
 layout: location
 keywords: homestays
 title: A Shaped Cottage
-cover_image: "/properties/A Shaped Cottage/1.jpg"
+cover_image: "/properties/A Shaped Cottage/1.webp"
 images_src: A Shaped Cottage
 price: ₹1,799
 area: Chikmagalur

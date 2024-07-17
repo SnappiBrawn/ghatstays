@@ -2,7 +2,7 @@
 layout: location
 title: Moon Mist
 keywords: resort stay
-cover_image: "/properties/Moon Mist/1.jpg"
+cover_image: "/properties/Moon Mist/1.webp"
 images_src: Moon Mist
 price: ₹2,999
 area: Coorg

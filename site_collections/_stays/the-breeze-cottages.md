@@ -2,8 +2,8 @@
 layout: location
 title: The Breeze Cottages
 keywords: cottage stay
-cover_image: /properties/0The Breeze Cottages/1.jpg
-images_src: 0The Breeze Cottages
+cover_image: /properties/The Breeze Cottages/1.webp
+images_src: The Breeze Cottages
 price: ₹2,999
 area: Kudremukh
 rating: 5

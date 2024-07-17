@@ -2,7 +2,7 @@
 layout: location
 title: Mountain Valley Homestay
 keywords: resort stay
-cover_image: "/properties/Mountain Valley Homestay/1.jpg"
+cover_image: "/properties/Mountain Valley Homestay/1.webp"
 images_src: Mountain Valley Homestay
 price: ₹X,XXX
 area: Chikmagalur

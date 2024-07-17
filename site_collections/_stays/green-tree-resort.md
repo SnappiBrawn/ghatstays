@@ -2,7 +2,7 @@
 layout: location
 title: Green Tree Resort
 keywords: resort stay
-cover_image: "/properties/Green Tree Resort/1.jpg"
+cover_image: "/properties/Green Tree Resort/1.webp"
 images_src: Green Tree Resort
 price: ₹2,799
 area: Sakleshpur

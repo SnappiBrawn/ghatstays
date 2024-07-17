@@ -44,7 +44,7 @@ div.position-stickyscrollable {
   position: sticky;
   top: 80px;
   overflow-y: hidden;
-  height: 70vh;
+  height: 80vh;
 
   &:hover {
     overflow-y: auto;
@@ -651,6 +651,8 @@ div.wide {
 
     img {
       width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     .price {

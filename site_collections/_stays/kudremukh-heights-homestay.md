@@ -2,7 +2,7 @@
 layout: location
 title: Kudremukh Heights Homestay
 keywords: resort stay
-cover_image: "/properties/Kudremukh Heights Homestay/1.jpg"
+cover_image: "/properties/Kudremukh Heights Homestay/1.webp"
 images_src: Kudremukh Heights Homestay
 price: ₹1,999
 area: Kudremukh
