@@ -438,30 +438,30 @@ header {
     font-weight: 600;
     padding: 9px 30px;
   }
-
-  .explore-stays {
-    .card-img-top {
-      height: 250px;
-      object-fit: cover;
-    }
-  
-    &.exclusive::before {
-      content: "EXCLUSIVE";
-      position: absolute;
-      padding: 5px 10px;
-      top: 5px;
-      right: -2px;
-      box-shadow: 0px 2px 5px 1px black;
-      background: $brand-color;
-      color: white;
-      font-weight: 700;
-    }
-  
-    .stay-title{
-      height: 50px;
-    }
-  
+}
+// in sortable as well as stays page
+.explore-stays {
+  .card-img-top {
+    height: 250px;
+    object-fit: cover;
   }
+
+  &.exclusive::before {
+    content: "EXCLUSIVE";
+    position: absolute;
+    padding: 5px 10px;
+    top: 5px;
+    right: -2px;
+    box-shadow: 0px 2px 5px 1px black;
+    background: $brand-color;
+    color: white;
+    font-weight: 700;
+  }
+
+  .stay-title{
+    height: 50px;
+  }
+
 }
 
 // wide video block
@@ -539,6 +539,9 @@ div.wide {
 
 //reviews
 .reviews{
+  .card{
+    box-shadow: 0px 0px 50px 50px rgba(red($brand-color), green($brand-color), blue($brand-color), 0.1);
+  }
   .card-body{
     background-color: rgba(red($brand-color), green($brand-color), blue($brand-color), 0.1);
 
