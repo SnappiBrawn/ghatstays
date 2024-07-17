@@ -19,7 +19,7 @@ image: /assets/img/999.jpg
     <div class="px-md-5 px-2">
         <div class="row">
             <div class="col-3 d-md-block d-none">
-                <div class="position-stickyscrollable">
+                <div class="position-stickyscrollable" id="Filters1">
                     <h3>Filters</h3>
                     <div class="accordion" id="filter1">
                         <div class="accordion-item rounded-0">
@@ -29,7 +29,7 @@ image: /assets/img/999.jpg
                                     Filter By Location
                                 </button>
                             </h2>
-                            <div id="filterOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            <div id="filterOne" class="accordion-collapse collapse show" aria-labelledby="filter1Header"
                                 data-bs-parent="#filter1">
                                 <div class="accordion-body">
                                     <div class="col" style="padding: 5px 0;">
@@ -65,11 +65,34 @@ image: /assets/img/999.jpg
                             <h2 class="accordion-header" id="filter2Header">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#filterTwo" aria-expanded="true" aria-controls="filterTwo">
+                                    Stay Type
+                                </button>
+                            </h2>
+                            <div id="filterTwo" class="accordion-collapse collapse show"
+                                aria-labelledby="filter2Header" data-bs-parent="#filter2">
+                                <div class="accordion-body">
+                                    <div class="col" style="padding: 5px 0;">
+                                        <input type="checkbox" id="f21" name="f21">
+                                        <label for="f21">Homestay</label>
+                                    </div>
+                                    <div class="col" style="padding: 5px 0;">
+                                        <input type="checkbox" id="f22" name="f22">
+                                        <label for="f22">Resort</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="accordion" id="filter3">
+                        <div class="accordion-item rounded-0">
+                            <h2 class="accordion-header" id="filter3Header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#filterThree" aria-expanded="true" aria-controls="filterThree">
                                     User Rating
                                 </button>
                             </h2>
-                            <div id="filterTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
-                                data-bs-parent="#filter2">
+                            <div id="filterThree" class="accordion-collapse collapse show"
+                                aria-labelledby="headingThree" data-bs-parent="#filter3">
                                 <div class="accordion-body">
                                     <div class="col" style="padding: 5px 0;">
                                         <input type="checkbox" id="f21" name="f21">
@@ -87,7 +110,7 @@ image: /assets/img/999.jpg
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="col-12 col-md-9">
@@ -114,7 +137,8 @@ image: /assets/img/999.jpg
                 </div>
                 <div class="stays-grid">
                     {% for stay in site.stays%}
-                    <div class="card my-4 my-md-2 stay-item {{stay.area}}" exclusive={{stay.exclusive}} iso-rating="{{stay.rating}}" iso-price="{{stay.price}}">
+                    <div class="card my-4 my-md-2 stay-item {{stay.area}} {{stay.stay-type}}" exclusive={{stay.exclusive}}
+                        iso-rating="{{stay.rating}}" iso-price="{{stay.price}}">
                         <div class="row p-3">
                             <div class="col-12 col-md-5">
                                 <a href="{{stay.url}}"><img src="{{stay.cover_image}}" alt=""></a>
@@ -199,7 +223,7 @@ image: /assets/img/999.jpg
                 </button>
             </h2>
             <div id="collapseLocationFilter" class="accordion-collapse collapse show"
-                aria-labelledby="locationFilterHeading" data-bs-parent="#locationFilter">
+                aria-labelledby="locationFilter" data-bs-parent="#locationFilter">
                 <div class="accordion-body">
                     <div class="col" style="padding: 5px 0;">
                         <input type="checkbox" id="mf11" name="mf11">
@@ -229,58 +253,52 @@ image: /assets/img/999.jpg
             </div>
         </div>
     </div>
-    <!-- <div class="accordion" id="filter1">
+    <div class="accordion" id="staytypeFilter">
         <div class="accordion-item rounded-0">
-            <h2 class="accordion-header" id="filter1Header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
-                    Popular Filters
+            <h2 class="accordion-header" id="stayTypeFilterHeader">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseStayTypeFilter"
+                    aria-expanded="true" aria-controls="collapseStayTypeFilter">
+                    Stay Type
                 </button>
             </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                data-bs-parent="#filter1">
+            <div id="collapseStayTypeFilter" class="accordion-collapse collapse show" aria-labelledby="stayTypeFilterHeader"
+                data-bs-parent="#staytypeFilter">
                 <div class="accordion-body">
                     <div class="col" style="padding: 5px 0;">
-                        <input type="checkbox" id="f11" name="f11">
-                        <label for="f11">Child Friendly</label>
+                        <input type="checkbox" id="mf21" name="mf21">
+                        <label for="mf21">Homestay</label>
                     </div>
                     <div class="col" style="padding: 5px 0;">
-                        <input type="checkbox" id="f12" name="f12">
-                        <label for="f12">Has Wifi</label>
+                        <input type="checkbox" id="mf22" name="mf22">
+                        <label for="mf22">Resort</label>
                     </div>
-                    <div class="col" style="padding: 5px 0;">
-                        <input type="checkbox" id="f13" name="f13">
-                        <label for="f13">Parking Available</label>
-                    </div>
-
                 </div>
             </div>
         </div>
     </div>
-    <div class="accordion" id="filter2">
+    <!-- <div class="accordion" id="ratingFilter">
         <div class="accordion-item rounded-0">
-            <h2 class="accordion-header" id="filter2Header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
+            <h2 class="accordion-header" id="ratingFilterHeader">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#ratingsFilterCollapse"
+                    aria-expanded="true" aria-controls="ratingsFilterCollapse">
                     User Rating
                 </button>
             </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
-                data-bs-parent="#filter2">
+            <div id="ratingsFilterCollapse" class="accordion-collapse collapse show" aria-labelledby="ratingFilterHeading"
+                data-bs-parent="#ratingFilter">
                 <div class="accordion-body">
                     <div class="col" style="padding: 5px 0;">
-                        <input type="checkbox" id="f21" name="f21">
-                        <label for="f21">4.5+ Stars</label>
+                        <input type="checkbox" id="mf31" name="mf31">
+                        <label for="mf31">4.5+ Stars</label>
                     </div>
                     <div class="col" style="padding: 5px 0;">
-                        <input type="checkbox" id="f22" name="f22">
-                        <label for="f22">4+ Stars</label>
+                        <input type="checkbox" id="mf32" name="mf32">
+                        <label for="mf32">4+ Stars</label>
                     </div>
                     <div class="col" style="padding: 5px 0;">
-                        <input type="checkbox" id="f23" name="f23">
-                        <label for="f23">3+ Stars</label>
+                        <input type="checkbox" id="mf33" name="mf33">
+                        <label for="mf33">3+ Stars</label>
                     </div>
-
                 </div>
             </div>
         </div>

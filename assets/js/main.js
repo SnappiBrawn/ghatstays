@@ -134,73 +134,135 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 
 
 // Isotope for stays page
+$(document).ready(function () {
+  var $stay_grid = $('.stays-grid').isotope({
+    itemSelector: '.stay-item',
+    layoutMode: 'vertical',
+    gutter: 0,
+    transitionDuration: 0,
+    getSortData: {
+      name_asc: function (ele) {
+        return $(ele).find(".iso-title").text();
+      },
+      price_asc: function (ele) {
+        return parseInt($(ele).attr('iso-price').replace(/[^0-9]/g, ""), 10)
+      },
+      price_desc: function (ele) {
+        return -parseInt($(ele).attr('iso-price').replace(/[^0-9]/g, ""), 10)
+      },
+      ratings: function (ele) {
+        return -parseInt($(ele).attr('iso-rating'), 10)
+      },
+    }
+  });
 
-var $stay_grid = $('.stays-grid').isotope({
-  itemSelector: '.stay-item',
-  layoutMode: 'vertical',
-  gutter: 0,
-  transitionDuration: 0,
-  getSortData: {
-    name_asc: function (ele) {
-      return $(ele).find(".iso-title").text();
-    },
-    price_asc: function (ele) {
-      return parseInt( $(ele).attr('iso-price').replace(/[^0-9]/g, ""), 10 )
-    },
-    price_desc: function (ele) {
-      return -parseInt( $(ele).attr('iso-price').replace(/[^0-9]/g, ""), 10 )
-    },
-    ratings: function (ele) {
-      return -parseInt( $(ele).attr('iso-rating'), 10 )
-    },
+  const url = new URL(window.location.href);
+  const searchParams = url.searchParams;
+  const locationMap = { Chikmagalur: 'f11', Coorg: 'f12', Horanadu: 'f13', Kudremukh: 'f14', Mudigere: 'f15', Sakleshpur: 'f16' };
+  const mobileLocationMap = { Chikmagalur: 'mf11', Coorg: 'mf12', Horanadu: 'mf13', Kudremukh: 'mf14', Mudigere: 'mf15', Sakleshpur: 'mf16' };
+  const typeMap = { Homestay: 'f21', Resort: 'f22' };
+  const mobileTypeMap = { Homestay: 'mf21', Resort: 'mf22' };
+
+  currentLocation = searchParams.get('location');
+  currentType = searchParams.get('type');
+  document.querySelector('#entry').innerHTML = currentLocation ? currentLocation : 'All locations';
+  if (currentLocation) {
+    document.getElementById(locationMap[currentLocation]).checked = true;
+    document.getElementById(mobileLocationMap[currentLocation]).checked = true;
+    document.getElementById(typeMap[currentType]).checked = true;
+    document.getElementById(mobileTypeMap[currentType]).checked = true;
   }
-});
+  var filters = [currentLocation ? `.${currentLocation}` : "", currentType ? `.${currentType}` : ""]
+  $stay_grid.isotope({ filter: filters.filter(Boolean).length ? filters.filter(Boolean).join("") : "*" });
+  $stay_grid.isotope('layout');
+  document.querySelector('#staysCount').innerHTML = $stay_grid.isotope('getFilteredItemElements').length;
 
-const url = new URL(window.location.href);
-const searchParams = url.searchParams;
-currentLocation = searchParams.get("location");
-document.querySelector('#entry').innerHTML = currentLocation ? currentLocation : "All locations";
-$stay_grid.isotope({ filter: currentLocation ? '.' + currentLocation : "*" });
-$stay_grid.isotope('layout');
-document.querySelector('#staysCount').innerHTML = $stay_grid.isotope('getFilteredItemElements').length;
+  $('#sort-options').on('change', function () {
+    const sortValue = $(this).val();
+    $stay_grid.isotope({ sortBy: sortValue });
+  });
 
-$('#sort-options').on('change', function () {
-  const sortValue = $(this).val();
-  $stay_grid.isotope({ sortBy: sortValue });
-});
-
-// location based filters for desktop and mobile respectively
-$('#filterOne input[type="checkbox"]').on('change', function() {
-  if ($(this).is(':checked')) {
-    $(this).closest('#filterOne').find('input[type="checkbox"]').prop('checked', false);
-    $(this).prop('checked', true);
+  // filters for desktop and mobile respectively
+  const locationFilters = [];
+  const typeFilters = [];
+  $('#Filters1 input[type="checkbox"]').on('change', function () {
     const checkedLabelText = $(this).closest('.col').find('label').text().trim();
-
-    $stay_grid.isotope({ filter: '.' + checkedLabelText});
+    if ($('#filterOne').find($(this)).length === 1) {
+      if ($(this).is(':checked')) {
+        locationFilters.push(checkedLabelText);
+      }
+      else if (!$(this).is(':checked')) {
+        const index = locationFilters.indexOf(checkedLabelText);
+        if (index !== -1) {
+          locationFilters.splice(index, 1);
+        }
+      }
+    }
+    if ($('#filterTwo').find($(this)).length === 1) {
+      if ($(this).is(':checked')) {
+        typeFilters.push(checkedLabelText);
+      }
+      else if (!$(this).is(':checked')) {
+        const index = typeFilters.indexOf(checkedLabelText);
+        if (index !== -1) {
+          typeFilters.splice(index, 1);
+        }
+      }
+    }
+    var combinedFilters = [];
+    if (locationFilters.length && typeFilters.length) {
+      for (const location of locationFilters) {
+        for (const type of typeFilters) {
+          combinedFilters.push(`.${location}.${type}`);
+        }
+      }
+    }
+    else {
+      combinedFilters.push(locationFilters.map(e => `.${e}`))
+    }
+    $stay_grid.isotope({ filter: combinedFilters.join(', ') });
     document.querySelector('#staysCount').innerHTML = $stay_grid.isotope('getFilteredItemElements').length;
-    document.querySelector('#entry').innerHTML = checkedLabelText;
-  }
-  else{
-    $stay_grid.isotope({ filter: '*'});
-    document.querySelector('#staysCount').innerHTML = $stay_grid.isotope('getItemElements').length;
-    document.querySelector('#entry').innerHTML = "All Locations"
-  }
-});
+    document.querySelector('#entry').innerHTML = locationFilters.length ? locationFilters.join(', ') : 'All Locations';
+  });
 
-$('#collapseLocationFilter input[type="checkbox"]').on('change', function() {
-  if ($(this).is(':checked')) {
-    $(this).closest('#collapseLocationFilter').find('input[type="checkbox"]').prop('checked', false);
-    $(this).prop('checked', true);
+  $('#filterOffCanvas input[type="checkbox"]').on('change', function () {
     const checkedLabelText = $(this).closest('.col').find('label').text().trim();
-
-    $stay_grid.isotope({ filter: '.' + checkedLabelText});
+    if ($('#locationFilter').find($(this)).length === 1) {
+      if ($(this).is(':checked')) {
+        locationFilters.push(checkedLabelText);
+      }
+      else if (!$(this).is(':checked')) {
+        const index = locationFilters.indexOf(checkedLabelText);
+        if (index !== -1) {
+          locationFilters.splice(index, 1);
+        }
+      }
+    }
+    if ($('#staytypeFilter').find($(this)).length === 1) {
+      if ($(this).is(':checked')) {
+        typeFilters.push(checkedLabelText);
+      }
+      else if (!$(this).is(':checked')) {
+        const index = typeFilters.indexOf(checkedLabelText);
+        if (index !== -1) {
+          typeFilters.splice(index, 1);
+        }
+      }
+    }
+    var combinedFilters = [];
+    if (locationFilters.length && typeFilters.length) {
+      for (const location of locationFilters) {
+        for (const type of typeFilters) {
+          combinedFilters.push(`.${location}.${type}`);
+        }
+      }
+    }
+    else {
+      combinedFilters.push(locationFilters.map(e => `.${e}`))
+    }
+    $stay_grid.isotope({ filter: combinedFilters.join(', ') });
     document.querySelector('#staysCount').innerHTML = $stay_grid.isotope('getFilteredItemElements').length;
-    document.querySelector('#entry').innerHTML = checkedLabelText;
-  }
-  else{
-    $stay_grid.isotope({ filter: '*'});
-    document.querySelector('#staysCount').innerHTML = $stay_grid.isotope('getItemElements').length;
-    document.querySelector('#entry').innerHTML = "All Locations"
-  }
-});
+    document.querySelector('#entry').innerHTML = locationFilters.length ? locationFilters.join(', ') : 'All Locations';
+  });
 
+})

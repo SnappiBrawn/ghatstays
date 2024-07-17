@@ -38,12 +38,12 @@
         </button>
     </div>
 
-    <div class="container">
-        <div class="card rounded-0 px-3 border-0">
+    <div class="container d-flex">
+        <div class="card rounded-0 px-3 border-0 mx-auto">
             <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex justify-content-between align-items-center gap-3">
                     <span class="border-end pe-3 d-none d-lg-block">Find your<br> <b>Destination</b></span>
-                    <span class="d-md-block d-none">When</span>
+                    <!-- <span class="d-md-block d-none">When</span>
                     <div class="input-group">
                         <select class="form-select rounded-0" id="inputGroupSelect01">
                             <option selected>Month</option>
@@ -52,30 +52,40 @@
                             <option value="3">March</option>
                         </select>
                         <span class="input-group-text rounded-0" id="basic-addon2"><i class="fa-regular fa-calendar-check"></i></span>
-                    </div>
-                    <span class="d-md-block d-none">Where</span>
-                    <div class="input-group">
-                        <select class="form-select rounded-0" id="inputGroupSelect02">
-                            <option selected>Destination</option>
-                            <option value="1">Bangalore</option>
-                            <option value="2">Chikkamangalur</option>
-                            <option value="3">Udupi</option>
+                    </div> -->
+                    <span class="d-md-inline d-none">Where</span>
+                    <div class="input-group w-100">
+                        <select class="form-select rounded-0" id="destinationSelect">
+                            <option value="" selected>Destination</option>
+                            <option value="Chikmagalur">Chikmagalur</option>
+                            <option value="Coorg">Coorg</option>
+                            <option value="Horanadu">Horanadu</option>
+                            <option value="Kudremukh">Kudremukh</option>
+                            <option value="Mudigere">Mudigere</option>
+                            <option value="Sakleshpur">Sakleshpur</option>
                         </select>
-                        <span class="input-group-text rounded-0" id="basic-addon2"><i class="fa-solid fa-earth-americas"></i></span>
+                        <span class="input-group-text rounded-0"><i class="fa-solid fa-earth-americas"></i></span>
                     </div>
                     <span class="d-md-block d-none">What</span>
-                    <div class="input-group">
-                        <select class="form-select rounded-0" id="inputGroupSelect03">
-                            <option selected>Type</option>
-                            <option value="1">Camping</option>
-                            <option value="2">Trekking</option>
-                            <option value="3">Scenic</option>
+                    <div class="input-group w-100">
+                        <select class="form-select rounded-0" id="typeSelect">
+                            <option value="" selected>Stay Type</option>
+                            <option value="Homestay">Homestay</option>
+                            <option value="Resort">Resort</option>
                         </select>
-                        <span class="input-group-text rounded-0" id="basic-addon2"><i class="fa-solid fa-rocket"></i></span>
+                        <span class="input-group-text rounded-0"><i class="fa-solid fa-rocket"></i></span>
                     </div>
-                    <button>SEARCH</button>
+                    <button onclick="submit()">SEARCH</button>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<script>
+    function submit(){
+        const location = document.querySelector("#destinationSelect").value;
+        const type = document.querySelector("#typeSelect").value;
+        window.location.href = `/stays?location=${location}&type=${type}`;
+    }
+</script>
