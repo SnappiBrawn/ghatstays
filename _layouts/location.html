@@ -14,7 +14,8 @@ layout: default
                     </div>
                     <div class="col-12 col-md-9 d-block d-md-flex justify-content-between stubs">
                         <div><i class="fa-solid fa-map-pin"></i> {{page.area}}</div>
-                        <div>Rating: {% for item in (1..page.rating) %}<i class="fa-solid fa-star"></i> {% endfor %}</div>
+                        <div>Rating: {% for item in (1..page.rating) %}<i class="fa-solid fa-star"></i> {% endfor %}
+                        </div>
                     </div>
                     <div class="mt-5">
                         <h3 class="fs-5">About the stay</h3>
@@ -232,50 +233,42 @@ layout: default
                 <div class="card rounded-0 p-4 enquiry">
                     <div class="card-body">
                         <h2 class="text-center pb-3 fs-3 fw-bolder">BOOK THIS STAY</h2>
-                        <form class="d-flex flex-column" onsubmit="(e)=>{e.preventDefault()}" id="book">
+                        <form class="d-flex flex-column" id="book" action="#">
+                            <input type="text" class="form-control" id="title" name="title" value="{{page.title}}"
+                                hidden>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Full Name" aria-label="Name"
-                                    aria-describedby="basic-addon2">
-                                <span class="input-group-text" id="basic-addon2"><i
-                                        class="fa-solid fa-user"></i></span>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Full Name"
+                                    aria-label="Name" aria-describedby="name-field" required>
+                                <span class="input-group-text" id="name-field"><i class="fa-solid fa-user"></i></span>
                             </div>
                             <div class="input-group mb-3">
-                                <input type="mail" class="form-control" placeholder="Email ID" aria-label="email"
-                                    aria-describedby="basic-addon2">
-                                <span class="input-group-text" id="basic-addon2"><i
+                                <input type="mail" class="form-control" id="email" name="email" placeholder="Email ID"
+                                    aria-label="email" aria-describedby="email-field" required>
+                                <span class="input-group-text" id="email-field"><i
                                         class="fa-solid fa-envelope"></i></span>
                             </div>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Contact Number"
-                                    aria-label="phone number" aria-describedby="basic-addon2">
-                                <span class="input-group-text" id="basic-addon2"><i
+                                <input type="text" class="form-control" id="contact" name="contact"
+                                    placeholder="Contact Number" aria-label="phone number"
+                                    aria-describedby="phone-number-field" required>
+                                <span class="input-group-text" id="phone-number-field"><i
                                         class="fa-solid fa-phone"></i></span>
                             </div>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Alternate Ccntact"
-                                    aria-label="phone number" aria-describedby="basic-addon2">
-                                <span class="input-group-text" id="basic-addon2"><i
-                                        class="fa-solid fa-phone"></i></span>
-                            </div>
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="No. of Adults"
-                                    aria-label="no of aduts" aria-describedby="basic-addon2">
-                                <span class="input-group-text" id="basic-addon2"><i
+                                <input type="text" class="form-control" id="beds" name="beds"
+                                    placeholder="No. of Adults" aria-label="no of adults"
+                                    aria-describedby="number-of-people-field" required>
+                                <span class="input-group-text" id="number-of-people-field"><i
                                         class="fa-solid fa-user-group"></i></span>
                             </div>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="No. of Children"
-                                    aria-label="no of children" aria-describedby="basic-addon2">
-                                <span class="input-group-text" id="basic-addon2"><i
-                                        class="fa-solid fa-user-group"></i></span>
-                            </div>
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Preferred Check-In"
-                                    aria-label="message" aria-describedby="basic-addon2">
-                                <span class="input-group-text" id="basic-addon2"><i
+                                <input type="text" class="form-control" id="checkin" name="checkin"
+                                    placeholder="Preferred Check-In" aria-label="message"
+                                    aria-describedby="check-in time" required>
+                                <span class="input-group-text" id="check-in time"><i
                                         class="fa-solid fa-pencil"></i></span>
                             </div>
-                            <button type="submit" class="btn btn-danger py-2 mb-3">Book Now</button>
+                            <button type="button" class="btn btn-danger py-2 mb-3" id="submitButton">Book Now</button>
                         </form>
                     </div>
                 </div>
@@ -283,4 +276,5 @@ layout: default
         </div>
     </div>
 </section>
+
 {% include suggested.html %}

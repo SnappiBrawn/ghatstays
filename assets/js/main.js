@@ -141,6 +141,32 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 })
 
+// Enquiry submit handler
+$('#submitButton').click(function (event) {
+  event.preventDefault(); 
+
+  const form = $('#book');
+  const formData = new FormData(form[0]); 
+
+  const jsonData = {};
+  for (const [key, value] of formData.entries()) {
+    jsonData[key] = value;
+  }
+
+  $.ajax({
+    url: 'https://7wusrylrub.execute-api.ap-south-1.amazonaws.com/send-mail',
+    type: 'POST',
+    contentType: 'application/json',
+    data: JSON.stringify(jsonData),
+    success: function (data) {
+      alert('Request sent, our team will get back to you shortly.')
+    },
+    error: function (error) {
+      alert('Error submitting request, please try again in a while');
+    }
+  });
+});
+
 
 // Isotope for stays page
 $(document).ready(function () {
