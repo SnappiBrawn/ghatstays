@@ -1,9 +1,9 @@
 ---
 layout: location
-title: Green Tree Resort
+title: Tranquil Retreat
 keywords: resort stay
-cover_image: "/properties/Green Tree Resort/1.webp"
-images_src: Green Tree Resort
+cover_image: "/properties/Tranquil Retreat/1.webp"
+images_src: Tranquil Retreat
 price: ₹2,799
 area: Sakleshpur
 rating: 5

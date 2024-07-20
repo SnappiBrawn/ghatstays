@@ -1,9 +1,9 @@
 ---
 layout: location
-title: The Breeze Cottages
+title: A Shaped Classhouse Cottages
 keywords: cottage stay
-cover_image: /properties/The Breeze Cottages/1.webp
-images_src: The Breeze Cottages
+cover_image: /properties/A Shaped Classhouse Cottages/1.webp
+images_src: A Shaped Classhouse Cottages
 price: ₹2,999
 area: Kudremukh
 rating: 5

@@ -1,13 +1,13 @@
 ---
 layout: location
-title: Tranquil Retreat Horanadu
+title: Heritage Resort Horanadu
 keywords: riverside stay
-cover_image: /properties/Tranquil Retreat Horanadu/1.webp
-images_src: Tranquil Retreat Horanadu
+cover_image: /properties/Heritage Resort Horanadu/1.webp
+images_src: Heritage Resort Horanadu
 price: ₹1,599
 area: Horanadu
 rating: 5
-description: Escape to serenity at Tranquil Retreat, Horanadu. Nestled amidst mist-kissed Western Ghats, our stone haven boasts breathtaking views. Unwind by the infinity pool, explore hidden trails that weave through verdant hills, or simply soak in the mountain magic. Reconnect with nature and rediscover yourself at Tranquil Retreat. Breathe in the crisp mountain air, invigorating your senses with each inhale. In the evenings, stargaze from your private balcony, letting the Milky Way wash over you with its celestial glow. Tranquil Retreat – your escape to tranquility awaits.
+description: Escape to serenity at Heritage Resort, Horanadu. Nestled amidst mist-kissed Western Ghats, our stone haven boasts breathtaking views. Unwind by the infinity pool, explore hidden trails that weave through verdant hills, or simply soak in the mountain magic. Reconnect with nature and rediscover yourself at Heritage Resort. Breathe in the crisp mountain air, invigorating your senses with each inhale. In the evenings, stargaze from your private balcony, letting the Milky Way wash over you with its celestial glow. Heritage Resort – your escape to tranquility awaits.
 district: Chikmagalur
 total-occupancy: 36
 rooms: 8

@@ -4,10 +4,7 @@
 - name: EXPERIENCES 
   description: We believe that travel is about more than just accommodation—it's about creating lasting memories. Which is why we offer a variety of curated experiences to complement your stay. Wahtever your interest, we have something for you. 
 
-# - name: SPECIAL PACKAGES 
-#   description: 
-  
-- name: ACCOMMODATION BOOKING 
+- name: SPECIAL PACKAGES 
   description: Whether you're looking for a cozy homestay nestled in the hills or a luxurious resort by the beach, we've got you covered. Our platform features a diverse selection of accommodations, including homestays, resorts, and guesthouses, across Karnataka. 
 
 - name: VACATION RENTALS 

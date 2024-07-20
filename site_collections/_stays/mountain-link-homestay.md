@@ -1,13 +1,13 @@
 ---
 layout: location
-title: RockStone Homestay
+title: Mountain Link Homestay
 keywords: resort stay
-cover_image: "/properties/RockStone Homestay/1.webp"
-images_src: RockStone Homestay
+cover_image: "/properties/Mountain Link Homestay/1.webp"
+images_src: Mountain Link Homestay
 price: ₹1,299
 area: Chikmagalur
 rating: 5
-description: Escape to RockStone Homestay, where the verdant embrace of the Western Ghats will leave you breathless. Nestled amidst this spectacular scenery, RockStone offers the perfect getaway you've been yearning for. Immerse yourself in the rich tapestry of Malnad tradition. Explore the sprawling coffee plantations that surround the homestay, and sip on a cup of the freshest homegrown brew imaginable. But the adventure doesn't stop there! Lace up your boots and embark on thrilling treks through the lush hills, discovering hidden waterfalls and breathtaking viewpoints. RockStone Homestay – reconnect with nature, explore ancient traditions, and create memories that will last a lifetime.
+description: Escape to Mountain Link Homestay, where the verdant embrace of the Western Ghats will leave you breathless. Nestled amidst this spectacular scenery, Mountain Link offers the perfect getaway you've been yearning for. Immerse yourself in the rich tapestry of Malnad tradition. Explore the sprawling coffee plantations that surround the homestay, and sip on a cup of the freshest homegrown brew imaginable. But the adventure doesn't stop there! Lace up your boots and embark on thrilling treks through the lush hills, discovering hidden waterfalls and breathtaking viewpoints. Mountain Link Homestay – reconnect with nature, explore ancient traditions, and create memories that will last a lifetime.
 district: Chikmagalur
 total-occupancy: 14
 rooms: 4

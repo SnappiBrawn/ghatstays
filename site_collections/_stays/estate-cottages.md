@@ -1,13 +1,13 @@
 ---
 layout: location
 keywords: homestays
-title: A Shaped Cottage
-cover_image: "/properties/A Shaped Cottage/1.webp"
-images_src: A Shaped Cottage
+title: Estate Cottages
+cover_image: "/properties/Estate Cottages/1.webp"
+images_src: Estate Cottages
 price: ₹1,799
 area: Chikmagalur
 rating: 5
-description: Seeking a unique escape in Coorg? Look no further than A-Frame Coorg! Reviewers rave about these eco-friendly cottages nestled in the verdant hills. The A-frame design seamlessly blends with the environment, while the spacious living areas offer a haven for relaxation after a day of exploration. Breathtaking views grace the balconies, perfect for unwinding with a good book or simply soaking in the fresh mountain air. A-Frame Coorg promises a tranquil escape in the heart of Coorg. 
+description: Seeking a unique escape in Coorg? Look no further than Estate Cottages! Reviewers rave about these eco-friendly cottages nestled in the verdant hills. The A-frame design seamlessly blends with the environment, while the spacious living areas offer a haven for relaxation after a day of exploration. Breathtaking views grace the balconies, perfect for unwinding with a good book or simply soaking in the fresh mountain air. Estate Cottages promises a tranquil escape in the heart of Coorg. 
 district: Chikmagalur
 total-occupancy: 10
 rooms: 3
