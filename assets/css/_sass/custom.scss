@@ -58,7 +58,7 @@ div.position-stickyscrollable {
   justify-content: space-between;
 }
 
-.owl-nav span{
+.owl-nav span {
   color: $brand-color;
 }
 
@@ -108,9 +108,54 @@ table {
 }
 
 
+.flipper {
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+  -webkit-perspective: 800px;
+  -ms-perspective: 800px;
+  perspective: 800px;
+}
 
+.flipper-card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transition: -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
 
+.flipper-front,
+.flipper-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  background: #ffffff50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.flipper-back {
+  background: #ffffff50;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flipper-card.flipper-is-flipped {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
 
 
 
@@ -337,7 +382,7 @@ header {
     font-weight: 700;
   }
 
-  .stay-title{
+  .stay-title {
     height: 50px;
   }
 
@@ -439,6 +484,7 @@ header {
     padding: 9px 30px;
   }
 }
+
 // in sortable as well as stays page
 .explore-stays {
   .card-img-top {
@@ -458,7 +504,7 @@ header {
     font-weight: 700;
   }
 
-  .stay-title{
+  .stay-title {
     height: 50px;
   }
 
@@ -538,14 +584,15 @@ div.wide {
 }
 
 //reviews
-.reviews{
-  .card{
+.reviews {
+  .card {
     box-shadow: 0px 0px 50px 50px rgba(red($brand-color), green($brand-color), blue($brand-color), 0.1);
   }
-  .card-body{
+
+  .card-body {
     background-color: rgba(red($brand-color), green($brand-color), blue($brand-color), 0.1);
 
-    p{
+    p {
       font-weight: 600;
       color: #00000090;
       position: relative;
@@ -553,7 +600,7 @@ div.wide {
       text-align: justify;
     }
 
-    &:before{
+    &:before {
       content: ' ';
       height: 100%;
       width: 100%;
@@ -568,13 +615,14 @@ div.wide {
       z-index: 1;
     }
   }
-  .user{
+
+  .user {
     display: flex;
     gap: 10px;
     flex-direction: column;
     align-items: center;
 
-    .avatar{
+    .avatar {
       width: 85px;
       height: auto;
       border-radius: 50%;
@@ -643,7 +691,7 @@ div.wide {
     background-color: #DC354520;
     border: none;
 
-    &[exclusive="true"]::before{
+    &[exclusive="true"]::before {
       content: "EXCLUSIVE";
       position: absolute;
       background: $brand-color;
@@ -968,6 +1016,130 @@ div.wide {
   }
 }
 
+.about-us {
+  h1 {
+    position: relative;
+    display: inline-block;
+    color: $brand-color;
+    font-weight: 600;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: $brand-color;
+      bottom: -5px;
+      width: 45%;
+      height: 4px;
+    }
+
+    &.right::before {
+      content: "";
+      position: absolute;
+      background: $brand-color;
+      bottom: -5px;
+      right: 0;
+      width: 45%;
+      height: 4px;
+    }
+
+    &.center::before {
+      content: "";
+      position: absolute;
+      background: $brand-color;
+      bottom: -5px;
+      right: 27.5%;
+      width: 45%;
+      height: 4px;
+    }
+
+  }
+
+  p {
+    line-height: 150%;
+  }
+
+  .img-decorated {
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+    width: 75%;
+    height: 75%;
+    z-index: 1;
+    background-color: $brand-color;
+
+    &+img {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  .achievements {
+    .card {
+      background-color: rgba(red($brand-color), green($brand-color), blue($brand-color), 0.2);
+      text-align: center;
+      height: 100%;
+
+      h3 {
+        font-size: 20px;
+        font-weight: 600;
+        position: relative;
+        text-transform: uppercase;
+
+        &::before {
+          content: '';
+          position: absolute;
+          background-color: $brand-color;
+          height: 4px;
+          width: 70%;
+          left: 15%;
+          bottom: -5px;
+        }
+      }
+
+      .date {
+        padding: 5px 0px;
+        font-size: 18px;
+        color: #828282;
+        text-transform: uppercase;
+      }
+
+      .description {
+        color: #444444;
+        font-size: 15px;
+        line-height: 130%;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .member {
+    display: flex;
+    justify-content: center;
+  }
+  .quote{
+    position: relative;
+    
+    &::before{
+      content: '❝';
+      font-size: 100px;
+      color: $brand-color;
+      position: absolute;
+      top: 10px;
+      left: -30px;
+      opacity: 0.5;
+    }
+
+    &::after{
+      content: '❞';
+      font-size: 100px;
+      color: $brand-color;
+      position: absolute;
+      bottom: 10px;
+      right: -30px;
+      opacity: 0.5;
+    }
+  }
+}
 
 @include media-query($on-hand) {
   header {
@@ -1022,11 +1194,11 @@ div.wide {
       height: 250px;
       object-fit: cover;
     }
-  
-    .stay-title{
-      height:unset;
+
+    .stay-title {
+      height: unset;
     }
-  
+
   }
 
   .magic-card {
@@ -1043,11 +1215,11 @@ div.wide {
       height: 250px;
       object-fit: cover;
     }
-  
-    .stay-title{
-      height:unset;
+
+    .stay-title {
+      height: unset;
     }
-  
+
   }
 
   .quickbook {
