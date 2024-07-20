@@ -1142,6 +1142,18 @@ div.wide {
 }
 
 @include media-query($on-hand) {
+
+  .flipper{
+    z-index: 0;
+  }
+
+  .flipper-back {
+    position: absolute;
+    top: -50%;
+    background: #ffffff;
+    height: max-content;
+  }
+
   header {
     position: sticky;
     top: 0;
@@ -1352,6 +1364,75 @@ div.wide {
 
       i {
         background-color: $brand-color-fade;
+      }
+    }
+  }
+
+  .about-us {
+    .container{
+      text-align: center;
+    }
+
+    .text-end, .text-start{
+      text-align: center !important;
+    }
+
+    h1 {
+      text-align: center;
+  
+      &::before, &.right::before {
+        content: "";
+        position: absolute;
+        background: $brand-color;
+        bottom: -5px;
+        right: 27.5%;
+        width: 45%;
+        height: 4px;
+      }
+    }
+
+    .flex-row-reverse-md{
+      flex-direction: column-reverse;
+    }
+  
+    p {
+      font-size: 14px;
+      text-align: center;
+    }
+  
+    .img-decorated {
+      display: none;
+    }
+
+    .flipper-card *{
+      font-size: 14px;
+    }
+  
+    .member {
+      display: flex;
+      justify-content: center;
+    }
+    .quote{
+      position: relative;
+      
+      &::before{
+        content: '❝';
+        font-size: 100px;
+        color: $brand-color;
+        position: absolute;
+        top: 10px;
+        left: -5px;
+        opacity: 0.5;
+      }
+  
+      &::after{
+        content: '❞';
+        font-size: 100px;
+        color: $brand-color;
+        position: absolute;
+        bottom: 10px;
+        right: -5px;
+        opacity: 0.5;
       }
     }
   }

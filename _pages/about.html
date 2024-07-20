@@ -15,7 +15,7 @@ permalink: /about-us/
 
     <section>
         <div class="container py-5">
-            <div class="row">
+            <div class="row gap-4 gap-md-0">
                 <div class="col-12 col-md-6 position-relative">
                     <div class="img-decorated"></div>
                     <img class="img-fluid h-100" style="object-fit: cover;" src="/assets/img/999.webp"
@@ -51,7 +51,7 @@ permalink: /about-us/
 
     <section>
         <div class="container py-5">
-            <div class="row py-4">
+            <div class="row gap-4 gap-md-0 py-4 flex-row-reverse-md">
                 <div class="col-12 col-md-6 text-end">
                     <h1 class="right">Our Vision</h1>
                     <p>At Ghatstays, our vision is to become the leading platform for homestay and resort bookings in
@@ -69,7 +69,7 @@ permalink: /about-us/
                     <img src="/assets/img/999.webp" alt="ghatstays vision" class="img-fluid h-100">
                 </div>
             </div>
-            <div class="row py-4">
+            <div class="row gap-4 gap-md-0 py-4">
                 <div class="col-12 col-md-6 position-relative">
                     <div class="img-decorated"></div>
                     <img src="/assets/img/999.webp" alt="ghatstays vision" class="img-fluid h-100">
@@ -91,20 +91,22 @@ permalink: /about-us/
         <div class="container py-5 achievements">
             <h1>What We've Achieved</h1>
             <div class="row py-4">
-                {% for award in site.data.awards %}
-                <div class="col-12 col-md-4">
-                    <div class="card border-0 rounded-0">
-                        <div class="card-body p-0">
-                            <img src="{{ award.image }}" alt="{{ award.alt }}" class="card-img-top">
-                            <div class="p-4">
-                                <h3>{{ award.title }}</h3>
-                                <p class="date">{{ award.date }}</p>
-                                <p class="description">{{ award.description }}</p>
+                <div class="owl-carousel">
+                    {% for award in site.data.awards %}
+                    <div class="item">
+                        <div class="card border-0 rounded-0">
+                            <div class="card-body p-0">
+                                <img src="{{ award.image }}" alt="{{ award.alt }}" class="card-img-top">
+                                <div class="p-4">
+                                    <h3>{{ award.title }}</h3>
+                                    <p class="date">{{ award.date }}</p>
+                                    <p class="description">{{ award.description }}</p>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    {% endfor %}
                 </div>
-                {% endfor %}
             </div>
         </div>
     </section>
@@ -133,7 +135,7 @@ permalink: /about-us/
     <section>
         <div class="container py-5">
             <h1>Our Team</h1>
-            <div class="row justify-content-center">
+            <div class="row gap-4 gap-md-0 justify-content-center">
                 <div class="col-12 col-md-4">
                     <div class="member">
                         <img src="/assets/img/team-member.png" class="img-fluid rounded-circle">
@@ -158,7 +160,7 @@ permalink: /about-us/
     </section>
     <section>
         <div class="container py-5">
-            <div class="row">
+            <div class="row gap-4 gap-md-0 flex-row-reverse-md">
                 <div class="col-12 col-md-4 d-flex align-items-center">
                     <img src="/assets/img/person.png" alt="CEO Srujan Jain" class="img-fluid">
                 </div>
@@ -166,17 +168,30 @@ permalink: /about-us/
                 <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
                     <h1 class="mb-5">Message from the CEO</h1>
                     <p class="quote">
-                        As we journey forward in our mission to provide unparalleled experiences in Karnataka's homestays and resorts, I am thrilled to extend my heartfelt gratitude to each of you. At Ghatstays, we are driven by a passion for hospitality and a commitment to creating unforgettable memories for our guests.<br>
-                        Our vision for Ghatstays goes beyond being just a booking platform; we aim to be a trusted companion in your exploration of Karnataka's diverse landscapes and cultures. Whether you seek tranquility amidst the lush greenery of Coorg, adventure in the Western Ghats, or the rich heritage of Hampi, we are here to make your journey seamless and memorable.<br>
-                        As CEO, I am dedicated to ensuring that Ghatstays continues to innovate and exceed expectations. We are constantly expanding our offerings, refining our services, and nurturing our partnerships with homestays and resorts across Karnataka. Our one-page booking interface reflects our commitment to simplicity and convenience, ensuring that your experience with Ghatstays is smooth from start to finish. <br>
-                        I encourage you to explore our website, discover new destinations, and embark on unforgettable journeys with Ghatstays. Your feedback and support are invaluable to us as we strive to enhance our platform and enrich your travel experiences. Thank you for choosing Ghatstays, and I look forward to serving you on your next adventure.</p>
+                        As we journey forward in our mission to provide unparalleled experiences in Karnataka's
+                        homestays and resorts, I am thrilled to extend my heartfelt gratitude to each of you. At
+                        Ghatstays, we are driven by a passion for hospitality and a commitment to creating unforgettable
+                        memories for our guests.<br>
+                        Our vision for Ghatstays goes beyond being just a booking platform; we aim to be a trusted
+                        companion in your exploration of Karnataka's diverse landscapes and cultures. Whether you seek
+                        tranquility amidst the lush greenery of Coorg, adventure in the Western Ghats, or the rich
+                        heritage of Hampi, we are here to make your journey seamless and memorable.<br>
+                        As CEO, I am dedicated to ensuring that Ghatstays continues to innovate and exceed expectations.
+                        We are constantly expanding our offerings, refining our services, and nurturing our partnerships
+                        with homestays and resorts across Karnataka. Our one-page booking interface reflects our
+                        commitment to simplicity and convenience, ensuring that your experience with Ghatstays is smooth
+                        from start to finish. <br>
+                        I encourage you to explore our website, discover new destinations, and embark on unforgettable
+                        journeys with Ghatstays. Your feedback and support are invaluable to us as we strive to enhance
+                        our platform and enrich your travel experiences. Thank you for choosing Ghatstays, and I look
+                        forward to serving you on your next adventure.</p>
                 </div>
             </div>
         </div>
     </section>
 </div>
 <!-- <section class="py-5">
-    <div class="row">
+    <div class="row gap-4 gap-md-0">
         <div class="col-12 col-md-6"></div>
         <div class="col-12 col-md-6"></div>
     </div>

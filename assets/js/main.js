@@ -306,5 +306,6 @@ $(document).ready(function () {
 $(document).ready(function() {
   $('.flipper').on('click', function () {
     $(this).find('.flipper-card').toggleClass('flipper-is-flipped');
+    $(this).css("z-index", +$(this).css("z-index") === 0 ? 1 : 0);
   });
 });
