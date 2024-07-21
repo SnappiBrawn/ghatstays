@@ -18,8 +18,6 @@ accomodation: [
 ]
 pricing: [
     [BASIC PACKAGE, 1799, Stay | Breakfast | Activities | Hi-tea | Veg Snacks],
-    [DORMITORY PACKAGE, 2499, Stay | All Meals | Activities | Hi-tea | Veg Snacks],
-    [STANDARD ROOM, 2799, Stay | All Meals | Activities | Hi-tea | Veg Snacks],
 ]
 ameneties: [
     [ fa-solid fa-utensils,Restaurant],

@@ -18,7 +18,7 @@ accomodation: [
     [Dormitory Room, 0, 0, shop]
 ]
 pricing: [
-    [BASIC PACKAGE, 2999, Stay | Activities | All Meals | Hi-tea | Veg Snacks],
+    [STANDARD PACKAGE, 2999, Stay | Activities | All Meals | Hi-tea | Veg Snacks],
 ]
 ameneties: [
     [ fa-solid fa-utensils,Dining Hall],

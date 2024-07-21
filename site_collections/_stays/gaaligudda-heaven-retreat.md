@@ -21,8 +21,8 @@ accomodation: [
 pricing: [
     [BASIC PACKAGE, 1499, Stay | Activities | Breakfast | Hi-tea | Veg Snacks],
     [STANDARD PACKAGE, 2199, Stay | Activities | All Meals | Hi-tea | Veg Snacks],
+    [DORMITORY, 1999, Stay | Activities | All Meals | Hi-tea | Veg Snacks],
     [COUPLE PACKAGE, 2499, Stay | Activities | All Meals | Hi-tea | Veg Snacks],
-    [DORMITORY, 2899, Stay | Activities | All Meals | Hi-tea | Veg Snacks],
 ]
 ameneties: [
     [ fa-solid fa-plug-circle-plus,Power Backup],
