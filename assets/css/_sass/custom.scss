@@ -688,7 +688,7 @@ div.wide {
   }
 
   .card {
-    background-color: #DC354520;
+    background-color: $brand-color-fade;
     border: none;
 
     &[exclusive="true"]::before {
