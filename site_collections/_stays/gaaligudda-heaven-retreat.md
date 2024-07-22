@@ -9,7 +9,7 @@ price: ₹1,999
 area: Kudremukh
 rating: 5
 description: Escape the ordinary at Gaaligudda Heaven Retreat, nestled near the vibrant hills of Kyathanmakki. This serene retreat offers a haven for nature lovers. Wake up to breathtaking sunrises over the untouched landscape. Breathe in crisp mountain air and listen to the melody of birdsong. Explore hidden waterfalls and lush hiking trails, or simply relax on your private balcony with a good book. In the evenings, unwind under a blanket of stars, sharing stories with fellow travelers. Gaaligudda Heaven Retreat – reconnect with nature's beauty and find your peace.
-district: Chikmagalur
+district: Horanadu
 total-occupancy: 20
 rooms: 4
 stay-type: Homestay

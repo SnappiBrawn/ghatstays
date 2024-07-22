@@ -9,7 +9,7 @@ price: ₹2,999
 area: Coorg
 rating: 5
 description: Imagine escaping to a hidden paradise nestled in the lush hills of the Western Ghats. This intimate resort, with only 32 private havens, offers the perfect getaway to unwind and soak in the breathtaking beauty. Spread over 7 acres of rolling landscapes, the resort blends seamlessly with nature. Picture eco-friendly cottages built with local stone and earth, their steel frames designed to minimize impact on the environment. Each cottage is carefully positioned to offer you the most stunning views, ensuring a truly unforgettable experience. Breathe in the fresh mountain air, lose yourself in the panoramic vistas, and find complete relaxation in this haven amidst the clouds.
-district: Chikmagalur 
+district: Coorg 
 total-occupancy: 16
 rooms: 3
 stay-type: Resort

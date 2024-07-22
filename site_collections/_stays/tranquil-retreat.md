@@ -8,7 +8,7 @@ price: ₹2,799
 area: Sakleshpur
 rating: 5
 description: 
-district: Hassan
+district: Sakleshpur
 total-occupancy: 26
 rooms: 13
 stay-type: Resort

@@ -8,7 +8,7 @@ price: ₹2,499
 area: Mudigere
 rating: 5
 description: Unveiled by the mist-shrouded hills of Chikmagalur, an enchanting escape awaits. Imagine this, crisp mountain air filling your lungs, a tapestry of emerald green that ignites your inner artist, and a sanctuary that restores your sense of self. Welcome to Woods, your intimate retreat with just 6 luxurious rooms, each framing a breathtaking panorama of Chikmagalur's dreamlike scenery. Wake gently to the melody of birdsong and the whispers of the forest. Unwind in our spacious, modern-tropical havens, designed to connect you seamlessly with the mesmerizing surroundings. Immerse yourself in nature's embrace – a stay at Woods promises to rejuvenate your mind, body, and soul. And for the adventurous spirit, the captivating mountain ranges of Chikmagalur offer thrilling trekking trails waiting to be explored.
-district: Chikmagalur
+district: Mudigere
 total-occupancy: 32
 rooms: 6
 stay-type: Resort

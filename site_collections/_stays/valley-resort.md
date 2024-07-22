@@ -7,8 +7,8 @@ images_src: Valley Resort
 price: ₹2,999
 area: Mudigere
 rating: 5
-description: Nestled amidst the rolling hills of the Western Ghats in Chikmagalur, Kalasa Valley Resort beckons you with a promise of serenity. Imagine a haven crafted in the true spirit of Malnad architecture, a cozy haven tucked away amongst verdant coffee plantations. Here, the valley unfolds before you, cradled between two majestic hills, a sparkling stream weaving its way through the heart of the estate. Breathe in the crisp mountain air, a welcome change from the city's clamor. Each day at Kalasa Valley Resort is a chance to reconnect with nature's rhythm. Wake up to the melody of birdsong, and spend your days exploring the whispering trails or simply soaking in the tranquility of your surroundings.  This picturesque escape is the perfect antidote to the everyday grind, offering a chance to unwind and rediscover the simple joys of life.
-district: Chikmagalur
+description: Nestled amidst the rolling hills of the Western Ghats in Mudigere, Valley Resort beckons you with a promise of serenity. Imagine a haven crafted in the true spirit of Malnad architecture, a cozy haven tucked away amongst verdant coffee plantations. Here, the valley unfolds before you, cradled between two majestic hills, a sparkling stream weaving its way through the heart of the estate. Breathe in the crisp mountain air, a welcome change from the city's clamor. Each day at Kalasa Valley Resort is a chance to reconnect with nature's rhythm. Wake up to the melody of birdsong, and spend your days exploring the whispering trails or simply soaking in the tranquility of your surroundings.  This picturesque escape is the perfect antidote to the everyday grind, offering a chance to unwind and rediscover the simple joys of life.
+district: Mudigere
 total-occupancy: 35
 rooms: 6
 stay-type: Resort

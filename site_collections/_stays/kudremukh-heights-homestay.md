@@ -8,7 +8,7 @@ price: ₹1,999
 area: Kudremukh
 rating: 5
 description: Craving a digital detox and fresh mountain air? Kudremukh Heights homestay beckons. Nestled on Kudremukh National Park's fringes, this family-run haven offers a simple escape. Breathe deep at 1,340 meters – year-round pleasant temperatures await. Leave stress behind and reconnect with nature's rhythm. Explore yoga with guidance, or simply unwind in the tranquility. Kudremukh Heights – your escape for a true mountain experience.
-district: Chikmagalur
+district: Kudremukh
 total-occupancy: 46
 rooms: 10
 stay-type: Homestay

@@ -5,7 +5,7 @@ keywords: resort stay
 cover_image: "/properties/Mistly Valley ckm/1.webp"
 images_src: Misty Valley ckm
 price: ₹2,999
-area: Coorg
+area: Chikmagalur
 rating: 5
 description: Mistly Valley ckm estates is an estate resort at Coorg in Karnataka. At 3800ft above sea level, this luxury resort in coorg gives you a picturesque view of the mountain ranges of western ghats. Uncrowded and unpolluted, Mistly Valley is one of the best places to stay in coorg, perfect for those looking for a getaway to breath fresh, clean air, take lazy walks and relax. Trek, Camp, Laugh, Sing and Dance. Come and Enjoy the wild beauty of coorg in a luxury resort amidst the woods, mist, rain, mountain, festivals, the people and much more.
 district: Chikmagalur 

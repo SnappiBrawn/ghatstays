@@ -9,7 +9,7 @@ price: ₹1,999
 area: Kudremukh
 rating: 5
 description: Craving a nature fix? Look no further than Kyathanmakki Eco Stay! Nestled in Kalasa's vibrant hills, our homestay offers a cozy retreat for mountain enthusiasts. Sip your morning chai on your private balcony, mesmerized by the endless emerald valleys and majestic peaks. Our modern rooms come with free Wi-Fi and comfy beds, perfect for unwinding after a day of exploring hidden waterfalls and lush hiking trails. In the evenings, share stories with fellow travelers under a sky ablaze with stars.  Kyathanmakki Eco Stay – your simple escape for a true mountain experience. 
-district: Chikmagalur
+district: Horanadu
 total-occupancy: 20
 rooms: 4
 stay-type: Homestay

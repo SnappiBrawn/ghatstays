@@ -8,7 +8,7 @@ price: ₹3,999
 area: Kudremukh
 rating: 5
 description: Escape to a paradise nestled 3,500 feet above the clouds at the foothills of majestic Kudremukha peak. Our budget-friendly homestay is perfect for nature enthusiasts, families, or even corporate retreats. Imagine waking up to a symphony of birdsong, surrounded by lush green tea estates. Step out onto your private balcony and breathe in the crisp mountain air, often veiled in a mystical mist. Explore hidden waterfalls and trekking trails, all within easy reach of your cozy haven.  We don't just offer stunning scenery; our homestay is renowned for its warm hospitality and mouthwatering Malnad-style cuisine, making your stay truly unforgettable.
-district: Chikmagalur
+district: Kudremukh
 total-occupancy: 16
 rooms: 4
 stay-type: Homestay
