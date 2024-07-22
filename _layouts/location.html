@@ -12,9 +12,28 @@ layout: default
                         <h1>{{page.title}}</h1>
                         <span class="price">{{page.price}}</span>
                     </div>
-                    <div class="col-12 col-md-9 d-block d-md-flex justify-content-between stubs">
+                    <!-- <div class="col-12 col-md-9 d-block d-md-flex justify-content-between stubs">
                         <div><i class="fa-solid fa-map-pin"></i> {{page.area}}</div>
                         <div>Rating: {% for item in (1..page.rating) %}<i class="fa-solid fa-star"></i> {% endfor %}
+                        </div>
+                    </div> -->
+                    <div class="row stubs">
+                        <div class="col-12 col-md-4 pt-3">
+                            <div><i class="fa-solid fa-map-pin"></i> {{page.area}}</div>
+                        </div>
+                        <div class="col-12 col-md-4 pt-3">
+                            <div>Rating: {% for item in (1..page.rating) %}<i class="fa-solid fa-star"></i> {% endfor %}
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 pt-3 d-none d-md-block"></div>
+                        <div class="col-12 col-md-4 pt-3">
+                            <div><i class="fa-solid fa-people-roof"></i> Max Capacity: {{page.total-occupancy}}</div>
+                        </div>
+                        <div class="col-12 col-md-4 pt-3">
+                            <div><i class="fa-solid fa-house-user"></i> Total Rooms: {{page.rooms}}</div>
+                        </div>
+                        <div class="col-12 col-md-4 pt-3">
+                            <div><i class="fa-solid fa-mountain-sun"></i> Stay Type: {{page.stay-type}}</div>
                         </div>
                     </div>
                     <div class="mt-5">
@@ -22,7 +41,7 @@ layout: default
                         <p class="py-3">
                             {{page.description}}
                         </p>
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col-6 col-md-3  p-1">
                                 <div class="feature-card">
                                     <div class="feature-header">
@@ -55,7 +74,7 @@ layout: default
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <!-- <div class="mt-5">
                         <h3 class="fs-5">Accomodation Types</h3>
@@ -76,22 +95,6 @@ layout: default
                             {% endfor %}
                         </div>
                     </div> -->
-                    <div class="mt-5" id="pricing">
-                        <h3 class="fs-5">Pricing</h3>
-                        <div class="row py-4 justify-content-center">
-                            {% for price in page.pricing %}
-                            <div class="col-6 col-md-5 p-2">
-                                <div class="feature-card h-100">
-                                    <div class="feature-header">
-                                        <span class="feature-name">{{price[0]}}</span>
-                                        <span class="price">{{price[1]}}</span>
-                                    </div>
-                                    <p class="col feature-text p-md-4 h-100">{{price[2]}}</p>
-                                </div>
-                            </div>
-                            {% endfor %}
-                        </div>
-                    </div>
                     <ul class="nav nav-tabs" id="infoTab" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active" id="amenities-tab" data-bs-toggle="tab" href="#amenities"
@@ -225,6 +228,22 @@ layout: default
                                 <li>If a customer cancels their stay 30 days or earlier from check-in, a 100% refund
                                     will be issued.</li>
                             </ul>
+                        </div>
+                    </div>
+                    <div class="mt-5" id="pricing">
+                        <h3 class="fs-5">Pricing</h3>
+                        <div class="row py-4 justify-content-center">
+                            {% for price in page.pricing %}
+                            <div class="col-6 col-md-5 p-2">
+                                <div class="feature-card h-100">
+                                    <div class="feature-header">
+                                        <span class="feature-name">{{price[0]}}</span>
+                                        <span class="price">{{price[1]}}</span>
+                                    </div>
+                                    <p class="col feature-text p-md-4 h-100">{{price[2]}}</p>
+                                </div>
+                            </div>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>
