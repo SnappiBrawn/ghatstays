@@ -11,7 +11,7 @@ description: Mistly Valley ckm estates is an estate resort at Coorg in Karnataka
 district: Chikmagalur 
 total-occupancy: 35
 rooms: 9
-stay-type: Resort
+stay-type: Homestay
 accomodation: [
     [0 Couples, 0, 0, house-door],
     [0 4-Sharing Rooms, 0, 0, shop],

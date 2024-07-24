@@ -4,7 +4,7 @@ title: Mountain Valley Homestay
 keywords: resort stay
 cover_image: "/properties/Mountain Valley Homestay/1.webp"
 images_src: Mountain Valley Homestay
-price: ₹X,XXX
+price: ₹2,899
 area: Chikmagalur
 rating: 5
 description: Craving a retreat nestled amidst rolling hills? Look no further than Mountain Valley Homestay in Chikmagalur. With sprawling green lawns, perfect for carefree afternoons of laughter and games. Cozy cottages dot the landscape, offering a haven of relaxation after a day of exploration. And as night arrives, gather around a crackling bonfire, sharing stories under a blanket of stars. To cap it all off, indulge in mouthwatering, local delicacies prepared with love. Mountain Valley Homestay – where memories are made under a starry sky.

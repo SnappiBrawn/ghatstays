@@ -8,7 +8,7 @@ images_src: Bhadra Aranya homestay
 price: ₹2,999
 area: Kudremukh
 rating: 5
-description: Seeking serenity? Look no further than Bhadra Aranya Wildlife Resort, a haven nestled 22 km outside Chikmagalur. Unwind in spacious, air-conditioned rooms with hill or garden views, each featuring a king bed and private balcony. Stay connected with Wi-Fi, cool off in the pool, or explore the resort's lush gardens and play areas. Evenings offer a cozy fireplace or starlit picnics under a sky ablaze with stars. Bhadra Aranya – where comfort meets nature, and tranquility awaits.
+description: Nestled in the heart of the lush forests along Horandu Kalasa Road, Aranya Wildlife Resort offers a serene escape into nature's embrace. Surrounded by cool, refreshing air and vibrant greenery, our resort provides a perfect blend of comfort and wilderness. At Aranya, we pride ourselves on offering premier stay experiences with a unique touch. Our nature swimming pool offers a refreshing dip amidst the forest backdrop, while our collection of various antique pieces adds a touch of history and charm to your stay. Whether you're seeking adventure or tranquility, Aranya Wildlife Resort is your ideal destination for an unforgettable getaway. Come, immerse yourself in the beauty of nature and experience the best of hospitality.
 district: Horanadu
 total-occupancy: 24
 rooms: 7
