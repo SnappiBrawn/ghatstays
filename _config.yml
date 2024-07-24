@@ -25,6 +25,8 @@ collections_dir: site_collections
 collections:
   stays:
     output: true
+  filtered:
+    output: true
 
 
 defaults:
