@@ -1,5 +1,6 @@
 ---
 layout: location
+exclusive: Yes
 title: Kudremukh Heights Homestay
 keywords: resort stay
 cover_image: "/properties/Kudremukh Heights Homestay/1.webp"
