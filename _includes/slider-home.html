@@ -1,26 +1,22 @@
 <section class="slider-home">
+    <video autoplay loop muted>
+        <source src="/assets/img/video/home.webm" type="video/webm">
+    </video>
     <div id="carouselExampleControls" class="carousel slide caption-fade" data-bs-ride="carousel">
-        <div class="carousel-inner">
+        <div class="carousel-inner" style="height: 80vh">
             <div class="carousel-item active" data-bs-interval="3000">
-                <img src="/assets/img/home-slider-1.webp"
-                    class=" w-100" alt="...">
                 <div class="carousel-caption">
                     <h3>LIVE AT</h3>
                     <h1>Amazing Green Spaces</h1>
                 </div>
-                
             </div>
             <div class="carousel-item" data-bs-interval="3000">
-                <img src="/assets/img/home-slider-2.webp"
-                    class=" w-100" alt="...">
                 <div class="carousel-caption">
                     <h3>EXPLORE</h3>
                     <h1>Refreshing Outdoor Treks</h1>
                 </div>
             </div>
             <div class="carousel-item" data-bs-interval="3000">
-                <img src="/assets/img/home-slider-3.webp"
-                    class=" w-100" alt="...">
                 <div class="carousel-caption">
                     <h3>EXPERIENCE</h3>
                     <h1>Naturally Healing Calmness</h1>
@@ -84,7 +80,7 @@
 </section>
 
 <script>
-    function submit(){
+    function submit() {
         const location = document.querySelector("#destinationSelect").value;
         const type = document.querySelector("#typeSelect").value;
         window.location.href = `/stays?location=${location}&type=${type}`;
