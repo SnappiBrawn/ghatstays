@@ -1,6 +1,5 @@
 //Add all custom CSS here
 
-
 // Globals
 html {
   scroll-behavior: smooth;
@@ -281,6 +280,13 @@ header {
 .slider-home {
   position: relative;
 
+  video {
+    position: absolute;
+    height: 80vh;
+    width: 100%;
+    object-fit: cover;
+  }
+
   .carousel {
     .carousel-caption {
       top: 150px;
@@ -293,12 +299,6 @@ header {
       h3 {
         font-size: 20px;
       }
-    }
-
-    img {
-      height: 80vh;
-      object-fit: cover;
-      filter: brightness(0.8);
     }
 
   }
@@ -466,7 +466,10 @@ header {
     }
 
     button.active {
-      color: red;
+      color: $brand-color;
+      text-decoration: underline;
+      text-decoration-color: $brand-color;
+      text-decoration-thickness: 2px;
     }
 
     button:focus {
@@ -585,6 +588,10 @@ div.wide {
 
 //reviews
 .reviews {
+  .item {
+    width: 75%;
+  }
+
   .card {
     box-shadow: 0px 0px 50px 50px rgba(red($brand-color), green($brand-color), blue($brand-color), 0.1);
   }
@@ -602,16 +609,17 @@ div.wide {
 
     &:before {
       content: ' ';
-      height: 100%;
-      width: 100%;
+      height: 50px;
+      width: 50px;
       background: url('/assets/img/quote.png');
+      background-size: contain;
       opacity: 0.3;
       font-size: 200px;
       background-repeat: no-repeat;
       position: absolute;
       color: $brand-color;
-      top: 0;
-      left: 10px;
+      top: 20px;
+      left: 20px;
       z-index: 1;
     }
   }
@@ -1116,10 +1124,11 @@ div.wide {
     display: flex;
     justify-content: center;
   }
-  .quote{
+
+  .quote {
     position: relative;
-    
-    &::before{
+
+    &::before {
       content: '❝';
       font-size: 100px;
       color: $brand-color;
@@ -1129,7 +1138,7 @@ div.wide {
       opacity: 0.5;
     }
 
-    &::after{
+    &::after {
       content: '❞';
       font-size: 100px;
       color: $brand-color;
@@ -1143,7 +1152,7 @@ div.wide {
 
 @include media-query($on-hand) {
 
-  .flipper{
+  .flipper {
     z-index: 0;
   }
 
@@ -1232,6 +1241,18 @@ div.wide {
       height: unset;
     }
 
+  }
+
+  .reviews {
+    .item {
+      width: 100%;
+      font-size: 12px;
+
+      .card-body p {
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
   }
 
   .quickbook {
@@ -1369,18 +1390,20 @@ div.wide {
   }
 
   .about-us {
-    .container{
+    .container {
       text-align: center;
     }
 
-    .text-end, .text-start{
+    .text-end,
+    .text-start {
       text-align: center !important;
     }
 
     h1 {
       text-align: center;
-  
-      &::before, &.right::before {
+
+      &::before,
+      &.right::before {
         content: "";
         position: absolute;
         background: $brand-color;
@@ -1391,31 +1414,32 @@ div.wide {
       }
     }
 
-    .flex-row-reverse-md{
+    .flex-row-reverse-md {
       flex-direction: column-reverse;
     }
-  
+
     p {
       font-size: 14px;
       text-align: center;
     }
-  
+
     .img-decorated {
       display: none;
     }
 
-    .flipper-card *{
+    .flipper-card * {
       font-size: 14px;
     }
-  
+
     .member {
       display: flex;
       justify-content: center;
     }
-    .quote{
+
+    .quote {
       position: relative;
-      
-      &::before{
+
+      &::before {
         content: '❝';
         font-size: 100px;
         color: $brand-color;
@@ -1424,8 +1448,8 @@ div.wide {
         left: -5px;
         opacity: 0.5;
       }
-  
-      &::after{
+
+      &::after {
         content: '❞';
         font-size: 100px;
         color: $brand-color;
