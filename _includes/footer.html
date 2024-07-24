@@ -1,20 +1,23 @@
 <footer style="background-color: #242625;">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-3 col-12 py-5 s1">
+			<div class="col-md-3 col-12 py-5 s1">
 				<img src="{{site.logo-white}}" class="img-fluid px-3 pb-3">
-				
-				<br><p>{{ site.description }}</p><br>
+
+				<br>
+				<p>{{ site.description }}</p><br>
 				<div class="d-flex flex-column gap-1">
-					<h6 style="font-size:small !important"><i class="bi bi-telephone-inbound"></i> 1-677-124-44227
+					<a href="tel:+918904451931">
+						<h6 style="font-size:small !important"><i class="fa-solid fa-phone"></i> +91 89044 51931
+					</a>
 					</h6>
-					<h6 style="font-size:small !important"><i class="bi bi-geo-alt"></i> 184 Main Street West
+					<!-- <h6 style="font-size:small !important"><i class="bi bi-geo-alt"></i> 184 Main Street West
 						Victoria 8007</h6>
 					<h6 style="font-size:small !important"><i class="bi bi-calendar-check"></i> Mon - Sat 8.00 - 18.00
-						Sunday CLOSED</h6>
+						Sunday CLOSED</h6> -->
 				</div>
 			</div>
-			<div class="col-sm-3 col-12 py-5">
+			<!-- <div class="col-sm-3 col-12 py-5">
 				<h5>Latest News</h5>
 				<div>
 					<div class="row align-items-center">
@@ -27,34 +30,37 @@
 							<p style="font-size: small; color: grey;">May 5, 2024</p>
 					</div>
 				</div>
-			</div>
-			<div class="col-sm-3 col-12 py-5">
+			</div> -->
+			<div class="col-md-6 col-12 py-5">
 				<h5>Gallery</h5>
 				<div class="row">
-					{% for index in (1..6)%}
+					{% for img in site.data.footer-gallery %}
 					<div class="col-4 p-2">
-						<a href="https://exp.cdn-hotels.com/hotels/2000000/1170000/1163200/1163147/1c53b3d9_z.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-caption="Scenic beaches" class="col-sm-4">
-							<img src="https://exp.cdn-hotels.com/hotels/2000000/1170000/1163200/1163147/1c53b3d9_z.jpg" class="img-fluid">
+						<a href="{{img.path}}" data-toggle="lightbox" data-gallery="example-gallery" data-caption="{{img.name}}" class="col-sm-4">
+							<img src="{{img.path}}" class="img-fluid">
 						</a>
 					</div>
 					{% endfor %}
 				</div>
 			</div>
-			<div class="col-sm-3 col-12 py-5 s4">
-				<h5>Follow Us</h5>
-				<a href="{{site.instagram}}"><i class="bi bi-instagram"></i><span>Instagram</span></a>
-				<a href="{{site.youtube}}"><i class="bi bi-youtube"></i><span>Youtube</span></a>
-				<a href="{{site.facebook}}"><i class="bi bi-facebook"></i><span>Facebook</span></a>
+			<div class="col-md-3 col-12 py-5 s4">
+				<div class="d-flex flex-column gap-3">
+					<h5>Follow Us</h5>
+					<a href="{{site.instagram}}"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a>
+					<a href="{{site.youtube}}"><i class="fa-brands fa-youtube"></i><span>Youtube</span></a>
+					<a href="{{site.facebook}}"><i class="fa-brands fa-facebook"></i><span>Facebook</span></a>
+				</div>
 			</div>
 		</div>
 		<hr>
-		<div class="d-flex justify-content-between py-3">
+		<div class="d-flex justify-content-center py-3">
 			<div>
-				<a href="https://snaplogix.in" target="_blank"><i class="bi bi-c-circle"></i> 2024 SnapLogix.Inc, All Rights Reserved</a>
+				<a href="https://snaplogix.in" target="_blank"><i class="fa-regular fa-copyright"></i> 2024 SnapLogix.Inc, All
+					Rights Reserved</a>
 			</div>
-			<div>
-				<i class="bi bi-globe"></i>
-			</div>
+			<!-- <div>
+				<i class="fa-solid fa-globe"></i>
+			</div> -->
 		</div>
 	</div>
 </footer>
