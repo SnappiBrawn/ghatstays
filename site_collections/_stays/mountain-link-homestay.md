@@ -1,5 +1,6 @@
 ---
 layout: location
+filtered: Yes
 title: Mountain Link Homestay
 keywords: resort stay
 cover_image: "/properties/Mountain Link Homestay/1.webp"

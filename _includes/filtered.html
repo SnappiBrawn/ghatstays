@@ -37,7 +37,8 @@
                         </div>
                     </div>
                 </div> -->
-                {% for stay in site.filtered %}
+                {% for stay in site.stays %}
+                {% if stay.filtered == true %}
                 <div class="col-12 col-md-4 iso-item {{stay.stay-type}}">
                     <div class="card explore-stays rounded-0 m-2 {% if stay.exclusive == true %}exclusive{% endif %}">
 						<a href="{{stay.url}}">
@@ -72,6 +73,7 @@
 						</div>
 					</div>
                 </div>
+                {% endif %}
                 {% endfor %}
             </div>
         </div>

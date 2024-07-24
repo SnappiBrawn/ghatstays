@@ -1,5 +1,6 @@
 ---
 layout: location
+filtered: Yes
 title: A Shaped Classhouse Cottages
 keywords: cottage stay
 cover_image: /properties/A Shaped Classhouse Cottages/1.webp

@@ -1,5 +1,6 @@
 ---
 layout: location
+filtered: Yes
 title: Tranquil Retreat
 keywords: resort stay
 cover_image: "/properties/Tranquil Retreat/1.webp"

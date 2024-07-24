@@ -1,5 +1,6 @@
 ---
 layout: location
+filtered: Yes
 keywords: homestays
 title: Estate Cottages
 cover_image: "/properties/Estate Cottages/1.webp"

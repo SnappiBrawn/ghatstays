@@ -1,5 +1,6 @@
 ---
 layout: location
+filtered: Yes
 title: Heritage Resort Horanadu
 keywords: riverside stay
 cover_image: /properties/Heritage Resort Horanadu/1.webp
