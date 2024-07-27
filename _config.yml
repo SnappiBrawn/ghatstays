@@ -1,6 +1,7 @@
 
 title: Ghatstays
-description: Your guide through the mesmerising landscape of the western ghats. 
+description: Your guide through the mesmerising landscape of the western ghats.
+url: "https://ghatstays.com"
 email: ghatstays@gmail.com
 instagram: https://www.instagram.com/ghatstays 
 linkedin: https://in.linkedin.com/in/ghat-stays 
@@ -46,3 +47,4 @@ compress_html:
 
 plugins:
  - jekyll-seo-tag
+ - jekyll-sitemap
