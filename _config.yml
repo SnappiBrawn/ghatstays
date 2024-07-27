@@ -48,3 +48,4 @@ compress_html:
 plugins:
  - jekyll-seo-tag
  - jekyll-sitemap
+ - jekyll-last-modified-at
